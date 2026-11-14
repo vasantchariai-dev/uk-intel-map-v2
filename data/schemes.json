@@ -1,0 +1,2911 @@
+{
+  "_meta": {
+    "description": "Scheme register for the CPC regional intelligence map. One record per scheme. First compiled 14 November 2026 from board papers (read directly) and public sources (web).",
+    "last_checked": "2026-11-14",
+    "vocab": {
+      "type": [
+        "fund",
+        "capital_project",
+        "programme",
+        "designation",
+        "transport",
+        "strategy",
+        "power",
+        "governance",
+        "private_investment"
+      ],
+      "themes": [
+        "innovation",
+        "growth",
+        "commercialisation",
+        "transport",
+        "housing",
+        "energy",
+        "culture",
+        "skills",
+        "nature",
+        "governance"
+      ],
+      "stage": [
+        "proposed",
+        "pipeline",
+        "business_case",
+        "approved",
+        "delivering",
+        "at_risk",
+        "complete",
+        "adopted"
+      ],
+      "loc_precision": [
+        "site",
+        "area",
+        "region"
+      ],
+      "confidence": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "notes": "Coordinates are approximate and must be checked during the build (see brief). value_gbp_m is only filled where a single headline figure is clear; otherwise see value_note. confidence = how well the record is supported: high (primary paper read), medium (official or trade press), low (secondary or AI-generated summary; verify)."
+  },
+  "schemes": [
+    {
+      "id": "sy-airport-city",
+      "region": "sy",
+      "name": "South Yorkshire Airport City (Doncaster Sheffield Airport freehold and Gateway East)",
+      "aliases": [
+        "DSA",
+        "Doncaster Sheffield Airport",
+        "Airport City",
+        "Gateway East"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "commercialisation",
+        "transport"
+      ],
+      "value_gbp_m": 121.62,
+      "value_note": "£121.62m of gainshare previously earmarked for Doncaster's Place Investment Plan retained by SYMCA to fund the borrowing. Purchase price not public.",
+      "funding": "SYMCA borrowing backed by gainshare; business rates retention on the airport site",
+      "stage": "approved",
+      "status": "Board approved purchase of the airport freehold and surrounding land from Peel on 27 October 2026, subject to legal due diligence and final valuation. Aim: reopen the airport and build an advanced industries hub. Lease to be assigned from City of Doncaster Council to FDL.",
+      "status_date": "2026-10-27",
+      "unknowns": "Price, BNP Paribas valuation, financial model, business plan scenarios, exit strategy and risk register are all exempt.",
+      "lat": 53.4805,
+      "lng": -1.0106,
+      "loc_precision": "site",
+      "place": "Finningley, Doncaster",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026: agenda, decisions and minutes",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "sy-tcr",
+      "region": "sy",
+      "name": "Transport for City Regions programme (South Yorkshire)",
+      "aliases": [
+        "TCR"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "value_gbp_m": 1455,
+      "value_note": "£1.455bn government funding; programme deliberately over-programmed.",
+      "funding": "Government transport settlement",
+      "stage": "business_case",
+      "status": "Board endorsed programme and thematic approach on 27 October 2026, subject to detailed development before submission to government. Themes: public transport, rail, road safety, active travel, highway maintenance, airport connectivity.",
+      "status_date": "2026-10-27",
+      "unknowns": "Final scheme list and phasing.",
+      "lat": 53.43,
+      "lng": -1.35,
+      "loc_precision": "region",
+      "place": "South Yorkshire",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "sy-krn",
+      "region": "sy",
+      "name": "South Yorkshire Key Route Network and mayoral power of direction",
+      "aliases": [
+        "SYKRN"
+      ],
+      "type": "power",
+      "themes": [
+        "transport",
+        "governance"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "approved",
+      "status": "Designated on 27 October 2026 as a statutory requirement of the English Devolution and Community Empowerment Act 2026. Power of direction to be used only as a last resort. Full review every five years.",
+      "status_date": "2026-10-27",
+      "unknowns": "",
+      "lat": 53.43,
+      "lng": -1.35,
+      "loc_precision": "region",
+      "place": "South Yorkshire",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "sy-investment-zone",
+      "region": "sy",
+      "name": "South Yorkshire Investment Zone (advanced manufacturing)",
+      "aliases": [
+        "SYIZ",
+        "AMID expansion"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": 80,
+      "value_note": "£80m government support at launch (2023); expected to leverage £1.2bn private investment and 8,000 jobs. Check current 10-year envelope.",
+      "funding": "Government Investment Zone funding; business rates retention; tax sites",
+      "stage": "delivering",
+      "status": "UK's first Investment Zone. Expands the Advanced Manufacturing Innovation District to Sheffield city centre and Rotherham town centre, with opportunity sites in Barnsley and Doncaster. Co-designed with University of Sheffield and Sheffield Hallam.",
+      "status_date": "2023-07-14",
+      "unknowns": "Current spend and pipeline; tax site take-up.",
+      "lat": 53.39,
+      "lng": -1.39,
+      "loc_precision": "area",
+      "place": "Sheffield–Rotherham corridor",
+      "sources": [
+        {
+          "title": "GOV.UK: South Yorkshire named as first UK Investment Zone",
+          "url": "https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone"
+        },
+        {
+          "title": "SYMCA Investment Zone prospectus",
+          "url": "https://invest.southyorkshire-ca.gov.uk/SCRInvest/media/PDF-library/The-South-Yorkshire-Investment-Zone.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "sy-compass",
+      "region": "sy",
+      "name": "COMPASS (Composites at Speed and Scale), AMRC Factory 2050",
+      "aliases": [
+        "COMPASS"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "First Investment Zone project; backed by a c.£80m partnership of Boeing, Spirit AeroSystems, Loop Technology and the AMRC.",
+      "funding": "Industry partners, government, SYMCA, University of Sheffield",
+      "stage": "delivering",
+      "status": "R&D facility extending AMRC Factory 2050.",
+      "status_date": "2023-07-14",
+      "unknowns": "Current build status.",
+      "lat": 53.396,
+      "lng": -1.392,
+      "loc_precision": "area",
+      "place": "Sheffield Business Park",
+      "sources": [
+        {
+          "title": "The Chemical Engineer: South Yorkshire investment zone",
+          "url": "https://www.thechemicalengineer.com/news/south-yorkshire-investment-zone-focuses-on-advanced-manufacturing-mag"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "sy-amp",
+      "region": "sy",
+      "name": "Advanced Manufacturing Park (AMP), Rotherham",
+      "aliases": [
+        "AMP",
+        "AMID",
+        "Waverley",
+        "Templeborough"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Core of the Advanced Manufacturing Innovation District; occupiers include Rolls-Royce, McLaren Automotive and Boeing. Expansion land at Waverley and around Magna at Templeborough.",
+      "status_date": "",
+      "unknowns": "Remaining land and pipeline.",
+      "lat": 53.3925,
+      "lng": -1.382,
+      "loc_precision": "site",
+      "place": "Catcliffe, Rotherham",
+      "sources": [
+        {
+          "title": "Rothbiz: Investment Zone to focus on Sheffield-Rotherham corridor",
+          "url": "https://www.rothbiz.co.uk/2023/07/news-8139-south-yorkshire-investment.html"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "sy-programme-approvals-oct26",
+      "region": "sy",
+      "name": "Programme approvals, October 2026 (transport revenue, highways, active travel)",
+      "aliases": [
+        "CRSTS and TCR Five-Year Revenue Programme",
+        "Highways Capital Maintenance",
+        "Active Travel Bridges Smithies and Dearne Valley"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": 149.28,
+      "value_note": "£77.64m CRSTS and TCR five-year revenue programme; £68.1m highways capital maintenance; £3.54m active travel bridges to Barnsley.",
+      "funding": "CRSTS / TCR",
+      "stage": "approved",
+      "status": "Approved at board, 27 October 2026.",
+      "status_date": "2026-10-27",
+      "unknowns": "",
+      "lat": 53.55,
+      "lng": -1.48,
+      "loc_precision": "region",
+      "place": "South Yorkshire",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "sy-bus-franchising",
+      "region": "sy",
+      "name": "Bus franchising and South Yorkshire People's Network",
+      "aliases": [
+        "People's Network"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Preparations for franchising under way; public questions at board focused on reliability reporting through transition.",
+      "status_date": "2026-10-27",
+      "unknowns": "Go-live dates.",
+      "lat": 53.38,
+      "lng": -1.47,
+      "loc_precision": "region",
+      "place": "South Yorkshire",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "sy-outcomes-lnrs",
+      "region": "sy",
+      "name": "South Yorkshire Strategy outcomes framework and Local Nature Recovery Strategy",
+      "aliases": [
+        "LNRS",
+        "Outcomes Framework"
+      ],
+      "type": "strategy",
+      "themes": [
+        "governance",
+        "nature"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "adopted",
+      "status": "26 headline metrics approved; LNRS approved in principle, adoption due December 2026.",
+      "status_date": "2026-10-27",
+      "unknowns": "",
+      "lat": 53.38,
+      "lng": -1.47,
+      "loc_precision": "region",
+      "place": "South Yorkshire",
+      "sources": [
+        {
+          "title": "SYMCA Board, 27 October 2026",
+          "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-bemdc",
+      "region": "wm",
+      "name": "Birmingham East Mayoral Development Corporation",
+      "aliases": [
+        "BEMDC",
+        "East Birmingham MDC",
+        "MDC"
+      ],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "housing",
+        "governance"
+      ],
+      "value_gbp_m": 11000,
+      "value_note": "£11bn of regeneration across 422ha; claims of 50,000 jobs and 20,000 homes.",
+      "funding": "Mixed public and private",
+      "stage": "delivering",
+      "status": "Established by Order (SI 2026/405) and launched at UKREiiF on 19 May 2026 with land acquisition and planning powers. Senior leadership announced September 2026. Covers five sites including the Sports Quarter and Central Heart fringe.",
+      "status_date": "2026-09-09",
+      "unknowns": "Business plan, capital budget, planning powers in practice.",
+      "lat": 52.478,
+      "lng": -1.865,
+      "loc_precision": "area",
+      "place": "East Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: Britain's biggest development corporation launched",
+          "url": "https://www.wmca.org.uk/news/mayor-launches-britain-s-biggest-and-most-powerful-development-corporation-to-drive-11bn-regeneration-of-east-birmingham/"
+        },
+        {
+          "title": "Housing Today: development corporation to lead £11bn regeneration",
+          "url": "https://www.housingtoday.co.uk/news/ukreiif-2026-west-midlands-mayor-launches-development-corporation-to-lead-11bn-east-birmingham-regeneration/5142340.article"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-sports-quarter",
+      "region": "wm",
+      "name": "Birmingham Sports Quarter (Birmingham City FC Powerhouse Stadium)",
+      "aliases": [
+        "Sports Quarter",
+        "Powerhouse Stadium",
+        "Birmingham Wheels site"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "culture",
+        "transport"
+      ],
+      "value_gbp_m": 2000,
+      "value_note": "c.£2bn privately led scheme; 62,000-seat stadium; c.8,400 jobs claimed by the club.",
+      "funding": "Knighthead Capital Management (private); government funding for a new Metro line",
+      "stage": "business_case",
+      "status": "Heatherwick Studio and MANICA design unveiled November 2025; planning application expected 2026. Includes training facilities, women's stadium, arena and housing on the 48-acre former Wheels site. Within BEMDC.",
+      "status_date": "2026-07-01",
+      "unknowns": "Planning submission date; Metro extension cost and timing.",
+      "lat": 52.475,
+      "lng": -1.864,
+      "loc_precision": "site",
+      "place": "Bordesley Green, Birmingham",
+      "sources": [
+        {
+          "title": "Place Midlands: Blues unveil 62,000-seat stadium plans",
+          "url": "https://www.placemidlands.co.uk/blues-unveil-62000-seat-new-stadium-plans/"
+        },
+        {
+          "title": "Football Ground Guide: new stadium latest",
+          "url": "https://footballgroundguide.com/news/new-birmingham-city-stadium-latest"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-investment-zone",
+      "region": "wm",
+      "name": "West Midlands Investment Zone",
+      "aliases": [
+        "WMIZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m; £39m first-wave capital across three sites; £15m tax incentive provision; target £5.5bn private investment and 30,000 jobs; c.£1.5bn business rates uplift over 25 years.",
+      "funding": "Government Investment Zone funding; business rates retention to 2049",
+      "stage": "delivering",
+      "status": "Three sites: Birmingham Knowledge Quarter, Coventry and Warwick Gigapark, Wolverhampton Green Innovation Corridor. Tax incentives at the first two.",
+      "status_date": "2025-02-01",
+      "unknowns": "Spend to date; tax site take-up.",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Zone",
+          "url": "https://www.wmca.org.uk/west-midlands-investment-zone"
+        },
+        {
+          "title": "Invest West Midlands: Investment Zone prospectus",
+          "url": "https://www.investwestmidlands.com/wp-content/uploads/2025/02/West-Midlands-Investment-Zone.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-bkq",
+      "region": "wm",
+      "name": "Birmingham Knowledge Quarter",
+      "aliases": [
+        "BKQ",
+        "Birmingham Innovation and Knowledge Quarter"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "£70m anchor investment from Bruntwood SciTech and Woodbourne Group; c.20,000 jobs estimated.",
+      "funding": "Investment Zone; tax site; business rates retention",
+      "stage": "delivering",
+      "status": "Health, medtech and digital cluster from Aston and BCU universities through Duddeston and Nechells, next to HS2 Curzon Street. Inside BEMDC area.",
+      "status_date": "2025-03-06",
+      "unknowns": "Site area quoted inconsistently (130ha and 210ha in different WMCA documents).",
+      "lat": 52.487,
+      "lng": -1.886,
+      "loc_precision": "area",
+      "place": "Eastside / Aston, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: Key development sites and corridors",
+          "url": "https://www.wmca.org.uk/documents/research-and-insights/west-midlands-futures-green-paper/west-midlands-futures-green-paper/chapter-2-places-and-the-spatial-development-strategy/key-development-sites-and-corridors-of-opportunity/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-gigapark",
+      "region": "wm",
+      "name": "Coventry and Warwick Gigapark (Investment Zone)",
+      "aliases": [
+        "Gigapark",
+        "Greenpower Park",
+        "Coventry Airport"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "energy"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Investment Zone; tax site; business rates retention",
+      "stage": "delivering",
+      "status": "240ha battery and EV manufacturing site at Coventry Airport. Note: partly in Warwick District, outside WMCA constituent boundary.",
+      "status_date": "",
+      "unknowns": "Anchor occupier.",
+      "lat": 52.3697,
+      "lng": -1.4797,
+      "loc_precision": "site",
+      "place": "Coventry Airport, Baginton",
+      "sources": [
+        {
+          "title": "WMCA: Key development sites and corridors",
+          "url": "https://www.wmca.org.uk/documents/research-and-insights/west-midlands-futures-green-paper/west-midlands-futures-green-paper/chapter-2-places-and-the-spatial-development-strategy/key-development-sites-and-corridors-of-opportunity/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-gic",
+      "region": "wm",
+      "name": "Wolverhampton Green Innovation Corridor",
+      "aliases": [
+        "GIC"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "energy",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Investment Zone (no tax incentives)",
+      "stage": "delivering",
+      "status": "Delivered by City of Wolverhampton Council and University of Wolverhampton; green industries and advanced manufacturing.",
+      "status_date": "",
+      "unknowns": "",
+      "lat": 52.592,
+      "lng": -2.118,
+      "loc_precision": "area",
+      "place": "Wolverhampton",
+      "sources": [
+        {
+          "title": "WMCA: Investment Zone funding to create manufacturing jobs",
+          "url": "https://www.wmca.org.uk/news/investment-zone-funding-to-create-hundreds-of-cutting-edge-manufacturing-jobs/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wm-investment-programme",
+      "region": "wm",
+      "name": "WMCA Regional Investment Programme",
+      "aliases": [
+        "Investment Programme"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "transport"
+      ],
+      "value_gbp_m": 835.2,
+      "value_note": "£835.2m approved grant funding at 30 September 2026; £757.5m spent to 31 August 2026.",
+      "funding": "Devolution deal investment fund",
+      "stage": "at_risk",
+      "status": "Eleven schemes red for completion dates; change requests to extend dates in progress.",
+      "status_date": "2026-10-19",
+      "unknowns": "Which eleven schemes.",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Investment Board minutes, 19 October 2026 (draft)",
+          "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-crsts",
+      "region": "wm",
+      "name": "City Region Sustainable Transport Settlement (West Midlands)",
+      "aliases": [
+        "CRSTS"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": 1182,
+      "value_note": "£1.182bn settlement; £1.055bn spend forecast; £1.287bn cumulative approvals (over-programmed); Q1 2026/27 spend £75.4m; c.£125m local contributions.",
+      "funding": "DfT",
+      "stage": "delivering",
+      "status": "On track against DfT spend forecast at Q1 2026/27. Future reports to explain slippage of 40+ days.",
+      "status_date": "2026-10-19",
+      "unknowns": "",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Investment Board minutes, 19 October 2026 (draft)",
+          "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-cif-rif",
+      "region": "wm",
+      "name": "Commercial and Residential Investment Funds (loan funds)",
+      "aliases": [
+        "CIF",
+        "RIF",
+        "West Midlands Development Capital"
+      ],
+      "type": "fund",
+      "themes": [
+        "commercialisation",
+        "growth",
+        "housing"
+      ],
+      "value_gbp_m": 300,
+      "value_note": "£300m combined exposure limit. October 2026 loans: £9m Bridges and Graftongate 95 JV (industrial/office); £1.655m Colmore Capital (Warwick refurbishment); £3.1m extension plus £0.8m Craig Watts Anchor Point.",
+      "funding": "Repayable debt",
+      "stage": "delivering",
+      "status": "Managed through West Midlands Development Capital. Members debating economic outputs against protecting the recyclable fund. Dashboards to show headroom in future.",
+      "status_date": "2026-10-19",
+      "unknowns": "Current deployment and headroom.",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Investment Board minutes, 19 October 2026 (draft)",
+          "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-coventry-station",
+      "region": "wm",
+      "name": "Coventry Station Masterplan",
+      "aliases": [
+        "Coventry bay platform"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "£10m moved from bay platform budget to complete the station building.",
+      "funding": "Investment Programme",
+      "stage": "at_risk",
+      "status": "Rated red: bay platform delayed by funding and programme challenges.",
+      "status_date": "2026-09-21",
+      "unknowns": "Revised bay platform delivery route.",
+      "lat": 52.4007,
+      "lng": -1.5135,
+      "loc_precision": "site",
+      "place": "Coventry station",
+      "sources": [
+        {
+          "title": "WMCA Investment Board minutes, 21 September 2026",
+          "url": "https://governance.wmca.org.uk/documents/s37913/Minutes%20Investment%20Board%2021.09.26%20APPROVED.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-mell-square",
+      "region": "wm",
+      "name": "Mell Square (Holbeche Place), Solihull",
+      "aliases": [
+        "Holbeche Place"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Additional funding request expected.",
+      "funding": "WMCA",
+      "stage": "at_risk",
+      "status": "Material cost and valuation pressures on phase 1 residential. Report to WMCA Board 13 November 2026 with private appendix.",
+      "status_date": "2026-11-13",
+      "unknowns": "Size of additional ask (exempt).",
+      "lat": 52.413,
+      "lng": -1.779,
+      "loc_precision": "site",
+      "place": "Solihull town centre",
+      "sources": [
+        {
+          "title": "WMCA Board, 13 November 2026: agenda",
+          "url": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=137&MId=2150"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-metro-review",
+      "region": "wm",
+      "name": "West Midlands Metro review and future operating model",
+      "aliases": [
+        "Midland Metro",
+        "MML",
+        "MMA"
+      ],
+      "type": "governance",
+      "themes": [
+        "transport",
+        "governance"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "proposed",
+      "status": "Phase 1 as-is review (AtkinsRéalis) found governance, accountability and interface issues across TfWM, Midland Metro Limited and the Alliance. Board asked on 13 November 2026 to approve Phase 2 with an independent reviewer and member steering group.",
+      "status_date": "2026-11-13",
+      "unknowns": "Board decision (pending publication).",
+      "lat": 52.4796,
+      "lng": -1.9026,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Board report: Metro review and future operating model",
+          "url": "https://governance.wmca.org.uk/documents/s37919/Metro%20-%20Future%20Delivery.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wm-bus",
+      "region": "wm",
+      "name": "Bus acquisition (West Midlands Bus Limited)",
+      "aliases": [
+        "Bus reform"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Secondary source reports business to operate as West Midlands Bus Limited from 1 November 2026, completion 1 December. Bus update went to board 13 November.",
+      "status_date": "2026-11-13",
+      "unknowns": "Verify against the board bus update report.",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Board, 13 November 2026: Bus update report",
+          "url": "https://governance.wmca.org.uk/documents/s37927/Bus%20Update%20Report.pdf"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "wm-construction-skills",
+      "region": "wm",
+      "name": "Construction skills programme",
+      "aliases": [],
+      "type": "programme",
+      "themes": [
+        "skills"
+      ],
+      "value_gbp_m": 70,
+      "value_note": "c.£70m",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Links residents to jobs on investment programme projects. Investment Board referred council influence over skills to scrutiny.",
+      "status_date": "2026-09-21",
+      "unknowns": "",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA Investment Board minutes, 21 September 2026",
+          "url": "https://governance.wmca.org.uk/documents/s37913/Minutes%20Investment%20Board%2021.09.26%20APPROVED.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-lipf",
+      "region": "em",
+      "name": "Local Innovation Partnership Fund: advanced manufacturing for clean energy cluster",
+      "aliases": [
+        "LIPF"
+      ],
+      "type": "fund",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "energy"
+      ],
+      "value_gbp_m": 20,
+      "value_note": "£20m over five years from UKRI, contracted directly to lead universities; up to £1.33m to EMCCA for cluster development.",
+      "funding": "UKRI",
+      "stage": "approved",
+      "status": "Four projects: high-integrity manufacturing, hybrid-electric propulsion, connected factories, business acceleration. Innovation Advisory Board oversees; Triple Helix partner board for operations. EMCCA pushing for future devolution of innovation funding.",
+      "status_date": "2026-10-12",
+      "unknowns": "Split by project; UKRI contracting.",
+      "lat": 52.95,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "East Midlands",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-connected-factories",
+      "region": "em",
+      "name": "Connected Factories project",
+      "aliases": [],
+      "type": "programme",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": 3.2,
+      "value_note": "Up to £3.2m Investment Zone revenue funding.",
+      "funding": "East Midlands Investment Zone reserve",
+      "stage": "approved",
+      "status": "Part of the LIPF portfolio.",
+      "status_date": "2026-10-12",
+      "unknowns": "Funding profile.",
+      "lat": 52.95,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "East Midlands",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-investment-zone",
+      "region": "em",
+      "name": "East Midlands Investment Zone",
+      "aliases": [
+        "EMIZ",
+        "Infinity Park",
+        "Explore Park",
+        "Hartington and Staveley"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "growth",
+        "energy"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m",
+      "funding": "Government Investment Zone funding",
+      "stage": "delivering",
+      "status": "Advanced manufacturing and clean energy. Sites: Infinity Park (Derby), Explore Park and Hartington/Staveley (Chesterfield area). EMCCA is accountable body.",
+      "status_date": "2026-02-09",
+      "unknowns": "Spend to date by site.",
+      "lat": 52.882,
+      "lng": -1.456,
+      "loc_precision": "area",
+      "place": "Infinity Park, Derby (lead site)",
+      "sources": [
+        {
+          "title": "EMCCA: What is the East Midlands Investment Zone?",
+          "url": "https://www.eastmidlands-cca.gov.uk/news/east-midlands-investment-zone-benefits"
+        },
+        {
+          "title": "EMCCA Spatial Vision",
+          "url": "https://www.eastmidlands-cca.gov.uk/content/uploads/2025/06/EMCCA-Spatial-Vision-FINAL.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "em-freeport",
+      "region": "em",
+      "name": "East Midlands Freeport",
+      "aliases": [
+        "EMF"
+      ],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "commercialisation",
+        "energy"
+      ],
+      "value_gbp_m": 1000,
+      "value_note": "£1bn investment strategy through retained business rates and complementary funding.",
+      "funding": "Retained business rates; tax incentives",
+      "stage": "delivering",
+      "status": "UK's only inland freeport. Sites: East Midlands Airport and Gateway Industrial Cluster, Ratcliffe-on-Soar power station, East Midlands Intermodal Park. EMCCA became accountable body in 2026.",
+      "status_date": "",
+      "unknowns": "Note: EMA site is in North West Leicestershire, outside EMCCA boundary.",
+      "lat": 52.8311,
+      "lng": -1.3281,
+      "loc_precision": "area",
+      "place": "East Midlands Airport",
+      "sources": [
+        {
+          "title": "EMCCA becomes accountable body for East Midlands Freeport",
+          "url": "https://www.eastmidlands-cca.gov.uk/news/east-midlands-freeport-accountable-body/"
+        },
+        {
+          "title": "East Midlands Business Link: Freeport £1bn investment strategy",
+          "url": "https://www.eastmidlandsbusinesslink.co.uk/mag/?p=141249"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "em-ratcliffe",
+      "region": "em",
+      "name": "Ratcliffe-on-Soar power station site",
+      "aliases": [
+        "Ratcliffe"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "energy",
+        "innovation",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Freeport; Uniper (owner)",
+      "stage": "pipeline",
+      "status": "Former coal power station being repurposed as a zero-carbon technology and energy hub; Freeport tax site.",
+      "status_date": "",
+      "unknowns": "Masterplan and anchor occupiers.",
+      "lat": 52.864,
+      "lng": -1.255,
+      "loc_precision": "site",
+      "place": "Rushcliffe, Nottinghamshire",
+      "sources": [
+        {
+          "title": "TheBusinessDesk: Freeport in talks with potential investors",
+          "url": "https://www.thebusinessdesk.com/eastmidlands/news/2087355-freeport-in-talks-with-potential-investors-to-create-tens-of-thousands-of-jobs"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "em-step-fusion",
+      "region": "em",
+      "name": "STEP Fusion prototype power plant, West Burton",
+      "aliases": [
+        "STEP",
+        "STEP2",
+        "UK Fusion Energy",
+        "UKIFS"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "energy",
+        "growth"
+      ],
+      "value_gbp_m": 2500,
+      "value_note": "£2.5bn government five-year commitment to fusion (2024/25 to 2029/30); £200m West Burton site redevelopment with construction partner appointed.",
+      "funding": "Government (UK Fusion Energy)",
+      "stage": "delivering",
+      "status": "Moved from research to delivery in 2026: site acquired, construction partner appointed, early enabling works. Plant expected to operate from 2040. Anchor of the Trent clean energy supercluster.",
+      "status_date": "2026-03-16",
+      "unknowns": "Consent route and timetable.",
+      "lat": 53.36,
+      "lng": -0.81,
+      "loc_precision": "site",
+      "place": "West Burton, Bassetlaw",
+      "sources": [
+        {
+          "title": "EMCCA: STEP Fusion moves from research to delivery",
+          "url": "https://www.eastmidlands-cca.gov.uk/news/step-fusion-construction"
+        },
+        {
+          "title": "UK Fusion Energy annual report 2025-26",
+          "url": "https://assets.publishing.service.gov.uk/media/6abf7664943e890cb55e5e68/SD26-032D_-_UKFE_Annual_Report_2025-26_DIGITAL.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "em-trent-supercluster",
+      "region": "em",
+      "name": "Trent clean energy supercluster",
+      "aliases": [
+        "Supercluster",
+        "Cottam",
+        "High Marnham"
+      ],
+      "type": "programme",
+      "themes": [
+        "energy",
+        "innovation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "pipeline",
+      "status": "Former power station sites: STEP Fusion at West Burton, SMR nuclear at Cottam, clean hydrogen at High Marnham.",
+      "status_date": "2026-03-16",
+      "unknowns": "Investment commitments at Cottam and High Marnham.",
+      "lat": 53.3,
+      "lng": -0.78,
+      "loc_precision": "area",
+      "place": "Trent valley, Bassetlaw",
+      "sources": [
+        {
+          "title": "EMCCA: STEP Fusion moves from research to delivery",
+          "url": "https://www.eastmidlands-cca.gov.uk/news/step-fusion-construction"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "em-energy-plans",
+      "region": "em",
+      "name": "Regional Energy Plan, eight Local Area Energy Plans and digital twin",
+      "aliases": [
+        "LAEP",
+        "Digital Twin"
+      ],
+      "type": "strategy",
+      "themes": [
+        "energy",
+        "innovation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "adopted",
+      "status": "Endorsed as the strategic evidence base for energy investment; Green Growth Advisory Board to oversee. Investment strategy to follow.",
+      "status_date": "2026-10-12",
+      "unknowns": "Investment strategy and delivery programme.",
+      "lat": 52.95,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "East Midlands",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-brrz",
+      "region": "em",
+      "name": "Business Rate Retention Zone proposal",
+      "aliases": [
+        "BRRZ"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Retained business rates",
+      "stage": "proposed",
+      "status": "Submitted to MHCLG on 30 September 2026 under officer decision; endorsed by board 12 October.",
+      "status_date": "2026-10-12",
+      "unknowns": "Sites and amounts.",
+      "lat": 52.95,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "East Midlands",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-becketwell",
+      "region": "em",
+      "name": "Becketwell office development, Derby",
+      "aliases": [
+        "Becketwell"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "EMCCA Investment Fund (pipeline)",
+      "stage": "pipeline",
+      "status": "Admitted to investment pipeline; promoter invited to submit final business case.",
+      "status_date": "2026-10-12",
+      "unknowns": "Funding ask.",
+      "lat": 52.9205,
+      "lng": -1.48,
+      "loc_precision": "site",
+      "place": "Derby city centre",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-peak-resort",
+      "region": "em",
+      "name": "Peak Resort enabling infrastructure, near Chesterfield",
+      "aliases": [
+        "Peak Resort"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "culture"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "EMCCA Investment Fund (pipeline)",
+      "stage": "pipeline",
+      "status": "Admitted to investment pipeline; final business case invited.",
+      "status_date": "2026-10-12",
+      "unknowns": "Funding ask.",
+      "lat": 53.29,
+      "lng": -1.45,
+      "loc_precision": "area",
+      "place": "Near Chesterfield (verify)",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-visitor-economy",
+      "region": "em",
+      "name": "Visitor Economy Strategic Framework",
+      "aliases": [],
+      "type": "strategy",
+      "themes": [
+        "growth",
+        "culture"
+      ],
+      "value_gbp_m": 1000,
+      "value_note": "Target: £1bn additional visitor economy growth over ten years.",
+      "funding": "",
+      "stage": "adopted",
+      "status": "Approved 12 October 2026.",
+      "status_date": "2026-10-12",
+      "unknowns": "",
+      "lat": 52.95,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "East Midlands",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-team-derby",
+      "region": "em",
+      "name": "Team Derby",
+      "aliases": [],
+      "type": "programme",
+      "themes": [
+        "growth"
+      ],
+      "value_gbp_m": 10,
+      "value_note": "£10m government investment.",
+      "funding": "Government",
+      "stage": "business_case",
+      "status": "Proposals in development: city centre placemaking, UTC expansion, derelict buildings back into use.",
+      "status_date": "2026-10-12",
+      "unknowns": "",
+      "lat": 52.9225,
+      "lng": -1.4746,
+      "loc_precision": "area",
+      "place": "Derby",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026 (Mayoral update)",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-alstom",
+      "region": "em",
+      "name": "Alstom Derby train manufacturing",
+      "aliases": [
+        "Litchurch Lane"
+      ],
+      "type": "private_investment",
+      "themes": [
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 1000,
+      "value_note": "£1bn investment; 29 trains for TransPennine Express; 350+ jobs.",
+      "funding": "Private",
+      "stage": "delivering",
+      "status": "Announced during visit by the Transport Secretary.",
+      "status_date": "2026-10-12",
+      "unknowns": "",
+      "lat": 52.907,
+      "lng": -1.463,
+      "loc_precision": "site",
+      "place": "Litchurch Lane, Derby",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026 (Mayoral update)",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "em-a38-a46",
+      "region": "em",
+      "name": "A38 Derby junctions and A46 Newark bypass (reinstatement case)",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "DfT (sought)",
+      "stage": "proposed",
+      "status": "Joint submission to DfT in mid-September 2026; decision expected before November board.",
+      "status_date": "2026-10-12",
+      "unknowns": "DfT decision.",
+      "lat": 52.93,
+      "lng": -1.2,
+      "loc_precision": "region",
+      "place": "Derby and Newark",
+      "sources": [
+        {
+          "title": "EMCCA Board, 12 October 2026 (Mayoral update)",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wy-mass-transit",
+      "region": "wy",
+      "name": "West Yorkshire Mass Transit",
+      "aliases": [
+        "Weaver Network",
+        "trams"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "value_gbp_m": 2500,
+      "value_note": "c.£2.5bn; £200m government funding 2021–27; further funding from £2.1bn Transport for City Regions 2027–32; government commitment beyond 2032 subject to business case.",
+      "funding": "DfT",
+      "stage": "business_case",
+      "status": "Government reaffirmed commitment after independent review (December 2025); strategic outline case due 2026; construction from 2028; full completion now late 2030s; entering Government Major Projects Portfolio.",
+      "status_date": "2026-01-29",
+      "unknowns": "Route confirmation; SOC approval.",
+      "lat": 53.8,
+      "lng": -1.65,
+      "loc_precision": "area",
+      "place": "Leeds–Bradford",
+      "sources": [
+        {
+          "title": "WYCA: New partnership to deliver Mass Transit",
+          "url": "https://www.westyorks-ca.gov.uk/news/new-partnership-to-deliver-mass-transit-once-and-for-all"
+        },
+        {
+          "title": "WYCA: Region-wide consultation on Mass Transit benefits",
+          "url": "https://www.westyorks-ca.gov.uk/news/region-wide-consultation-asks-how-best-to-maximise-mass-transit-benefits"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-investment-zone",
+      "region": "wy",
+      "name": "West Yorkshire Investment Zone (healthtech and digital)",
+      "aliases": [
+        "WYIZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m over ten years; 2,500+ jobs and £220m+ investment expected.",
+      "funding": "Government Investment Zone funding",
+      "stage": "delivering",
+      "status": "Capital investment in Leeds, Bradford and Huddersfield around universities and hospitals.",
+      "status_date": "2026-03-12",
+      "unknowns": "Spend to date.",
+      "lat": 53.75,
+      "lng": -1.7,
+      "loc_precision": "region",
+      "place": "West Yorkshire",
+      "sources": [
+        {
+          "title": "WYCA: Mayor kickstarts delivery of £160m Investment Zone",
+          "url": "https://www.westyorks-ca.gov.uk/news/mayor-kickstarts-delivery-of-160-million-investment-zone-with-new-support-for-hundreds-of-healthtech-firms"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-leeds-innovation-village",
+      "region": "wy",
+      "name": "Leeds Innovation Village and Old Medical School",
+      "aliases": [
+        "Innovation Arc",
+        "Old Medical School",
+        "LGI"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Old Medical School: 75,000 sq ft of innovation space by 2027. Wider Innovation Village 2.2m sq ft, part of £2bn Leeds Innovation Arc.",
+      "funding": "Investment Zone; HiVE Places / Scarborough Group International",
+      "stage": "delivering",
+      "status": "Old Medical School is the first scheme into delivery. New hospital delayed (national funding pushed to 2030); trust pursuing alternative delivery models.",
+      "status_date": "2026-03-12",
+      "unknowns": "Hospital funding route.",
+      "lat": 53.803,
+      "lng": -1.556,
+      "loc_precision": "site",
+      "place": "Leeds General Infirmary",
+      "sources": [
+        {
+          "title": "Place Yorkshire: next steps for Leeds' Old Medical School",
+          "url": "https://www.placeyorkshire.co.uk/next-steps-for-leeds-old-medical-school/"
+        },
+        {
+          "title": "Leeds Teaching Hospitals: Innovation Village update",
+          "url": "https://www.leedsth.nhs.uk/?p=57239"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-nhic-huddersfield",
+      "region": "wy",
+      "name": "National Health Innovation Campus and Station to Stadium corridor, Huddersfield",
+      "aliases": [
+        "NHIC",
+        "Gasworks Street"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Investment Zone",
+      "stage": "delivering",
+      "status": "Kirklees Cabinet (24 March 2026) took forward land at Gasworks Street for health and life sciences employment within the Investment Zone.",
+      "status_date": "2026-03-24",
+      "unknowns": "",
+      "lat": 53.651,
+      "lng": -1.777,
+      "loc_precision": "area",
+      "place": "Huddersfield",
+      "sources": [
+        {
+          "title": "Kirklees Cabinet: Gasworks Street, West Yorkshire Investment Zone",
+          "url": "https://democracy.kirklees.gov.uk/documents/s70596/20260324 Item 2 - Cabinet Report Huddersfield Investment Zone Gasworks Stv3final.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-bradford-dhez",
+      "region": "wy",
+      "name": "Digital Health Enterprise Zone, University of Bradford",
+      "aliases": [
+        "DHEZ"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Investment Zone",
+      "stage": "delivering",
+      "status": "One of the Investment Zone sites receiving funding.",
+      "status_date": "",
+      "unknowns": "",
+      "lat": 53.792,
+      "lng": -1.764,
+      "loc_precision": "site",
+      "place": "University of Bradford",
+      "sources": [
+        {
+          "title": "Yorkshire Post: Investment Zone sites set to receive funding",
+          "url": "https://www.yorkshirepost.co.uk:443/business/west-yorkshire-investment-zone-three-sites-set-to-receive-funding-as-part-of-ps80m-plan-to-develop-life-changing-technologies-4550544"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-investment-pipeline",
+      "region": "wy",
+      "name": "West Yorkshire investment pipeline and prospectus",
+      "aliases": [
+        "Investment prospectus"
+      ],
+      "type": "programme",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": 200,
+      "value_note": "Over £200m approved March 2026; prospectus (May 2026) lists nationally significant programmes and 40 investment-ready developments. Sits alongside a £2bn integrated settlement from April 2026.",
+      "funding": "Integrated settlement; gainshare",
+      "stage": "approved",
+      "status": "Includes Leeds Bradford Airport Parkway station commitment and Ferrybridge Knottingley Industrial Corridor.",
+      "status_date": "2026-05-01",
+      "unknowns": "Full list of 40 sites (to extract from prospectus).",
+      "lat": 53.75,
+      "lng": -1.6,
+      "loc_precision": "region",
+      "place": "West Yorkshire",
+      "sources": [
+        {
+          "title": "WYCA: leaders kickstart £200m+ investment pipeline",
+          "url": "https://www.westyorks-ca.gov.uk/news/west-yorkshire-leaders-kickstart-major-investment-pipeline-with-over-200-million-for-transformative-projects"
+        },
+        {
+          "title": "West Yorkshire investment prospectus (May 2026)",
+          "url": "https://www.westyorks-ca.gov.uk/media/lxvhy3ra/west-yorkshire-investment-prospectus.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-ferrybridge",
+      "region": "wy",
+      "name": "Ferrybridge Knottingley Industrial Corridor (Yorkshire Employment Hub)",
+      "aliases": [
+        "Yorkshire Employment Hub"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "pipeline",
+      "status": "Prime development sites at the A1(M)/M62 interchange, listed in the investment prospectus.",
+      "status_date": "2026-05-01",
+      "unknowns": "",
+      "lat": 53.71,
+      "lng": -1.26,
+      "loc_precision": "area",
+      "place": "Ferrybridge, Wakefield",
+      "sources": [
+        {
+          "title": "West Yorkshire investment prospectus (May 2026)",
+          "url": "https://www.westyorks-ca.gov.uk/media/lxvhy3ra/west-yorkshire-investment-prospectus.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-lba-parkway",
+      "region": "wy",
+      "name": "Leeds Bradford Airport Parkway station",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "approved",
+      "status": "Committed in the March 2026 investment pipeline.",
+      "status_date": "2026-03-12",
+      "unknowns": "Cost and timetable.",
+      "lat": 53.866,
+      "lng": -1.66,
+      "loc_precision": "area",
+      "place": "Leeds Bradford Airport",
+      "sources": [
+        {
+          "title": "WYCA: leaders kickstart £200m+ investment pipeline",
+          "url": "https://www.westyorks-ca.gov.uk/news/west-yorkshire-leaders-kickstart-major-investment-pipeline-with-over-200-million-for-transformative-projects"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "wy-bus-franchising",
+      "region": "wy",
+      "name": "Bus franchising (West Yorkshire)",
+      "aliases": [
+        "Weaver Network"
+      ],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Fully franchised network in three phases between April 2027 and October 2028.",
+      "status_date": "",
+      "unknowns": "",
+      "lat": 53.75,
+      "lng": -1.6,
+      "loc_precision": "region",
+      "place": "West Yorkshire",
+      "sources": [
+        {
+          "title": "Public Sector Executive: West Yorkshire mass transit plans",
+          "url": "https://www.publicsectorexecutive.com/articles/west-yorkshire-mass-transit-plans-set-green-light"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-york-central",
+      "region": "yny",
+      "name": "York Central (Mayoral Development Zone)",
+      "aliases": [
+        "York Central MDZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "value_gbp_m": null,
+      "value_note": "2,500+ homes and a new central business district anchored by the Government Hub.",
+      "funding": "Enterprise Zone business rates (to 2052); Homes England",
+      "stage": "delivering",
+      "status": "Approved in principle as a Mayoral Development Zone (non-statutory) by YNYCA Cabinet, July 2026.",
+      "status_date": "2026-07-02",
+      "unknowns": "MDZ governance and funding.",
+      "lat": 53.96,
+      "lng": -1.096,
+      "loc_precision": "site",
+      "place": "York station",
+      "sources": [
+        {
+          "title": "City of York: CA paper on Mayoral Development Zones",
+          "url": "https://democracy.york.gov.uk/documents/s194725/CA MDZ Paper.pdf"
+        },
+        {
+          "title": "YNYCA: partners welcome three MDZs",
+          "url": "https://yorknorthyorks-ca.gov.uk/partners-welcome-creation-of-three-mayoral-development-zones-to-drive-regeneration-across-region/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-scarborough-mdz",
+      "region": "yny",
+      "name": "Scarborough Mayoral Development Zone",
+      "aliases": [],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "value_gbp_m": 8,
+      "value_note": "Initial £8m regeneration boost.",
+      "funding": "YNYCA",
+      "stage": "approved",
+      "status": "First coastal MDZ in the country: town centre, harbour and housing.",
+      "status_date": "2026-07-02",
+      "unknowns": "",
+      "lat": 54.283,
+      "lng": -0.4,
+      "loc_precision": "area",
+      "place": "Scarborough",
+      "sources": [
+        {
+          "title": "This is the Coast: Scarborough first coastal MDZ",
+          "url": "https://www.thisisthecoast.co.uk/news/local-news/scarborough-to-become-first-coastal-mayoral-development-zone/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-selby-growth-zone",
+      "region": "yny",
+      "name": "Selby Growth Zone (Mayoral Development Zone)",
+      "aliases": [
+        "Selby Growth Corridor"
+      ],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "energy"
+      ],
+      "value_gbp_m": null,
+      "value_note": "7,000+ jobs.",
+      "funding": "",
+      "stage": "approved",
+      "status": "Brings together major employment sites across the south of the region.",
+      "status_date": "2026-07-02",
+      "unknowns": "",
+      "lat": 53.784,
+      "lng": -1.067,
+      "loc_precision": "area",
+      "place": "Selby",
+      "sources": [
+        {
+          "title": "YNYCA: partners welcome three MDZs",
+          "url": "https://yorknorthyorks-ca.gov.uk/partners-welcome-creation-of-three-mayoral-development-zones-to-drive-regeneration-across-region/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-drax-ai",
+      "region": "yny",
+      "name": "Drax AI and clean energy campus (data centre)",
+      "aliases": [
+        "AI Growth Zone bid"
+      ],
+      "type": "private_investment",
+      "themes": [
+        "innovation",
+        "energy"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Private (Drax)",
+      "stage": "proposed",
+      "status": "AI Growth Zone bid rejected by government; Drax says it will still apply for planning for phase 1 of a data centre at the Selby site.",
+      "status_date": "",
+      "unknowns": "Planning application status.",
+      "lat": 53.736,
+      "lng": -0.997,
+      "loc_precision": "site",
+      "place": "Drax Power Station, Selby",
+      "sources": [
+        {
+          "title": "Yorkshire Post: why was the AI growth zone bid knocked back?",
+          "url": "https://www.yorkshirepost.co.uk/news/opinion/columnists/why-was-north-yorkshires-bid-to-become-an-ai-growth-zone-knocked-back-9278035"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-bioyorkshire",
+      "region": "yny",
+      "name": "BioYorkshire bioeconomy programme",
+      "aliases": [
+        "BioYorkshire"
+      ],
+      "type": "programme",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "energy"
+      ],
+      "value_gbp_m": null,
+      "value_note": "4,000+ jobs and £1.4bn GVA potential; joint partnership with Tees Valley targets 5,000 jobs and £5bn growth.",
+      "funding": "University of York, YNYCA mayoral funding",
+      "stage": "delivering",
+      "status": "Bioeconomy cluster project connecting 150+ partners; partnership with TVCA, Teesside University and CPI (Nov 2025).",
+      "status_date": "2025-11-14",
+      "unknowns": "",
+      "lat": 53.948,
+      "lng": -1.053,
+      "loc_precision": "area",
+      "place": "University of York",
+      "sources": [
+        {
+          "title": "University of York: northern partnership for bio-based future",
+          "url": "https://www.york.ac.uk/news-and-events/news/2025/research/northern-partnership-bio-based-economic-future/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-transport-settlement",
+      "region": "yny",
+      "name": "Mayoral transport settlement (York and North Yorkshire)",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": 456.2,
+      "value_note": "£456.2m, 2026–2030; £70.9m to councils for highways maintenance in 2026/27.",
+      "funding": "DfT",
+      "stage": "approved",
+      "status": "Approved 27 March 2026.",
+      "status_date": "2026-03-27",
+      "unknowns": "",
+      "lat": 54.1,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "York and North Yorkshire",
+      "sources": [
+        {
+          "title": "YNYCA: first long-term transport deal",
+          "url": "https://yorknorthyorks-ca.gov.uk/first-long-term-deal-backed-by-record-investment-to-boost-regions-transport-network/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "yny-carbon-negative",
+      "region": "yny",
+      "name": "Carbon Negative Challenge Fund and Local Net Zero Accelerator",
+      "aliases": [
+        "LNZA"
+      ],
+      "type": "fund",
+      "themes": [
+        "energy",
+        "innovation"
+      ],
+      "value_gbp_m": 9.55,
+      "value_note": "£6.75m Carbon Negative Challenge Fund plus £2.8m Local Net Zero Accelerator (government).",
+      "funding": "Mayoral Investment Fund; government",
+      "stage": "delivering",
+      "status": "Goal: England's first carbon negative region by 2040.",
+      "status_date": "2026-06-05",
+      "unknowns": "",
+      "lat": 54.1,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "York and North Yorkshire",
+      "sources": [
+        {
+          "title": "YNYCA: carbon negative challenge fund",
+          "url": "https://yorknorthyorks-ca.gov.uk/multi-million-pound-boost-for-york-and-north-yorkshires-push-for-carbon-negative-status/"
+        },
+        {
+          "title": "YNYCA: Local Net Zero Accelerator",
+          "url": "https://yorknorthyorks-ca.gov.uk/green-investment-initiative-for-york-and-north-yorkshire-backed-by-2-8-million-government-funding/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-teesworks",
+      "region": "tv",
+      "name": "Teesworks (South Tees Development Corporation)",
+      "aliases": [
+        "STDC",
+        "Redcar steelworks"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "energy",
+        "commercialisation"
+      ],
+      "value_gbp_m": 350,
+      "value_note": "Loan facility of up to £350m from TVCA to STDC replacing 'historic informal arrangements'. Site c.4,500 acres.",
+      "funding": "TVCA loans; joint venture with JC Musgrave Capital and Northern Land Management",
+      "stage": "delivering",
+      "status": "TVCA Cabinet formalised the loan framework on 31 July 2026, subject to STDC Board approval. Site at the heart of Teesside Freeport.",
+      "status_date": "2026-07-31",
+      "unknowns": "Repayment profile; inspection findings.",
+      "lat": 54.605,
+      "lng": -1.12,
+      "loc_precision": "site",
+      "place": "Redcar",
+      "sources": [
+        {
+          "title": "TVCA: loan agreement approved",
+          "url": "https://teesvalley-ca.gov.uk/news/loan-agreement-approved-to-support-teesworks-regeneration/"
+        },
+        {
+          "title": "Yorkshire Post: £350m Teesworks loan facility",
+          "url": "https://www.yorkshirepost.co.uk/news/politics/teesworks-loan-facility-of-ps350m-historic-informal-arrangements-8836530"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-best-value-inspection",
+      "region": "tv",
+      "name": "Best Value Inspection of Tees Valley Combined Authority",
+      "aliases": [
+        "Best Value Notice"
+      ],
+      "type": "governance",
+      "themes": [
+        "governance"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Announced 15 October 2026 over debt, leadership and governance concerns; lead inspector Laura Shoaf CBE; report to ministers by March 2027. Follows Best Value Notice of April 2025.",
+      "status_date": "2026-10-15",
+      "unknowns": "Findings.",
+      "lat": 54.509,
+      "lng": -1.429,
+      "loc_precision": "region",
+      "place": "TVCA HQ, Teesside Airport",
+      "sources": [
+        {
+          "title": "GOV.UK: Best Value Inspection confirmed at TVCA",
+          "url": "https://www.gov.uk/government/news/best-value-inspection-confirmed-at-tees-valley-combined-authority"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "tv-nzt-power",
+      "region": "tv",
+      "name": "Net Zero Teesside Power and Northern Endurance Partnership",
+      "aliases": [
+        "NZT Power",
+        "NEP",
+        "East Coast Cluster"
+      ],
+      "type": "private_investment",
+      "themes": [
+        "energy",
+        "innovation"
+      ],
+      "value_gbp_m": 4000,
+      "value_note": "Contracts worth c.£4bn; 3,000 construction and 1,000 permanent jobs.",
+      "funding": "bp, Equinor, TotalEnergies; government contracts",
+      "stage": "delivering",
+      "status": "World's first gas-fired power station with carbon capture; financial close reached; construction under way at Teesworks.",
+      "status_date": "2026-04-02",
+      "unknowns": "",
+      "lat": 54.606,
+      "lng": -1.155,
+      "loc_precision": "site",
+      "place": "Teesworks, Redcar",
+      "sources": [
+        {
+          "title": "Teesworks: landmark decision on £4bn net zero project",
+          "url": "https://www.teesworks.co.uk/news/landmark-decision-on-4bn-net-zero-project-at-teesworks"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-freeport",
+      "region": "tv",
+      "name": "Teesside Freeport",
+      "aliases": [],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "Retained business rates; tax incentives",
+      "stage": "delivering",
+      "status": "UK's largest freeport, launched November 2021; covers all five local authorities with Teesworks at its heart. South Bank primary customs zone civils and building packages in procurement pipeline.",
+      "status_date": "",
+      "unknowns": "",
+      "lat": 54.585,
+      "lng": -1.17,
+      "loc_precision": "area",
+      "place": "South Bank / Teesworks",
+      "sources": [
+        {
+          "title": "TVCA: Teesside Freeport",
+          "url": "https://teesvalley-ca.gov.uk/about/leadership/mayor/the-mayors-priorities/teesside-freeport/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-investment-zone",
+      "region": "tv",
+      "name": "Tees Valley Investment Zone",
+      "aliases": [],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "growth"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m",
+      "funding": "Government Investment Zone funding",
+      "stage": "delivering",
+      "status": "Backed by Teesside University; supporting Middlesbrough's digital sector.",
+      "status_date": "2026-07-27",
+      "unknowns": "Sites and sector focus (verify).",
+      "lat": 54.574,
+      "lng": -1.234,
+      "loc_precision": "area",
+      "place": "Middlesbrough",
+      "sources": [
+        {
+          "title": "TVCA: investment vision for Tees Valley",
+          "url": "https://teesvalley-ca.gov.uk/news/creative-talent-industrial-strength-and-digital-growth-the-investment-vision-for-tees-valley/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-transport-plan",
+      "region": "tv",
+      "name": "Tees Valley transport delivery plan",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": 1300,
+      "value_note": "£1.3bn+ submitted to DfT, including £256m for rail (stations, capacity, freight gauge).",
+      "funding": "DfT (sought)",
+      "stage": "proposed",
+      "status": "Submitted October 2026. Earlier allocations include Darlington Northern Link Road (£250m) and Teesside Park station / Thornaby / Tees Marshalling Yards (£150m).",
+      "status_date": "2026-10-16",
+      "unknowns": "DfT response.",
+      "lat": 54.55,
+      "lng": -1.3,
+      "loc_precision": "region",
+      "place": "Tees Valley",
+      "sources": [
+        {
+          "title": "Railway News: Tees Valley approves £256m rail plan",
+          "url": "https://railwaynews.net/tees-valley-approves-256m-rail-infrastructure-plan.html"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tv-darlington-station",
+      "region": "tv",
+      "name": "Darlington Station Growth Hub",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "value_gbp_m": 162,
+      "value_note": "£162m",
+      "funding": "CRSTS / DfT",
+      "stage": "delivering",
+      "status": "Station improvements due to conclude in 2026.",
+      "status_date": "2026-01-05",
+      "unknowns": "",
+      "lat": 54.52,
+      "lng": -1.547,
+      "loc_precision": "site",
+      "place": "Darlington station",
+      "sources": [
+        {
+          "title": "Transport for the North: Tees Valley",
+          "url": "https://transportforthenorth.com/?p=13197"
+        },
+        {
+          "title": "TVCA: the huge things happening in 2026",
+          "url": "https://teesvalley-ca.gov.uk/news/the-huge-things-happening-across-tees-valley-in-2026/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-mdz-newcastle-gateshead",
+      "region": "ne",
+      "name": "Newcastle-Gateshead Mayoral Development Zone",
+      "aliases": [
+        "MDZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "growth",
+        "housing",
+        "culture"
+      ],
+      "value_gbp_m": 2000,
+      "value_note": "Described as a £2bn development zone.",
+      "funding": "Mixed",
+      "stage": "delivering",
+      "status": "Created September 2025; 20-year strategic regeneration framework; option to escalate to a Mayoral Development Corporation. Includes Forth Yards and Gateshead Quays.",
+      "status_date": "2026-03-10",
+      "unknowns": "Framework publication.",
+      "lat": 54.966,
+      "lng": -1.608,
+      "loc_precision": "area",
+      "place": "Newcastle and Gateshead quaysides",
+      "sources": [
+        {
+          "title": "North East CA: Newcastle-Gateshead MDZ",
+          "url": "https://www.northeast-ca.gov.uk/mayoral-development-zone"
+        },
+        {
+          "title": "Place North West: why investors should look to North East England",
+          "url": "https://www.placenorthwest.co.uk/why-investors-should-look-to-north-east-england-in-2026/"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-forth-yards",
+      "region": "ne",
+      "name": "Forth Yards, Newcastle",
+      "aliases": [],
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "value_gbp_m": 120,
+      "value_note": "£120m government funding; c.2,500 homes.",
+      "funding": "Government",
+      "stage": "delivering",
+      "status": "Newcastle's most significant development site; within the MDZ.",
+      "status_date": "2025-09-23",
+      "unknowns": "",
+      "lat": 54.966,
+      "lng": -1.62,
+      "loc_precision": "site",
+      "place": "Forth Yards, Newcastle",
+      "sources": [
+        {
+          "title": "North East CA: new MDZ aims to be boldest in the country",
+          "url": "https://www.northeast-ca.gov.uk/news/housing-and-land/new-mayoral-development-zone-aims-to-be-boldest-and-most-ambitious-in-the-country"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-gateshead-quays",
+      "region": "ne",
+      "name": "Gateshead Quays arena",
+      "aliases": [],
+      "type": "capital_project",
+      "themes": [
+        "culture",
+        "growth"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Part of £104m creative industries package (March 2026); arena of 12,500–15,000 seats.",
+      "funding": "North East CA; Ask:PATRIZIA (developer partner)",
+      "stage": "approved",
+      "status": "First major scheme in the MDZ; stalled scheme rescued but scaled back.",
+      "status_date": "2026-03-17",
+      "unknowns": "Split of the £104m between projects.",
+      "lat": 54.968,
+      "lng": -1.6,
+      "loc_precision": "site",
+      "place": "Gateshead Quayside",
+      "sources": [
+        {
+          "title": "North East CA: new arena a step closer",
+          "url": "https://www.northeast-ca.gov.uk/news/culture-creative-tourism-and-sport/new-arena-a-step-closer-to-bringing-the-biggest-bands-to-the-north-east"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-crown-works",
+      "region": "ne",
+      "name": "Crown Works Studios, Sunderland",
+      "aliases": [
+        "Riverside Sunderland studio"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "culture",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 120,
+      "value_note": "Up to £120m public (Sunderland City Council and North East CA) leveraging £450m from Fulwell 73 and Cain International.",
+      "funding": "Public grant plus private",
+      "stage": "approved",
+      "status": "Revised planning permission granted; construction expected from autumn 2026. Subsidy referred to the CMA.",
+      "status_date": "",
+      "unknowns": "CMA subsidy advice outcome.",
+      "lat": 54.91,
+      "lng": -1.418,
+      "loc_precision": "site",
+      "place": "Pallion riverside, Sunderland",
+      "sources": [
+        {
+          "title": "Yahoo/LDRS: Crown Works moves ahead",
+          "url": "https://uk.news.yahoo.com/crown-works-studios-moves-ahead-145528529.html"
+        },
+        {
+          "title": "CMA: subsidy referral to Sunderland City Council",
+          "url": "https://gov.uk/cma-cases/referral-of-the-proposed-subsidy-to-sunderland-city-council-by-the-north-east-mayoral-strategic-authority"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-investment-zone",
+      "region": "ne",
+      "name": "North East Investment Zone",
+      "aliases": [
+        "NEIZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "energy",
+        "growth"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m; c.4,000 jobs; c.£3bn private investment expected over ten years.",
+      "funding": "Government Investment Zone funding",
+      "stage": "delivering",
+      "status": "Green energy and advanced manufacturing across sites from County Durham to Northumberland.",
+      "status_date": "2024-11-27",
+      "unknowns": "",
+      "lat": 54.95,
+      "lng": -1.6,
+      "loc_precision": "region",
+      "place": "North East",
+      "sources": [
+        {
+          "title": "North East CA: £16.8m push to power green energy",
+          "url": "https://www.northeast-ca.gov.uk/news/economy/the-north-east-combined-authority-in-16-8-million-push-to-power-green-energy"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ne-netpark",
+      "region": "ne",
+      "name": "NETPark Phase 3, Sedgefield",
+      "aliases": [
+        "NETPark"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": 11.26,
+      "value_note": "£11.255m Investment Zone grant for infrastructure and enabling works on Zone 1.",
+      "funding": "North East Investment Zone",
+      "stage": "delivering",
+      "status": "Science park expansion for low-carbon manufacturing, materials and research.",
+      "status_date": "2025-02-10",
+      "unknowns": "",
+      "lat": 54.653,
+      "lng": -1.451,
+      "loc_precision": "site",
+      "place": "Sedgefield, County Durham",
+      "sources": [
+        {
+          "title": "North East CA: delegated decision, NETPark Phase 3a",
+          "url": "https://www.northeast-ca.gov.uk/downloads/3429/250210-delegated-decision-report-ne-investment-zones-netpark-phase-3a.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ne-leamside",
+      "region": "ne",
+      "name": "Leamside Investment Corridor",
+      "aliases": [
+        "Leamside line"
+      ],
+      "type": "programme",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "value_gbp_m": 0.5,
+      "value_note": "£500,000 for economic growth strategy, spatial plan and communications.",
+      "funding": "North East CA",
+      "stage": "business_case",
+      "status": "Corridor strategy across Gateshead, South Tyneside, Sunderland and County Durham.",
+      "status_date": "2025-07-10",
+      "unknowns": "Rail reopening decision.",
+      "lat": 54.85,
+      "lng": -1.5,
+      "loc_precision": "area",
+      "place": "Leamside corridor",
+      "sources": [
+        {
+          "title": "North East CA: delegated decision, Leamside Investment Corridor",
+          "url": "https://www.northeast-ca.gov.uk/downloads/3904/250710-delegated-decision-report-leamside-investment-corridor.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "gcr-empowerment",
+      "region": "gcr",
+      "name": "Glasgow City Region Regional Empowerment Framework",
+      "aliases": [
+        "Devolution deal",
+        "Good Growth Fund"
+      ],
+      "type": "governance",
+      "themes": [
+        "governance",
+        "growth"
+      ],
+      "value_gbp_m": 7500,
+      "value_note": "Illustrative c.£7.5bn ten-year investment programme; proposed Good Growth Fund to attract pension fund money. Not an agreed package.",
+      "funding": "Proposed integrated settlement",
+      "stage": "proposed",
+      "status": "Draft framework for consultation at Cabinet 17 November 2026: single council-led regional body, expanded Cabinet, no mayor; powers to borrow, manage investment and assemble land. Final in March 2027.",
+      "status_date": "2026-11-17",
+      "unknowns": "Government response; borrowing arrangements.",
+      "lat": 55.86,
+      "lng": -4.25,
+      "loc_precision": "region",
+      "place": "Glasgow City Region",
+      "sources": [
+        {
+          "title": "GCR Cabinet, 17 November 2026: agenda and papers",
+          "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "gcr-investment-zone",
+      "region": "gcr",
+      "name": "Glasgow City Region Investment Zone",
+      "aliases": [
+        "GCR IZ"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 190,
+      "value_note": "£190m over ten years (UK and Scottish governments) per Renfrewshire Council; GCR's own site still cites £160m programme funding, so reconcile. Up to £25m extra from Scottish Enterprise proposed; NDR retention worth up to £162m over 25 years.",
+      "funding": "UK and Scottish governments; Scottish Enterprise; retained non-domestic rates",
+      "stage": "delivering",
+      "status": "Advanced manufacturing: space, semiconductors, maritime. Six projects. Grant agreements to be executed Q3 2026/27. NDR retention sites at AMIDS/Airport, Glasgow Clyde and Eurocentral.",
+      "status_date": "2026-11-17",
+      "unknowns": "Scottish Enterprise board approval (November 2026).",
+      "lat": 55.87,
+      "lng": -4.3,
+      "loc_precision": "region",
+      "place": "Glasgow City Region",
+      "sources": [
+        {
+          "title": "GCR Cabinet, 17 November 2026: Investment Zone report",
+          "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
+        },
+        {
+          "title": "Renfrewshire Council: tax incentives at AMIDS and Glasgow Airport",
+          "url": "https://www.renfrewshire.gov.uk/news/2026/tax-incentives-now-available-new-businesses-locating-amids-and-glasgow-airport"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "gcr-amids",
+      "region": "gcr",
+      "name": "AMIDS and Glasgow Airport Investment Zone tax site",
+      "aliases": [
+        "AMIDS",
+        "Advanced Manufacturing Innovation District Scotland",
+        "Netherton"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "112ha tax site; full AMIDS masterplan c.£100–150m.",
+      "funding": "Tax reliefs; retained rates",
+      "stage": "delivering",
+      "status": "Tax site designated from 26 February 2026.",
+      "status_date": "2026-03-16",
+      "unknowns": "",
+      "lat": 55.878,
+      "lng": -4.428,
+      "loc_precision": "site",
+      "place": "Inchinnan / Glasgow Airport, Renfrewshire",
+      "sources": [
+        {
+          "title": "Invest Glasgow: designation of Investment Zone tax site",
+          "url": "https://www.investglasgow.com/resources/news/432-glasgow-city-region-welcomes-designation-of-investment-zone-tax-site"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gcr-lgf",
+      "region": "gcr",
+      "name": "Local Growth Fund (Glasgow City Region)",
+      "aliases": [
+        "LGF",
+        "Enabling Commercial Space",
+        "Regional Projects of Scale"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "commercialisation",
+        "skills"
+      ],
+      "value_gbp_m": 60.9,
+      "value_note": "£60.9m (2026/27–2028/29): £18.4m revenue, £42.4m capital (£20m Enabling Commercial Space, £20m Regional Projects of Scale, £2.49m Green Business Support).",
+      "funding": "UK Government",
+      "stage": "delivering",
+      "status": "Years 2–3 revenue to focus on young people not in work or education and the foundational economy; two Regional Projects of Scale for approval 17 November.",
+      "status_date": "2026-11-17",
+      "unknowns": "Which two Regional Projects of Scale.",
+      "lat": 55.86,
+      "lng": -4.25,
+      "loc_precision": "region",
+      "place": "Glasgow City Region",
+      "sources": [
+        {
+          "title": "GCR Cabinet, 17 November 2026: Local Growth Fund update",
+          "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "gcr-clyde-mission",
+      "region": "gcr",
+      "name": "Clyde Mission Strategic Masterplan and Heat Decarbonisation Fund",
+      "aliases": [
+        "Clyde Mission"
+      ],
+      "type": "strategy",
+      "themes": [
+        "growth",
+        "energy"
+      ],
+      "value_gbp_m": 25,
+      "value_note": "£25m Clyde Mission Heat Decarbonisation Fund (launched December 2025).",
+      "funding": "",
+      "stage": "approved",
+      "status": "'River-first' masterplan core proposition for approval 17 November 2026; moving to delivery development.",
+      "status_date": "2026-11-17",
+      "unknowns": "Delivery funding.",
+      "lat": 55.857,
+      "lng": -4.28,
+      "loc_precision": "area",
+      "place": "River Clyde corridor",
+      "sources": [
+        {
+          "title": "GCR Cabinet, 17 November 2026: Clyde Mission masterplan",
+          "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "gcr-clyde-metro",
+      "region": "gcr",
+      "name": "Clyde Metro",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "value_gbp_m": 12.155,
+      "value_note": "£12.155m City Deal for the case for investment (plus £2.2m SPT). Construction cost not yet set.",
+      "funding": "City Deal (UK and Scottish governments 50:50); SPT",
+      "stage": "business_case",
+      "status": "Programme business case due early 2027; emerging findings to Cabinet 17 November 2026. National Wealth Fund (UKIB) exploring finance options.",
+      "status_date": "2026-11-17",
+      "unknowns": "Capital funding route.",
+      "lat": 55.86,
+      "lng": -4.25,
+      "loc_precision": "region",
+      "place": "Glasgow City Region",
+      "sources": [
+        {
+          "title": "Glasgow City Council: Clyde Metro",
+          "url": "https://www.glasgow.gov.uk/article/2558/Clyde-Metro"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-pbgf",
+      "region": "bel",
+      "name": "Belfast Place Based Growth Fund (proposed)",
+      "aliases": [
+        "BPBGF"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "value_gbp_m": 250,
+      "value_note": "£250m proposed fund; five-case business case prepared.",
+      "funding": "Sought from UK Government and NI Executive",
+      "stage": "proposed",
+      "status": "Council lobbying for housing-led regeneration, remediation, enabling infrastructure and viability gap funding; aligned with a forthcoming innovation proposition.",
+      "status_date": "2026-11-11",
+      "unknowns": "Any government commitment.",
+      "lat": 54.597,
+      "lng": -5.93,
+      "loc_precision": "area",
+      "place": "Belfast",
+      "sources": [
+        {
+          "title": "Belfast City Growth and Regeneration Committee, 11 November 2026",
+          "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "bel-brcd",
+      "region": "bel",
+      "name": "Belfast Region City Deal",
+      "aliases": [
+        "BRCD"
+      ],
+      "type": "programme",
+      "themes": [
+        "innovation",
+        "growth",
+        "transport",
+        "skills"
+      ],
+      "value_gbp_m": 1000,
+      "value_note": "£1bn co-investment; 20+ projects; up to 20,000 jobs.",
+      "funding": "UK Government, NI Executive, councils, universities, private",
+      "stage": "delivering",
+      "status": "Signed December 2021. Pillars: innovation and digital, tourism-led regeneration, infrastructure, employability and skills.",
+      "status_date": "2026-03-20",
+      "unknowns": "",
+      "lat": 54.6,
+      "lng": -5.93,
+      "loc_precision": "region",
+      "place": "Belfast Region",
+      "sources": [
+        {
+          "title": "Belfast SP&R Committee: BRCD update, March 2026",
+          "url": "https://minutes.belfastcity.gov.uk/documents/s126788/Item 4 g BRCD Update Report March 26 Final.pdf"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-gii",
+      "region": "bel",
+      "name": "Global Innovation Institute (QUB)",
+      "aliases": [
+        "GII",
+        "ECIT"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": 58.4,
+      "value_note": "£58.4m total; £52.4m City Deal.",
+      "funding": "BRCD; Queen's University Belfast",
+      "stage": "delivering",
+      "status": "Expansion of ECIT in Titanic Quarter: cyber, data, secure connectivity.",
+      "status_date": "",
+      "unknowns": "Opening date (was planned 2025).",
+      "lat": 54.608,
+      "lng": -5.914,
+      "loc_precision": "site",
+      "place": "Titanic Quarter, Belfast",
+      "sources": [
+        {
+          "title": "DfE: £170m for Queen's innovation projects",
+          "url": "https://economy-ni.gov.uk/node/57481"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-amic",
+      "region": "bel",
+      "name": "Advanced Manufacturing Innovation Centre (QUB)",
+      "aliases": [
+        "AMIC",
+        "Factory of the Future"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": 98,
+      "value_note": "£98m total; £78.7m City Deal; £10m Antrim and Newtownabbey Borough Council.",
+      "funding": "BRCD; QUB; council",
+      "stage": "delivering",
+      "status": "Industry 4.0 and smart automation centre.",
+      "status_date": "",
+      "unknowns": "",
+      "lat": 54.687,
+      "lng": -5.96,
+      "loc_precision": "area",
+      "place": "Newtownabbey (verify)",
+      "sources": [
+        {
+          "title": "DfE: £170m for Queen's innovation projects",
+          "url": "https://economy-ni.gov.uk/node/57481"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-ireach",
+      "region": "bel",
+      "name": "iREACH (Institute of Research Excellence for Advanced Clinical Healthcare)",
+      "aliases": [
+        "iREACH"
+      ],
+      "type": "capital_project",
+      "themes": [
+        "innovation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Part of £170m City Deal funding for three QUB centres.",
+      "funding": "BRCD; QUB",
+      "stage": "delivering",
+      "status": "Clinical research facility.",
+      "status_date": "",
+      "unknowns": "Project value; site.",
+      "lat": 54.588,
+      "lng": -5.94,
+      "loc_precision": "area",
+      "place": "Belfast (verify site)",
+      "sources": [
+        {
+          "title": "DfE: £170m for Queen's innovation projects",
+          "url": "https://economy-ni.gov.uk/node/57481"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-belfast-stories",
+      "region": "bel",
+      "name": "Belfast Stories",
+      "aliases": [],
+      "type": "capital_project",
+      "themes": [
+        "culture",
+        "growth"
+      ],
+      "value_gbp_m": 100,
+      "value_note": "£100m",
+      "funding": "BRCD",
+      "stage": "business_case",
+      "status": "Flagship tourism-led regeneration at Royal Avenue and North Street; Snøhetta with TODD Architects; planning application 2026; £250,000 community grants.",
+      "status_date": "2026-02-19",
+      "unknowns": "Planning determination.",
+      "lat": 54.601,
+      "lng": -5.93,
+      "loc_precision": "site",
+      "place": "Royal Avenue, Belfast",
+      "sources": [
+        {
+          "title": "Belfast City Council: Belfast Stories grants",
+          "url": "https://www.belfastcity.gov.uk/news/%c2%a3250-000-community-and-creative-grant-launched-to"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bel-funding-clarity",
+      "region": "bel",
+      "name": "NI growth funding streams (Local Growth Fund, Pride in Place, Trailblazers Neighbourhood Fund)",
+      "aliases": [
+        "Trailblazers"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "governance"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "UK Government via NIO / DoF",
+      "stage": "at_risk",
+      "status": "Council still seeking clarity from MHCLG, NIO and Department of Finance on Belfast's allocations.",
+      "status_date": "2026-11-11",
+      "unknowns": "Allocations and delivery route.",
+      "lat": 54.597,
+      "lng": -5.93,
+      "loc_precision": "area",
+      "place": "Belfast",
+      "sources": [
+        {
+          "title": "Belfast City Growth and Regeneration Committee, 11 November 2026",
+          "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "bel-city-centre",
+      "region": "bel",
+      "name": "City centre regeneration strategy, Vacant to Vibrant and A Bolder Vision",
+      "aliases": [
+        "BCCRIS",
+        "Vacant to Vibrant",
+        "A Bolder Vision",
+        "Eastern Transport Plan"
+      ],
+      "type": "strategy",
+      "themes": [
+        "growth",
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "City centre non-domestic rates up from £41.9m to £53.2m (2020/21–2024/25); offices 64% of city centre rates.",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Regeneration tracker presented 11 November 2026; Vacant to Vibrant update restricted. Eastern Transport Plan 2035 in development.",
+      "status_date": "2026-11-11",
+      "unknowns": "Vacant to Vibrant details (restricted).",
+      "lat": 54.597,
+      "lng": -5.93,
+      "loc_precision": "area",
+      "place": "Belfast city centre",
+      "sources": [
+        {
+          "title": "Belfast City Growth and Regeneration Committee, 11 November 2026",
+          "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ccr-investment-zone",
+      "region": "ccr",
+      "name": "Cardiff Capital Region Investment Zone (compound semiconductors)",
+      "aliases": [
+        "Cardiff and Newport Investment Zone"
+      ],
+      "type": "designation",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 160,
+      "value_note": "£160m over ten years; £500m private investment, 4,000 jobs and 3m sq ft expected.",
+      "funding": "UK Government, supported by Welsh Government",
+      "stage": "delivering",
+      "status": "Moving into delivery (October 2026); focused on Cardiff and Newport and the compound semiconductor cluster.",
+      "status_date": "2026-10-05",
+      "unknowns": "Sites and first projects.",
+      "lat": 51.53,
+      "lng": -3.08,
+      "loc_precision": "area",
+      "place": "Cardiff and Newport",
+      "sources": [
+        {
+          "title": "GOV.UK: Cardiff Capital Region Investment Zone advances",
+          "url": "https://www.gov.uk/government/news/growth-and-local-jobs-top-of-the-agenda-as-cardiff-capital-region-investment-zone-advances"
+        },
+        {
+          "title": "Semiconductor Today: Investment Zone moving into delivery",
+          "url": "https://semiconductor-today.com/news_items/2026/oct/ccr-051026.shtml"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ccr-wider-investment-fund",
+      "region": "ccr",
+      "name": "City Deal Wider Investment Fund",
+      "aliases": [
+        "City Deal",
+        "WIF"
+      ],
+      "type": "fund",
+      "themes": [
+        "growth",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Q1 2026/27 spend £5.0m against £7.9m planned.",
+      "funding": "City Deal",
+      "stage": "delivering",
+      "status": "Portfolio maturing: Apex repaid investment; Ogi full-fibre final £1m drawdown done. Focus shifting to next generation of investments.",
+      "status_date": "2026-10-12",
+      "unknowns": "Pipeline (exempt appendix).",
+      "lat": 51.6,
+      "lng": -3.25,
+      "loc_precision": "region",
+      "place": "Cardiff Capital Region",
+      "sources": [
+        {
+          "title": "CCR CJC, 12 October 2026: Q1 performance report",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ccr-kla",
+      "region": "ccr",
+      "name": "KLA manufacturing and R&D centre, Imperial Park",
+      "aliases": [
+        "KLA"
+      ],
+      "type": "private_investment",
+      "themes": [
+        "commercialisation",
+        "innovation"
+      ],
+      "value_gbp_m": 6.25,
+      "value_note": "£6.25m CCR grant plus £750,000 Newport City Council; 237,000 sq ft facility.",
+      "funding": "CCR grant; private",
+      "stage": "complete",
+      "status": "Semiconductor equipment manufacturing expansion.",
+      "status_date": "2026-02-19",
+      "unknowns": "",
+      "lat": 51.553,
+      "lng": -3.043,
+      "loc_precision": "site",
+      "place": "Imperial Park, Newport",
+      "sources": [
+        {
+          "title": "Cardiff and South Wales Advertiser: CCR invests £6.25m in KLA",
+          "url": "https://www.cardiffandsouthwalesadvertiser.com/?p=3475"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ccr-csconnected",
+      "region": "ccr",
+      "name": "CSconnected compound semiconductor cluster",
+      "aliases": [
+        "CSconnected",
+        "Strength in Places"
+      ],
+      "type": "programme",
+      "themes": [
+        "innovation",
+        "commercialisation"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Strength in Places Fund programme concluded 2026; £1m supply chain development programme with CCR.",
+      "funding": "UKRI Strength in Places; CCR",
+      "stage": "delivering",
+      "status": "World's first compound semiconductor cluster; anchor of the Investment Zone.",
+      "status_date": "2026-08-11",
+      "unknowns": "",
+      "lat": 51.549,
+      "lng": -3.037,
+      "loc_precision": "area",
+      "place": "Newport",
+      "sources": [
+        {
+          "title": "Semiconductor Today: CSconnected impact report",
+          "url": "https://semiconductor-today.com/news_items/2026/jun/csconnected-050626.shtml"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ccr-metro-central",
+      "region": "ccr",
+      "name": "Metro Central, Cardiff",
+      "aliases": [],
+      "type": "transport",
+      "themes": [
+        "transport"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "City Deal",
+      "stage": "at_risk",
+      "status": "Anticipated payment deferred pending resolution of outstanding financial matters.",
+      "status_date": "2026-10-12",
+      "unknowns": "Nature of the financial matters.",
+      "lat": 51.476,
+      "lng": -3.179,
+      "loc_precision": "site",
+      "place": "Cardiff Central",
+      "sources": [
+        {
+          "title": "CCR CJC, 12 October 2026: Q1 performance report",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ccr-northern-valleys",
+      "region": "ccr",
+      "name": "Northern Valleys Initiative and Business Unit Accelerator",
+      "aliases": [],
+      "type": "programme",
+      "themes": [
+        "growth",
+        "commercialisation",
+        "culture"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "City Deal",
+      "stage": "delivering",
+      "status": "Tourism programme (including Tour de France Grand Départ legacy) and a delivery vehicle for new industrial units across the region.",
+      "status_date": "2026-10-12",
+      "unknowns": "",
+      "lat": 51.72,
+      "lng": -3.3,
+      "loc_precision": "area",
+      "place": "Heads of the Valleys",
+      "sources": [
+        {
+          "title": "CCR CJC, 12 October 2026: Q1 performance report",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ccr-aberthaw",
+      "region": "ccr",
+      "name": "Aberthaw (former power station) procurement review",
+      "aliases": [
+        "Aberthaw"
+      ],
+      "type": "governance",
+      "themes": [
+        "governance",
+        "energy"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "stage": "delivering",
+      "status": "Action plan following an independent review of procurement; CJC inherited litigation liability from Cardiff Council.",
+      "status_date": "2026-10-12",
+      "unknowns": "Full review report (part exempt).",
+      "lat": 51.388,
+      "lng": -3.405,
+      "loc_precision": "site",
+      "place": "Aberthaw, Vale of Glamorgan",
+      "sources": [
+        {
+          "title": "CCR CJC, 12 October 2026: Aberthaw action plan review",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-10-aberthaw-procurement-action-plan-review.pdf"
+        }
+      ],
+      "confidence": "high"
+    }
+  ]
+}

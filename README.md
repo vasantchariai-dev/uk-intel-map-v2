@@ -11,7 +11,7 @@ npm run build      # validates the data, type-checks, builds to dist/
 npm run preview    # serves the built site
 ```
 
-The build is static. Deploy `dist/` to Vercel or Netlify (build command `npm run build`, output `dist`).
+The build is static. A push to `main` deploys it to GitHub Pages (`.github/workflows/pages.yml`); in the repo settings, Pages source must be set to GitHub Actions. It also works on Vercel or Netlify (build command `npm run build`, output `dist`).
 
 ## Data
 

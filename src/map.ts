@@ -27,7 +27,10 @@ async function resolveStyle(): Promise<StyleSpecification> {
   try {
     const res = await fetch(OPENFREEMAP_STYLE, { signal: AbortSignal.timeout(6000) });
     if (!res.ok) throw new Error(String(res.status));
-    return (await res.json()) as StyleSpecification;
+    const style = (await res.json()) as StyleSpecification;
+    // No glyph server: MapLibre then draws all map labels with the local font (Arial).
+    delete style.glyphs;
+    return style;
   } catch {
     return RASTER_FALLBACK;
   }
@@ -99,6 +102,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     dragRotate: false,
     pitchWithRotate: false,
     attributionControl: false,
+    localIdeographFontFamily: 'Arial, Helvetica, sans-serif',
   });
   map.touchZoomRotate.disableRotation();
   map.addControl(new maplibregl.AttributionControl({ compact: false }), 'bottom-right');

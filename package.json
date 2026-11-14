@@ -1,0 +1,26 @@
+{
+  "name": "regional-intel-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "validate": "tsx scripts/validate.ts",
+    "boundaries": "node scripts/fetch-boundaries.mjs && node scripts/build-boundaries.mjs",
+    "check-locations": "node --disable-warning=ExperimentalWarning scripts/check-locations.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.24.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.6.6",
+    "mapshaper": "^0.7.101",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}

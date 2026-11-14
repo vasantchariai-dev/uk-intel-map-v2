@@ -83,7 +83,14 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Robin_Hood_Airport_2006-04-02.jpg?width=800",
+        "caption": "Doncaster Sheffield Airport terminal, 2006",
+        "credit": "Dbertman",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Robin_Hood_Airport_2006-04-02.jpg"
+      }
     },
     {
       "id": "sy-tcr",
@@ -521,7 +528,14 @@
           "url": "https://www.wmca.org.uk/documents/research-and-insights/west-midlands-futures-green-paper/west-midlands-futures-green-paper/chapter-2-places-and-the-spatial-development-strategy/key-development-sites-and-corridors-of-opportunity/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coventry_Airport_july06.JPG?width=800",
+        "caption": "Coventry Airport, 2006",
+        "credit": "Snowmanradio (English Wikipedia)",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_Airport_july06.JPG"
+      }
     },
     {
       "id": "wm-gic",
@@ -678,7 +692,14 @@
           "url": "https://governance.wmca.org.uk/documents/s37913/Minutes%20Investment%20Board%2021.09.26%20APPROVED.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coventry_railway_station%2C_West_Midlands_-_geograph.org.uk_-_7263990.jpg?width=800",
+        "caption": "Coventry railway station",
+        "credit": "Nigel Thompson",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_railway_station,_West_Midlands_-_geograph.org.uk_-_7263990.jpg"
+      }
     },
     {
       "id": "wm-mell-square",
@@ -709,7 +730,14 @@
           "url": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=137&MId=2150"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/TK_Maxx%2C_Mell_Square%2C_Solihull_(5718216715).jpg?width=800",
+        "caption": "Mell Square, Solihull, before redevelopment",
+        "credit": "Elliott Brown from Birmingham, United Kingdom",
+        "licence": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:TK_Maxx,_Mell_Square,_Solihull_(5718216715).jpg"
+      }
     },
     {
       "id": "wm-metro-review",
@@ -936,7 +964,14 @@
           "url": "https://www.eastmidlandsbusinesslink.co.uk/mag/?p=141249"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/East_Midlands2.JPG?width=800",
+        "caption": "East Midlands Airport",
+        "credit": "Emeraude (English Wikipedia)",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:East_Midlands2.JPG"
+      }
     },
     {
       "id": "em-ratcliffe",
@@ -968,7 +1003,14 @@
           "url": "https://www.thebusinessdesk.com/eastmidlands/news/2087355-freeport-in-talks-with-potential-investors-to-create-tens-of-thousands-of-jobs"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ratcliffe-on-Soar_Power_Station_with_coal_train%2C_26th_March_2007.jpg?width=800",
+        "caption": "Ratcliffe-on-Soar power station, 2007",
+        "credit": "MaltaGC",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ratcliffe-on-Soar_Power_Station_with_coal_train,_26th_March_2007.jpg"
+      }
     },
     {
       "id": "em-step-fusion",
@@ -1007,7 +1049,14 @@
           "url": "https://assets.publishing.service.gov.uk/media/6abf7664943e890cb55e5e68/SD26-032D_-_UKFE_Annual_Report_2025-26_DIGITAL.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Upper_Ings_Lane_-_geograph.org.uk_-_285251.jpg?width=800",
+        "caption": "West Burton power stations, the site for STEP",
+        "credit": "Richard Croft",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:View_from_Upper_Ings_Lane_-_geograph.org.uk_-_285251.jpg"
+      }
     },
     {
       "id": "em-trent-supercluster",
@@ -1253,7 +1302,14 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Derby_MMB_02_Litchurch_Lane_Works.jpg?width=800",
+        "caption": "Litchurch Lane Works, Derby",
+        "credit": "mattbuck",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Derby_MMB_02_Litchurch_Lane_Works.jpg"
+      }
     },
     {
       "id": "em-a38-a46",
@@ -1387,7 +1443,14 @@
           "url": "https://www.leedsth.nhs.uk/?p=57239"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leeds_General_Infirmary_2013-09-30_15-52-05.jpg?width=800",
+        "caption": "Leeds General Infirmary, 2013",
+        "credit": "astroman3D",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_General_Infirmary_2013-09-30_15-52-05.jpg"
+      }
     },
     {
       "id": "wy-nhic-huddersfield",
@@ -1450,7 +1513,14 @@
           "url": "https://www.yorkshirepost.co.uk:443/business/west-yorkshire-investment-zone-three-sites-set-to-receive-funding-as-part-of-ps80m-plan-to-develop-life-changing-technologies-4550544"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Bradford_Richmond_24_April_2017_01.jpg?width=800",
+        "caption": "University of Bradford, 2017",
+        "credit": "Chemical Engineer",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Bradford_Richmond_24_April_2017_01.jpg"
+      }
     },
     {
       "id": "wy-investment-pipeline",
@@ -1516,7 +1586,14 @@
           "url": "https://www.westyorks-ca.gov.uk/media/lxvhy3ra/west-yorkshire-investment-prospectus.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Knottingley_-_Ferrybridge_Power_Station.jpg?width=800",
+        "caption": "Ferrybridge power station, before demolition",
+        "credit": "Dave Bevis",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Knottingley_-_Ferrybridge_Power_Station.jpg"
+      }
     },
     {
       "id": "wy-lba-parkway",
@@ -1544,7 +1621,14 @@
           "url": "https://www.westyorks-ca.gov.uk/news/west-yorkshire-leaders-kickstart-major-investment-pipeline-with-over-200-million-for-transformative-projects"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LBIA_Airside_2.jpg?width=800",
+        "caption": "Leeds Bradford Airport",
+        "credit": "Mtaylor848",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:LBIA_Airside_2.jpg"
+      }
     },
     {
       "id": "wy-bus-franchising",
@@ -1609,7 +1693,14 @@
           "url": "https://yorknorthyorks-ca.gov.uk/partners-welcome-creation-of-three-mayoral-development-zones-to-drive-regeneration-across-region/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/York_railway_station_and_Royal_York_Hotel_-_April_10_2005.jpg?width=800",
+        "caption": "York railway station, next to the York Central site, 2005",
+        "credit": "Tagishsimon (English Wikipedia)",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:York_railway_station_and_Royal_York_Hotel_-_April_10_2005.jpg"
+      }
     },
     {
       "id": "yny-scarborough-mdz",
@@ -1700,7 +1791,14 @@
           "url": "https://www.yorkshirepost.co.uk/news/opinion/columnists/why-was-north-yorkshires-bid-to-become-an-ai-growth-zone-knocked-back-9278035"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Drax_Power_Station_-_geograph.org.uk_-_955513.jpg?width=800",
+        "caption": "Drax power station",
+        "credit": "David Wright",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Drax_Power_Station_-_geograph.org.uk_-_955513.jpg"
+      }
     },
     {
       "id": "yny-bioyorkshire",
@@ -1832,7 +1930,14 @@
           "url": "https://www.yorkshirepost.co.uk/news/politics/teesworks-loan-facility-of-ps350m-historic-informal-arrangements-8836530"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bran_Sands_dunes_and_Corus_Redcar_-_geograph.org.uk_-_1706064.jpg?width=800",
+        "caption": "Former Redcar steelworks, now the Teesworks site",
+        "credit": "Alan Murray-Rust",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bran_Sands_dunes_and_Corus_Redcar_-_geograph.org.uk_-_1706064.jpg"
+      }
     },
     {
       "id": "tv-best-value-inspection",
@@ -2014,7 +2119,14 @@
           "url": "https://teesvalley-ca.gov.uk/news/the-huge-things-happening-across-tees-valley-in-2026/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Darlington_Bank_Top_station.jpg?width=800",
+        "caption": "Darlington station",
+        "credit": "Matt Buck",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Darlington_Bank_Top_station.jpg"
+      }
     },
     {
       "id": "ne-mdz-newcastle-gateshead",
@@ -2108,7 +2220,14 @@
           "url": "https://www.northeast-ca.gov.uk/news/culture-creative-tourism-and-sport/new-arena-a-step-closer-to-bringing-the-biggest-bands-to-the-north-east"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Sage_Gateshead.jpg?width=800",
+        "caption": "The Glasshouse (formerly Sage Gateshead), next to the arena site",
+        "credit": "William Nicholson from London / Paris, England / France",
+        "licence": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_Sage_Gateshead.jpg"
+      }
     },
     {
       "id": "ne-crown-works",
@@ -2339,7 +2458,14 @@
           "url": "https://www.investglasgow.com/resources/news/432-glasgow-city-region-welcomes-designation-of-investment-zone-tax-site"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/GlasgowAirportFromAir.jpg?width=800",
+        "caption": "Glasgow Airport from the air",
+        "credit": "Jim Smillie",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:GlasgowAirportFromAir.jpg"
+      }
     },
     {
       "id": "gcr-lgf",
@@ -2529,7 +2655,14 @@
           "url": "https://economy-ni.gov.uk/node/57481"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Titanic_Belfast_side_view.jpg?width=800",
+        "caption": "Titanic Quarter, Belfast",
+        "credit": "See source page",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Titanic_Belfast_side_view.jpg"
+      }
     },
     {
       "id": "bel-amic",
@@ -2844,7 +2977,14 @@
           "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff_Central_station_(26526139271).jpg?width=800",
+        "caption": "Cardiff Central station",
+        "credit": "Jeremy Segrott from Cardiff, Wales, UK",
+        "licence": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_Central_station_(26526139271).jpg"
+      }
     },
     {
       "id": "ccr-northern-valleys",
@@ -2905,7 +3045,14 @@
           "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-10-aberthaw-procurement-action-plan-review.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aberthaw_B_power_station_-_geograph.org.uk_-_414146.jpg?width=800",
+        "caption": "Aberthaw B power station",
+        "credit": "Christopher Ware",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aberthaw_B_power_station_-_geograph.org.uk_-_414146.jpg"
+      }
     }
   ]
 }

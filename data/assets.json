@@ -1,0 +1,1531 @@
+{
+  "_meta": {
+    "description": "Innovation and R&D assets in the priority regions: universities, Catapult centres and other research and innovation centres. Compiled 14 November 2026. Universities, coordinates, websites, dates and student numbers come from Wikidata; other coordinates were geocoded with Nominatim (OpenStreetMap). Summaries are one-line descriptions, not sourced from board papers. Not exhaustive.",
+    "last_checked": "2026-11-14",
+    "vocab": {
+      "kind": [
+        "university",
+        "catapult",
+        "research"
+      ],
+      "loc_precision": [
+        "site",
+        "area"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "id": "bel-asset-catalyst",
+      "region": "bel",
+      "name": "Catalyst",
+      "kind": "research",
+      "summary": "Science park in the Titanic Quarter.",
+      "established": null,
+      "students": null,
+      "website": "http://catalyst-inc.org/",
+      "lat": 54.608,
+      "lng": -5.903,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7058524"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Northern_Ireland_Science_Park_(detail)_-_geograph.org.uk_-_670970.jpg?width=800",
+        "caption": "Catalyst",
+        "credit": "Ross",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Northern_Ireland_Science_Park_(detail)_-_geograph.org.uk_-_670970.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "bel-asset-ecit-institute-queen-s-university-belfast",
+      "region": "bel",
+      "name": "ECIT Institute, Queen's University Belfast",
+      "kind": "research",
+      "summary": "Institute of Electronics, Communications and Information Technology.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.61414,
+      "lng": -5.90015,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "bel-asset-queen-s-university-belfast",
+      "region": "bel",
+      "name": "Queen's University Belfast",
+      "kind": "university",
+      "summary": "",
+      "established": 1845,
+      "students": 24560,
+      "website": "https://qub.ac.uk/",
+      "lat": 54.58417,
+      "lng": -5.93472,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q877925"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lanyon_Building%2C_Queen's_University%2C_Belfast.jpg?width=800",
+        "caption": "Queen's University Belfast",
+        "credit": "Nick Birse",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lanyon_Building,_Queen%27s_University,_Belfast.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "bel-asset-ulster-university-belfast-campus",
+      "region": "bel",
+      "name": "Ulster University, Belfast campus",
+      "kind": "university",
+      "summary": "Belfast city centre campus of Ulster University.",
+      "established": null,
+      "students": null,
+      "website": "https://www.ulster.ac.uk/",
+      "lat": 54.60466,
+      "lng": -5.92934,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2096524"
+        },
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Ulster%2C_Belfast_Campus%2C_July_2010_(07).JPG?width=800",
+        "caption": "Ulster University, Belfast campus",
+        "credit": "Ardfern",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Ulster,_Belfast_Campus,_July_2010_(07).JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ccr-asset-compound-semiconductor-applications-catapult",
+      "region": "ccr",
+      "name": "Compound Semiconductor Applications Catapult",
+      "kind": "catapult",
+      "summary": "Catapult centre for compound semiconductors. Marker placed at Imperial Park, Newport, not at the building.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 51.55439,
+      "lng": -3.03667,
+      "loc_source": "Nominatim (Imperial Park)",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "loc_precision": "area",
+      "image": null
+    },
+    {
+      "id": "ccr-asset-cardiff-metropolitan-university",
+      "region": "ccr",
+      "name": "Cardiff Metropolitan University",
+      "kind": "university",
+      "summary": "",
+      "established": 1996,
+      "students": null,
+      "website": "http://www.cardiffmet.ac.uk",
+      "lat": 51.4843,
+      "lng": -3.1649,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5038449"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/UWIC_Llandaff_Cardiff.JPG?width=800",
+        "caption": "Cardiff Metropolitan University",
+        "credit": "Welshleprechaun",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:UWIC_Llandaff_Cardiff.JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ccr-asset-cardiff-university",
+      "region": "ccr",
+      "name": "Cardiff University",
+      "kind": "university",
+      "summary": "",
+      "established": 1883,
+      "students": 30930,
+      "website": "https://cardiff.ac.uk/",
+      "lat": 51.48743,
+      "lng": -3.17823,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1035745"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff_University_main_building.jpg?width=800",
+        "caption": "Cardiff University",
+        "credit": "Stan Zurek",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_University_main_building.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ccr-asset-university-of-south-wales",
+      "region": "ccr",
+      "name": "University of South Wales",
+      "kind": "university",
+      "summary": "",
+      "established": 2013,
+      "students": null,
+      "website": "http://www.southwales.ac.uk/",
+      "lat": 51.47946,
+      "lng": -3.16928,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1971174"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_South_Wales%2C_Newport_city_centre_campus.jpg?width=800",
+        "caption": "University of South Wales",
+        "credit": "Pwimageglow",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_South_Wales,_Newport_city_centre_campus.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "em-asset-biocity-nottingham",
+      "region": "em",
+      "name": "BioCity Nottingham",
+      "kind": "research",
+      "summary": "Life sciences incubator and laboratory campus.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 52.95066,
+      "lng": -1.13667,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "em-asset-ihub-infinity-park-derby",
+      "region": "em",
+      "name": "iHub, Infinity Park Derby",
+      "kind": "research",
+      "summary": "Innovation centre on Infinity Park Derby.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 52.87685,
+      "lng": -1.468,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "em-asset-nottingham-trent-university",
+      "region": "em",
+      "name": "Nottingham Trent University",
+      "kind": "university",
+      "summary": "",
+      "established": 1970,
+      "students": 40000,
+      "website": "https://www.ntu.ac.uk",
+      "lat": 52.9564,
+      "lng": -1.15203,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2002619"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Byron_house_2.JPG?width=800",
+        "caption": "Nottingham Trent University",
+        "credit": "Superhasn (English Wikipedia)",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Byron_house_2.JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "em-asset-university-of-derby",
+      "region": "em",
+      "name": "University of Derby",
+      "kind": "university",
+      "summary": "",
+      "established": null,
+      "students": null,
+      "website": "https://www.derby.ac.uk",
+      "lat": 52.9388,
+      "lng": -1.49648,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3183295"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Derby_Library.jpg?width=800",
+        "caption": "University of Derby",
+        "credit": "Lianne99",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Derby_Library.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "em-asset-university-of-nottingham",
+      "region": "em",
+      "name": "University of Nottingham",
+      "kind": "university",
+      "summary": "",
+      "established": 1881,
+      "students": null,
+      "website": "https://www.nottingham.ac.uk/",
+      "lat": 52.93889,
+      "lng": -1.19694,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q472316"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nottingham%2C_Trent_Building.jpg?width=800",
+        "caption": "University of Nottingham",
+        "credit": "Greentreepencil",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nottingham,_Trent_Building.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-advanced-forming-research-centre-afrc",
+      "region": "gcr",
+      "name": "Advanced Forming Research Centre (AFRC)",
+      "kind": "catapult",
+      "summary": "University of Strathclyde research centre at Inchinnan. Part of the High Value Manufacturing Catapult.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 55.88448,
+      "lng": -4.44158,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-national-manufacturing-institute-scotland-nmis",
+      "region": "gcr",
+      "name": "National Manufacturing Institute Scotland (NMIS)",
+      "kind": "catapult",
+      "summary": "Operated by the University of Strathclyde. Part of the High Value Manufacturing Catapult.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 55.87342,
+      "lng": -4.41779,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-offshore-renewable-energy-catapult-glasgow",
+      "region": "gcr",
+      "name": "Offshore Renewable Energy Catapult, Glasgow",
+      "kind": "catapult",
+      "summary": "Catapult office in the Inovo building.",
+      "established": null,
+      "students": null,
+      "website": "https://ore.catapult.org.uk/",
+      "lat": 55.86036,
+      "lng": -4.24333,
+      "loc_source": "Nominatim (Inovo building)",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30260912"
+        },
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-technology-and-innovation-centre-university-of-strathclyde",
+      "region": "gcr",
+      "name": "Technology and Innovation Centre, University of Strathclyde",
+      "kind": "research",
+      "summary": "Research and industry collaboration building in the Glasgow City Innovation District.",
+      "established": 2015,
+      "students": null,
+      "website": "",
+      "lat": 55.86018,
+      "lng": -4.24246,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7896365"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Strathclyde_Technology_and_Innovation_Centre_(geograph_5669956).jpg?width=800",
+        "caption": "Technology and Innovation Centre, University of Strathclyde",
+        "credit": "Richard Sutcliffe",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Technology_and_Innovation_Centre_(geograph_5669956).jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-glasgow-caledonian-university",
+      "region": "gcr",
+      "name": "Glasgow Caledonian University",
+      "kind": "university",
+      "summary": "",
+      "established": 1993,
+      "students": 17045,
+      "website": "https://www.gcu.ac.uk/",
+      "lat": 55.86719,
+      "lng": -4.25019,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1353139"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/GCU_Campus_View.png?width=800",
+        "caption": "Glasgow Caledonian University",
+        "credit": "Knwwsss",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:GCU_Campus_View.png"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-glasgow-school-of-art",
+      "region": "gcr",
+      "name": "Glasgow School of Art",
+      "kind": "university",
+      "summary": "",
+      "established": 1845,
+      "students": 1600,
+      "website": "https://www.gsa.ac.uk/",
+      "lat": 55.86605,
+      "lng": -4.26375,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q748106"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Glasgow_School_of_Art_-_September_2017.jpg?width=800",
+        "caption": "Glasgow School of Art",
+        "credit": "Stinglehammer",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Glasgow_School_of_Art_-_September_2017.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-university-of-glasgow",
+      "region": "gcr",
+      "name": "University of Glasgow",
+      "kind": "university",
+      "summary": "",
+      "established": 1451,
+      "students": null,
+      "website": "https://gla.ac.uk/",
+      "lat": 55.87222,
+      "lng": -4.28806,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q192775"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg?width=800",
+        "caption": "University of Glasgow",
+        "credit": "Diliff",
+        "licence": "CC BY 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-university-of-strathclyde",
+      "region": "gcr",
+      "name": "University of Strathclyde",
+      "kind": "university",
+      "summary": "",
+      "established": 1796,
+      "students": 25105,
+      "website": "https://www.strath.ac.uk/",
+      "lat": 55.8617,
+      "lng": -4.2416,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1859178"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Strathclyde_Campus.jpg?width=800",
+        "caption": "University of Strathclyde",
+        "credit": "Flickr User StrathclydeGuy",
+        "licence": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Campus.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "gcr-asset-university-of-the-west-of-scotland",
+      "region": "gcr",
+      "name": "University of the West of Scotland",
+      "kind": "university",
+      "summary": "",
+      "established": 2007,
+      "students": 15555,
+      "website": "http://www.uws.ac.uk/",
+      "lat": 55.94511,
+      "lng": -4.08174,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1296153"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-offshore-renewable-energy-catapult-blyth",
+      "region": "ne",
+      "name": "Offshore Renewable Energy Catapult, Blyth",
+      "kind": "catapult",
+      "summary": "Catapult test and demonstration site for offshore wind, wave and tidal energy.",
+      "established": 2012,
+      "students": null,
+      "website": "https://ore.catapult.org.uk/",
+      "lat": 55.13125,
+      "lng": -1.50813,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30260912"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-netpark",
+      "region": "ne",
+      "name": "NETPark",
+      "kind": "research",
+      "summary": "North East Technology Park, Sedgefield. Science park.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.67019,
+      "lng": -1.45384,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-newcastle-helix",
+      "region": "ne",
+      "name": "Newcastle Helix",
+      "kind": "research",
+      "summary": "City centre innovation district.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.97267,
+      "lng": -1.62767,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-sunderland-software-centre",
+      "region": "ne",
+      "name": "Sunderland Software Centre",
+      "kind": "research",
+      "summary": "Digital and software business centre.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.90375,
+      "lng": -1.37766,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-durham-university",
+      "region": "ne",
+      "name": "Durham University",
+      "kind": "university",
+      "summary": "",
+      "established": 1832,
+      "students": 19520,
+      "website": "https://durham.ac.uk",
+      "lat": 54.775,
+      "lng": -1.575,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q458393"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Durham_-_Castle_-_02.jpg?width=800",
+        "caption": "Durham University",
+        "credit": "Benjamin Smith",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Durham_-_Castle_-_02.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-newcastle-university",
+      "region": "ne",
+      "name": "Newcastle University",
+      "kind": "university",
+      "summary": "",
+      "established": 1963,
+      "students": null,
+      "website": "https://www.ncl.ac.uk/",
+      "lat": 54.978,
+      "lng": -1.615,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q837164"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ncle_Union_2012.jpg?width=800",
+        "caption": "Newcastle University",
+        "credit": "Chemical Engineer",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ncle_Union_2012.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-northumbria-university",
+      "region": "ne",
+      "name": "Northumbria University",
+      "kind": "university",
+      "summary": "",
+      "established": 1992,
+      "students": null,
+      "website": "http://www.northumbria.ac.uk",
+      "lat": 54.9764,
+      "lng": -1.608,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2503794"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Northumbria_University_(geograph_2248224).jpg?width=800",
+        "caption": "Northumbria University",
+        "credit": "Peter McDermott",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Northumbria_University_(geograph_2248224).jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "ne-asset-university-of-sunderland",
+      "region": "ne",
+      "name": "University of Sunderland",
+      "kind": "university",
+      "summary": "",
+      "established": 1901,
+      "students": null,
+      "website": "http://www.sunderland.ac.uk/",
+      "lat": 54.9051,
+      "lng": -1.3914,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1094742"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "sy-asset-advanced-manufacturing-research-centre-amrc",
+      "region": "sy",
+      "name": "Advanced Manufacturing Research Centre (AMRC)",
+      "kind": "catapult",
+      "summary": "University of Sheffield research centre. Part of the High Value Manufacturing Catapult.",
+      "established": 2001,
+      "students": null,
+      "website": "https://www.amrc.co.uk",
+      "lat": 53.39121,
+      "lng": -1.36272,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q56583645"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "sy-asset-advanced-wellbeing-research-centre",
+      "region": "sy",
+      "name": "Advanced Wellbeing Research Centre",
+      "kind": "research",
+      "summary": "Sheffield Hallam University research centre at Sheffield Olympic Legacy Park.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 53.3966,
+      "lng": -1.42733,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "sy-asset-translational-energy-research-centre",
+      "region": "sy",
+      "name": "Translational Energy Research Centre",
+      "kind": "research",
+      "summary": "University of Sheffield energy research facility.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 53.39371,
+      "lng": -1.38298,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "sy-asset-sheffield-hallam-university",
+      "region": "sy",
+      "name": "Sheffield Hallam University",
+      "kind": "university",
+      "summary": "",
+      "established": 1992,
+      "students": 30009,
+      "website": "http://www.shu.ac.uk/",
+      "lat": 53.37911,
+      "lng": -1.46471,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1752117"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SHU_buildings.png?width=800",
+        "caption": "Sheffield Hallam University",
+        "credit": "St BC (English Wikipedia)",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:SHU_buildings.png"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "sy-asset-university-of-sheffield",
+      "region": "sy",
+      "name": "University of Sheffield",
+      "kind": "university",
+      "summary": "",
+      "established": 1905,
+      "students": null,
+      "website": "https://sheffield.ac.uk/",
+      "lat": 53.38072,
+      "lng": -1.48881,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q823917"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Frederick_Mappin_Building.jpg?width=800",
+        "caption": "University of Sheffield",
+        "credit": "Paolo Margari from Sheffield, United Kingdom / Italy",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Frederick_Mappin_Building.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "tv-asset-cpi-wilton-centre",
+      "region": "tv",
+      "name": "CPI, Wilton Centre",
+      "kind": "catapult",
+      "summary": "Centre for Process Innovation. Part of the High Value Manufacturing Catapult. Marker placed at Wilton International, not at the building.",
+      "established": null,
+      "students": null,
+      "website": "https://www.uk-cpi.com",
+      "lat": 54.5877,
+      "lng": -1.1176,
+      "loc_source": "Wikidata (Wilton International)",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21006880"
+        },
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q18163207"
+        }
+      ],
+      "confidence": "medium",
+      "loc_precision": "area",
+      "image": null
+    },
+    {
+      "id": "tv-asset-materials-processing-institute",
+      "region": "tv",
+      "name": "Materials Processing Institute",
+      "kind": "research",
+      "summary": "Materials and steel research institute at Grangetown.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.57906,
+      "lng": -1.16072,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "tv-asset-national-horizons-centre",
+      "region": "tv",
+      "name": "National Horizons Centre",
+      "kind": "research",
+      "summary": "Teesside University bioscience centre in Darlington.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 54.52695,
+      "lng": -1.54214,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "tv-asset-teesside-university",
+      "region": "tv",
+      "name": "Teesside University",
+      "kind": "university",
+      "summary": "",
+      "established": 1930,
+      "students": 19290,
+      "website": "http://www.tees.ac.uk/",
+      "lat": 54.57064,
+      "lng": -1.23524,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3695910"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teesside_University's_Phoenix_Building.JPG?width=800",
+        "caption": "Teesside University",
+        "credit": "LTees",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Teesside_University%27s_Phoenix_Building.JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-energy-systems-catapult",
+      "region": "wm",
+      "name": "Energy Systems Catapult",
+      "kind": "catapult",
+      "summary": "Catapult centre for energy systems. Based in Birmingham.",
+      "established": 2015,
+      "students": null,
+      "website": "https://es.catapult.org.uk/",
+      "lat": 52.48301,
+      "lng": -1.89508,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q56584703"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-manufacturing-technology-centre-mtc",
+      "region": "wm",
+      "name": "Manufacturing Technology Centre (MTC)",
+      "kind": "catapult",
+      "summary": "Part of the High Value Manufacturing Catapult. At Ansty Park, just outside the combined authority boundary.",
+      "established": 2010,
+      "students": null,
+      "website": "http://www.the-mtc.org/",
+      "lat": 52.43071,
+      "lng": -1.40341,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30292183"
+        },
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-wmg-university-of-warwick",
+      "region": "wm",
+      "name": "WMG, University of Warwick",
+      "kind": "catapult",
+      "summary": "University of Warwick department. Part of the High Value Manufacturing Catapult.",
+      "established": 1980,
+      "students": null,
+      "website": "https://warwick.ac.uk/fac/sci/wmg",
+      "lat": 52.3833,
+      "lng": -1.561,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7971155"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-birmingham-health-innovation-campus",
+      "region": "wm",
+      "name": "Birmingham Health Innovation Campus",
+      "kind": "research",
+      "summary": "Life sciences campus at Selly Oak.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 52.44523,
+      "lng": -1.94074,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-aston-university",
+      "region": "wm",
+      "name": "Aston University",
+      "kind": "university",
+      "summary": "",
+      "established": 1895,
+      "students": null,
+      "website": "http://www.aston.ac.uk/",
+      "lat": 52.486,
+      "lng": -1.8895,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q750066"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aston_Uni_Lakeside_01.JPG?width=800",
+        "caption": "Aston University",
+        "credit": "Chemical Engineer",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Uni_Lakeside_01.JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-birmingham-city-university",
+      "region": "wm",
+      "name": "Birmingham City University",
+      "kind": "university",
+      "summary": "",
+      "established": 1971,
+      "students": null,
+      "website": "https://www.bcu.ac.uk",
+      "lat": 52.51722,
+      "lng": -1.89806,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3547145"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bar_42_UCE_Birmingham.JPG?width=800",
+        "caption": "Birmingham City University",
+        "credit": "David Waterson (DWaterson)",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bar_42_UCE_Birmingham.JPG"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-coventry-university",
+      "region": "wm",
+      "name": "Coventry University",
+      "kind": "university",
+      "summary": "",
+      "established": 1970,
+      "students": null,
+      "website": "https://www.coventry.ac.uk/",
+      "lat": 52.40806,
+      "lng": -1.50556,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1138080"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coventry_University.jpeg?width=800",
+        "caption": "Coventry University",
+        "credit": "See source page",
+        "licence": "CC BY 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_University.jpeg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-newman-university",
+      "region": "wm",
+      "name": "Newman University",
+      "kind": "university",
+      "summary": "",
+      "established": 1968,
+      "students": null,
+      "website": "http://www.newman.ac.uk/",
+      "lat": 52.433,
+      "lng": -1.99361,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4710828"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-university-college-birmingham",
+      "region": "wm",
+      "name": "University College Birmingham",
+      "kind": "university",
+      "summary": "",
+      "established": 1957,
+      "students": null,
+      "website": "http://www.ucb.ac.uk",
+      "lat": 52.48139,
+      "lng": -1.90633,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7894613"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-university-of-birmingham",
+      "region": "wm",
+      "name": "University of Birmingham",
+      "kind": "university",
+      "summary": "",
+      "established": 1900,
+      "students": 30832,
+      "website": "https://birmingham.ac.uk/",
+      "lat": 52.45056,
+      "lng": -1.93056,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q223429"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aston_Webb_buildings_in_snow%2C_The_University_of_Birmingham%2C_Dec_2009.jpg?width=800",
+        "caption": "University of Birmingham",
+        "credit": "Simonham",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Webb_buildings_in_snow,_The_University_of_Birmingham,_Dec_2009.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-university-of-warwick",
+      "region": "wm",
+      "name": "University of Warwick",
+      "kind": "university",
+      "summary": "",
+      "established": 1965,
+      "students": 25615,
+      "website": "https://warwick.ac.uk/",
+      "lat": 52.38008,
+      "lng": -1.56193,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q865528"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Warwick_University_House.jpg?width=800",
+        "caption": "University of Warwick",
+        "credit": "See source page",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Warwick_University_House.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wm-asset-university-of-wolverhampton",
+      "region": "wm",
+      "name": "University of Wolverhampton",
+      "kind": "university",
+      "summary": "",
+      "established": 1992,
+      "students": 24020,
+      "website": "https://www.wlv.ac.uk/",
+      "lat": 52.58722,
+      "lng": -2.12722,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1816202"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Wolverhampton_-_geograph.org.uk_-_396324.jpg?width=800",
+        "caption": "University of Wolverhampton",
+        "credit": "Gordon Griffiths",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Wolverhampton_-_geograph.org.uk_-_396324.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wy-asset-leeds-beckett-university",
+      "region": "wy",
+      "name": "Leeds Beckett University",
+      "kind": "university",
+      "summary": "",
+      "established": 1992,
+      "students": null,
+      "website": "http://www.leedsbeckett.ac.uk/",
+      "lat": 53.80417,
+      "lng": -1.54944,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2392351"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LBU_entrance_cropped_2015_01.jpg?width=800",
+        "caption": "Leeds Beckett University",
+        "credit": "Chemical Engineer, cropped by Blackcat",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:LBU_entrance_cropped_2015_01.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wy-asset-leeds-trinity-university",
+      "region": "wy",
+      "name": "Leeds Trinity University",
+      "kind": "university",
+      "summary": "",
+      "established": 1966,
+      "students": null,
+      "website": "http://www.leedstrinity.ac.uk/",
+      "lat": 53.8488,
+      "lng": -1.64735,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1849271"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leeds_Trinity_University_(geograph_3395276).jpg?width=800",
+        "caption": "Leeds Trinity University",
+        "credit": "John Slater",
+        "licence": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_Trinity_University_(geograph_3395276).jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wy-asset-university-of-bradford",
+      "region": "wy",
+      "name": "University of Bradford",
+      "kind": "university",
+      "summary": "",
+      "established": null,
+      "students": 9665,
+      "website": "http://www.brad.ac.uk/",
+      "lat": 53.79155,
+      "lng": -1.76721,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q954035"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Bradford_Richmond_24_April_2017_01.jpg?width=800",
+        "caption": "University of Bradford",
+        "credit": "Chemical Engineer",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Bradford_Richmond_24_April_2017_01.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wy-asset-university-of-huddersfield",
+      "region": "wy",
+      "name": "University of Huddersfield",
+      "kind": "university",
+      "summary": "",
+      "established": 1992,
+      "students": null,
+      "website": "http://hud.ac.uk/",
+      "lat": 53.6432,
+      "lng": -1.77837,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3056815"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Queensgate_Campus_Top.jpg?width=800",
+        "caption": "University of Huddersfield",
+        "credit": "University Of Huddersfield",
+        "licence": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Queensgate_Campus_Top.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "wy-asset-university-of-leeds",
+      "region": "wy",
+      "name": "University of Leeds",
+      "kind": "university",
+      "summary": "",
+      "established": 1904,
+      "students": null,
+      "website": "https://leeds.ac.uk/",
+      "lat": 53.80722,
+      "lng": -1.55167,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q503424"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parkinson_Building%2C_Leeds_University%2C_England-12Sept2010.jpg?width=800",
+        "caption": "University of Leeds",
+        "credit": "Tim Green from Bradford",
+        "licence": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Parkinson_Building,_Leeds_University,_England-12Sept2010.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "yny-asset-york-science-park",
+      "region": "yny",
+      "name": "York Science Park",
+      "kind": "research",
+      "summary": "Science park next to the University of York.",
+      "established": null,
+      "students": null,
+      "website": "",
+      "lat": 53.94841,
+      "lng": -1.047,
+      "loc_source": "Nominatim",
+      "sources": [
+        {
+          "title": "OpenStreetMap (Nominatim geocode)",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ],
+      "confidence": "medium",
+      "image": null,
+      "loc_precision": "site"
+    },
+    {
+      "id": "yny-asset-university-of-york",
+      "region": "yny",
+      "name": "University of York",
+      "kind": "university",
+      "summary": "",
+      "established": 1963,
+      "students": 17155,
+      "website": "https://york.ac.uk/",
+      "lat": 53.94659,
+      "lng": -1.0525,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q967165"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/York_central_hall.jpg?width=800",
+        "caption": "University of York",
+        "credit": "Johnteslade (English Wikipedia)",
+        "licence": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:York_central_hall.jpg"
+      },
+      "loc_precision": "site"
+    },
+    {
+      "id": "yny-asset-york-st-john-university",
+      "region": "yny",
+      "name": "York St John University",
+      "kind": "university",
+      "summary": "",
+      "established": 1841,
+      "students": null,
+      "website": "http://www.yorksj.ac.uk/",
+      "lat": 53.96491,
+      "lng": -1.0801,
+      "loc_source": "Wikidata",
+      "sources": [
+        {
+          "title": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q8055565"
+        }
+      ],
+      "confidence": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/York_St_John_University.jpg?width=800",
+        "caption": "York St John University",
+        "credit": "Robert Dawson",
+        "licence": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:York_St_John_University.jpg"
+      },
+      "loc_precision": "site"
+    }
+  ]
+}

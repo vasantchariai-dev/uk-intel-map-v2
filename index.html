@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Regional growth intelligence map</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#panel">Skip to list</a>
+    <div class="app">
+      <header class="header">
+        <div class="header-title">
+          <h1><a href="#" data-action="home">Regional growth intelligence map</a></h1>
+          <p id="last-checked"></p>
+        </div>
+        <form class="search" role="search" onsubmit="return false">
+          <label for="search">Search schemes and assets</label>
+          <input id="search" type="search" autocomplete="off" placeholder="Name, place or status" />
+        </form>
+      </header>
+      <main class="main">
+        <div class="map-wrap">
+          <div id="map" role="application" aria-label="Map of priority regions. Everything on the map is also in the list."></div>
+          <details class="legend" id="legend">
+            <summary>Key and layers</summary>
+            <div id="legend-body"></div>
+          </details>
+        </div>
+        <aside class="panel" id="panel" aria-label="Details">
+          <button class="sheet-handle" id="sheet-handle" type="button" aria-expanded="true">Hide details</button>
+          <div class="panel-body" id="panel-body" aria-live="polite"></div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

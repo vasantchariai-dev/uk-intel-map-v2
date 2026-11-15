@@ -70,10 +70,10 @@ export interface MapHandlers {
 }
 
 export interface MapApi {
-  selectRegion(id: string | null, animate?: boolean): void;
+  selectRegion(id: string | null, animate?: boolean, refitSame?: boolean): void;
+  view(): { centre: [number, number]; zoom: number; allRegionsVisible: boolean };
   selectPoint(kind: 'scheme' | 'asset' | null, id?: string): void;
   setLayer(name: 'councils' | 'assets', visible: boolean): void;
-  resize(): void;
 }
 
 const colourMatch = (map: Record<string, string>, key: string) =>
@@ -90,13 +90,23 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     (a, b) => [Math.min(a[0], b[0]), Math.min(a[1], b[1]), Math.max(a[2], b[2]), Math.max(a[3], b[3])],
     [Infinity, Infinity, -Infinity, -Infinity],
   );
-  const padding = () => ({ top: 30, left: 30, right: 30, bottom: 30 + bottomInset() });
+  // Padding is clamped so it can never be larger than the canvas: top plus bottom
+  // stays within 60% of the height, and left plus right within 60% of the width.
+  const padding = () => {
+    const { clientWidth: w, clientHeight: h } = container;
+    const side = Math.min(30, w * 0.3);
+    const vertical = 60 + bottomInset();
+    const scale = vertical > h * 0.6 ? (h * 0.6) / vertical : 1;
+    return { top: 30 * scale, bottom: (30 + bottomInset()) * scale, left: side, right: side };
+  };
 
   const map = new maplibregl.Map({
     container,
     style,
-    bounds: all,
-    fitBoundsOptions: { padding: padding() },
+    // A safe starting view over the UK. The real fit happens after load, once
+    // the container has its final size.
+    center: [-3.2, 54.3],
+    zoom: 4.5,
     minZoom: 4,
     maxZoom: 16,
     dragRotate: false,
@@ -118,6 +128,30 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
   });
 
   await new Promise<void>((resolve) => map.once('load', () => resolve()));
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let selectedRegion: string | null = null;
+  let pointSelected = false;
+  /** Fits the selected region, or all ten. Does nothing while the map has no size. */
+  const fit = (animate: boolean) => {
+    if (container.clientWidth < 50 || container.clientHeight < 50) return;
+    // Clear any padding left behind by an earlier camera move, so it is not counted twice.
+    map.setPadding({ top: 0, bottom: 0, left: 0, right: 0 });
+    map.fitBounds(selectedRegion ? bounds.get(selectedRegion)! : all, {
+      padding: padding(),
+      maxZoom: 11.5,
+      duration: animate && !reduceMotion ? 900 : 0,
+    });
+  };
+  map.resize();
+  fit(false);
+  // Refit when the map changes size or the device rotates, unless something is selected.
+  const refit = () => {
+    map.resize();
+    if (!selectedRegion && !pointSelected) fit(false);
+  };
+  new ResizeObserver(refit).observe(container);
+  window.addEventListener('orientationchange', refit);
 
   const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
   const regionColour = colourMatch(REGION_COLOURS, 'id');
@@ -228,7 +262,6 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     layout: { 'icon-image': ['get', 'icon'], 'icon-allow-overlap': true, 'symbol-sort-key': ['get', 'order'] },
   });
 
-  let selectedRegion: string | null | undefined;
   // Region name labels are real buttons, so regions can be opened by keyboard.
   const names = new Map(regions.map((r) => [r.id, r.name]));
   for (const f of features) {
@@ -276,20 +309,20 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     if (region) handlers.onRegion(String(region.id));
   });
 
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   return {
-    selectRegion(id, animate = true) {
-      if (id === selectedRegion) return;
+    selectRegion(id, animate = true, refitSame = false) {
+      // "All regions" always refits, so it recovers the view after panning away.
+      if (id === selectedRegion && !refitSame) return;
       selectedRegion = id;
       toggleLabels();
       for (const key of bounds.keys())
         map.setFeatureState({ source: 'regions', id: key }, { selected: key === id, dim: id != null && key !== id });
-      map.fitBounds(id ? bounds.get(id)! : all, { padding: padding(), maxZoom: 11.5, duration: animate && !reduceMotion ? 900 : 0 });
+      fit(animate);
     },
     selectPoint(kind, id) {
       map.setFilter('scheme-selected', ['==', ['get', 'id'], kind === 'scheme' ? id! : '']);
       map.setFilter('asset-selected', ['==', ['get', 'id'], kind === 'asset' ? id! : '']);
+      pointSelected = Boolean(kind && id);
       if (!kind || !id) return;
       const item = kind === 'scheme' ? schemes.find((s) => s.id === id) : assets.find((a) => a.id === id);
       if (!item || (kind === 'scheme' && !isMapped(item as (typeof schemes)[number]))) return;
@@ -299,11 +332,19 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       if (!inView || map.getZoom() < minZoom - 2.5)
         map.easeTo({ center: target, zoom: Math.max(map.getZoom(), minZoom), padding: padding(), duration: reduceMotion ? 0 : 700 });
     },
+    view() {
+      const b = map.getBounds();
+      return {
+        centre: map.getCenter().toArray(),
+        zoom: map.getZoom(),
+        // True when every region's bounding box is inside the visible map.
+        allRegionsVisible: [...bounds.values()].every((r) => b.contains([r[0], r[1]]) && b.contains([r[2], r[3]])),
+      };
+    },
     setLayer(name, visible) {
       const value = visible ? 'visible' : 'none';
       if (name === 'councils') map.setLayoutProperty('lads-line', 'visibility', value);
       else for (const id of ['asset-points', 'asset-selected']) map.setLayoutProperty(id, 'visibility', value);
     },
-    resize: () => map.resize(),
   };
 }

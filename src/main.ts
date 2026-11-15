@@ -66,7 +66,8 @@ function apply(userAction: boolean) {
     if (isMobile() && (item || state.region)) setSheet(true);
     panelBody.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
   }
-  map?.selectRegion(state.region ?? null, userAction);
+  const overview = !state.region && !item;
+  map?.selectRegion(state.region ?? null, userAction, overview && userAction && !state.q);
   map?.selectPoint(scheme ? 'scheme' : asset ? 'asset' : null, item?.id);
 }
 
@@ -149,7 +150,8 @@ createMap(
   .then((api) => {
     map = api;
     apply(false);
-    window.addEventListener('resize', () => api.resize());
+    // Read by the browser tests.
+    (window as unknown as { mapView: MapApi['view'] }).mapView = api.view;
   })
   .catch((error) => {
     console.error(error);

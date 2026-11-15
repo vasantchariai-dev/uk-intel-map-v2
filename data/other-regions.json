@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "Other regions shown on the map in grey: established combined authorities, emerging strategic authorities, and deal areas and joint committees in Scotland, Wales and Northern Ireland. They are not priority regions and carry no scheme records. Boundaries are built from member councils (ONS LAD December 2025). An entry with \"cauth\" is matched to the ONS combined authority of that name and its \"lads\" list is filled in by the boundary build. Not exhaustive.",
+    "description": "Other regions shown on the map in grey: established combined authorities, emerging strategic authorities, and deal areas and joint committees in Scotland, Wales and Northern Ireland. They are not priority regions and carry no scheme records. Boundaries are built from member councils (ONS LAD December 2025). An entry with \"cauth\" is matched to the ONS combined authority of that name and its \"lads\" list is filled in by the boundary build. English areas with no agreed strategic authority are not shown.",
     "last_checked": "2026-11-15",
     "vocab": {
       "group": [
@@ -168,12 +168,20 @@
       "type": "Combined authority",
       "nation": "England",
       "cauth": "Lancashire",
-      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
-      "unknowns": "",
+      "status_note": "Lancashire Combined County Authority, in the ONS December 2025 boundary file. A Foundation Strategic Authority now. Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Lancashire.",
+      "unknowns": "Timetable for a mayor.",
       "sources": [
         {
           "title": "ONS: Combined Authorities (December 2025) boundaries",
           "url": "https://geoportal.statistics.gov.uk/"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        },
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
         }
       ],
       "confidence": "high",
@@ -192,34 +200,6 @@
         "South Ribble",
         "West Lancashire",
         "Wyre"
-      ]
-    },
-    {
-      "id": "dt",
-      "name": "Devon and Torbay",
-      "group": "established",
-      "type": "Combined authority",
-      "nation": "England",
-      "cauth": "Devon and Torbay",
-      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
-      "unknowns": "",
-      "sources": [
-        {
-          "title": "ONS: Combined Authorities (December 2025) boundaries",
-          "url": "https://geoportal.statistics.gov.uk/"
-        }
-      ],
-      "confidence": "high",
-      "lads": [
-        "East Devon",
-        "Exeter",
-        "Mid Devon",
-        "North Devon",
-        "South Hams",
-        "Teignbridge",
-        "Torbay",
-        "Torridge",
-        "West Devon"
       ]
     },
     {
@@ -275,29 +255,6 @@
       ]
     },
     {
-      "id": "cornwall",
-      "name": "Cornwall",
-      "group": "established",
-      "type": "Council with a county devolution deal",
-      "nation": "England",
-      "lads": [
-        "Cornwall"
-      ],
-      "status_note": "Cornwall Council has a devolution deal with government. The first was agreed in 2015; a further Level 2 deal was published on 22 November 2023. There is no combined authority or mayor.",
-      "unknowns": "What has changed since the 2023 deal was not checked. The Isles of Scilly are a separate council and are not shown.",
-      "sources": [
-        {
-          "title": "GOV.UK: Cornwall devolution deal (Kevambos Digresennans Kernow) 2023",
-          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal-kevambos-digresennans-kernow-2023"
-        },
-        {
-          "title": "GOV.UK: Cornwall devolution deal (2015)",
-          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal"
-        }
-      ],
-      "confidence": "high"
-    },
-    {
       "id": "mk",
       "name": "Milton Keynes",
       "group": "established",
@@ -306,8 +263,8 @@
       "lads": [
         "Milton Keynes"
       ],
-      "status_note": "Milton Keynes City Council area. Shown because Connected Places Catapult is based here (Unity Place, 200 Grafton Gate, per the Catapult Network map).",
-      "unknowns": "Any devolution or strategic authority plans covering Milton Keynes were not looked up.",
+      "status_note": "Milton Keynes City Council area. Shown because Connected Places Catapult is based here (Unity Place, 200 Grafton Gate, per the Catapult Network map). Budget 2026 (28 October 2026) names Bedford, Central Bedfordshire, Luton and Milton Keynes as places \"where there is broad agreement but not yet local consensus\" on a strategic authority.",
+      "unknowns": "No strategic authority is agreed for this area yet.",
       "sources": [
         {
           "title": "ONS: Local Authority Districts (December 2025) boundaries",
@@ -316,6 +273,119 @@
         {
           "title": "Catapult Network: map of locations",
           "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "bucks",
+      "name": "Buckinghamshire",
+      "group": "established",
+      "type": "Foundation strategic authority (single council)",
+      "nation": "England",
+      "lads": [
+        "Buckinghamshire"
+      ],
+      "status_note": "Buckinghamshire Council is treated as a Foundation Strategic Authority in government funding letters for 2026 to 2027.",
+      "unknowns": "When and how it was designated was not looked up.",
+      "sources": [
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "warks",
+      "name": "Warwickshire",
+      "group": "established",
+      "type": "Foundation strategic authority (single council)",
+      "nation": "England",
+      "lads": [
+        "North Warwickshire",
+        "Nuneaton and Bedworth",
+        "Rugby",
+        "Stratford-on-Avon",
+        "Warwick"
+      ],
+      "status_note": "Warwickshire County Council is treated as a Foundation Strategic Authority in government funding letters for 2026 to 2027.",
+      "unknowns": "When and how it was designated was not looked up.",
+      "sources": [
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "dt",
+      "name": "Devon, Plymouth and Torbay",
+      "group": "emerging",
+      "type": "Combined county authority; mayoral strategic authority proposed with Plymouth",
+      "nation": "England",
+      "status_note": "Devon and Torbay Combined County Authority is established (in the ONS December 2025 file) and is a Foundation Strategic Authority. Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Devon, Plymouth and Torbay.",
+      "unknowns": "Plymouth is not in the current combined county authority. The outline shows the proposed area, including Plymouth.",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        },
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "East Devon",
+        "Exeter",
+        "Mid Devon",
+        "North Devon",
+        "Plymouth",
+        "South Hams",
+        "Teignbridge",
+        "Torbay",
+        "Torridge",
+        "West Devon"
+      ]
+    },
+    {
+      "id": "cornwall",
+      "name": "Cornwall",
+      "group": "emerging",
+      "type": "Foundation strategic authority (single council)",
+      "nation": "England",
+      "lads": [
+        "Cornwall"
+      ],
+      "status_note": "Cornwall Council is treated as a Foundation Strategic Authority in government funding letters for 2026 to 2027. Budget 2026 (28 October 2026) says the government is in the final stages of agreeing \"a single Foundation Strategic Authority for Cornwall\". Earlier devolution deals were agreed in 2015 and 2023. No mayor.",
+      "unknowns": "Final terms of the new agreement. The Isles of Scilly are a separate council and are not shown.",
+      "sources": [
+        {
+          "title": "GOV.UK: Cornwall devolution deal (Kevambos Digresennans Kernow) 2023",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal-kevambos-digresennans-kernow-2023"
+        },
+        {
+          "title": "GOV.UK: Cornwall devolution deal (2015)",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        },
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
         }
       ],
       "confidence": "high"
@@ -330,12 +400,16 @@
         "Cumberland",
         "Westmorland and Furness"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -351,12 +425,16 @@
         "Cheshire West and Chester",
         "Warrington"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -381,12 +459,16 @@
         "Mid Suffolk",
         "West Suffolk"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -413,12 +495,16 @@
         "Southend-on-Sea",
         "Thurrock"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -444,12 +530,16 @@
         "Mid Sussex",
         "Worthing"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -476,12 +566,16 @@
         "Southampton",
         "Isle of Wight"
       ],
-      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
-      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026. Budget 2026 (28 October 2026) still lists it among the areas at the forefront of the devolution programme, and refers to areas electing mayors for the first time in 2027 and 2028.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and its election year (2027 or 2028), was not confirmed.",
       "sources": [
         {
           "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
           "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
         }
       ],
       "confidence": "medium"
@@ -490,7 +584,7 @@
       "id": "surrey",
       "name": "Surrey",
       "group": "emerging",
-      "type": "County reorganising into two unitary councils",
+      "type": "Foundation strategic authority; mayoral strategic authority proposed",
       "nation": "England",
       "lads": [
         "Elmbridge",
@@ -505,15 +599,188 @@
         "Waverley",
         "Woking"
       ],
-      "status_note": "Not on the Devolution Priority Programme. The Secretary of State decided, subject to Parliamentary approval, to replace the county and its 11 districts with two unitary councils.",
-      "unknowns": "Start date of the new councils, and the plan and timetable for a strategic authority covering Surrey, were not confirmed from the page read. The boundary shown is the current county.",
+      "status_note": "Surrey County Council is treated as a Foundation Strategic Authority in government funding letters for 2026 to 2027. Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Surrey, with local consultation as the next step. Separately, the county and its 11 districts are being replaced by two unitary councils, subject to Parliamentary approval.",
+      "unknowns": "Start date of the new councils and the timetable for a mayor. The boundary shown is the current county.",
       "sources": [
         {
           "title": "GOV.UK: Local government reorganisation in Surrey",
           "url": "https://www.gov.uk/government/consultations/local-government-reorganisation-in-surrey"
+        },
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        },
+        {
+          "title": "GOV.UK: Foundation Strategic Authorities, free courses for jobs funding 2026 to 2027",
+          "url": "https://www.gov.uk/government/publications/adult-skills-fund-devolved-grant-determination-letters-2026/foundation-strategic-authorities-s31-free-courses-for-jobs-funding-for-2026-to-2027"
         }
       ],
       "confidence": "medium"
+    },
+    {
+      "id": "herts",
+      "name": "Hertfordshire",
+      "group": "emerging",
+      "type": "Proposed mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Broxbourne",
+        "Dacorum",
+        "East Hertfordshire",
+        "Hertsmere",
+        "North Hertfordshire",
+        "St Albans",
+        "Stevenage",
+        "Three Rivers",
+        "Watford",
+        "Welwyn Hatfield"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Hertfordshire, with local consultation as the next step.",
+      "unknowns": "Final arrangements are subject to agreement with local areas. The councils listed are the current districts; boundaries may change with local government reorganisation.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "llr",
+      "name": "Leicester, Leicestershire and Rutland",
+      "group": "emerging",
+      "type": "Proposed mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Leicester",
+        "Blaby",
+        "Charnwood",
+        "Harborough",
+        "Hinckley and Bosworth",
+        "Melton",
+        "North West Leicestershire",
+        "Oadby and Wigston",
+        "Rutland"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Leicester, Leicestershire and Rutland, with local consultation as the next step.",
+      "unknowns": "Final arrangements are subject to agreement with local areas. The councils listed are the current districts; boundaries may change with local government reorganisation.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "staffs",
+      "name": "Stoke and Staffordshire",
+      "group": "emerging",
+      "type": "Proposed mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Stoke-on-Trent",
+        "Cannock Chase",
+        "East Staffordshire",
+        "Lichfield",
+        "Newcastle-under-Lyme",
+        "South Staffordshire",
+        "Stafford",
+        "Staffordshire Moorlands",
+        "Tamworth"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Stoke and Staffordshire, with local consultation as the next step.",
+      "unknowns": "Final arrangements are subject to agreement with local areas. The councils listed are the current districts; boundaries may change with local government reorganisation.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "thames",
+      "name": "Thames Valley",
+      "group": "emerging",
+      "type": "Proposed mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Cherwell",
+        "Oxford",
+        "South Oxfordshire",
+        "Vale of White Horse",
+        "West Oxfordshire",
+        "Bracknell Forest",
+        "Reading",
+        "Slough",
+        "West Berkshire",
+        "Windsor and Maidenhead",
+        "Wokingham",
+        "Swindon"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for \"Thames Valley (Oxfordshire, Berkshire and Swindon)\", with local consultation as the next step.",
+      "unknowns": "Final arrangements are subject to agreement with local areas. The councils listed are the current districts; boundaries may change with local government reorganisation.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "wessex",
+      "name": "Wessex",
+      "group": "emerging",
+      "type": "Proposed mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Dorset",
+        "Somerset",
+        "Wiltshire",
+        "Bournemouth, Christchurch and Poole"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Mayoral Strategic Authority for Wessex, with local consultation as the next step.",
+      "unknowns": "The Budget names \"Wessex\" but does not list its councils. Dorset, Somerset, Wiltshire, and Bournemouth, Christchurch and Poole are from our own knowledge of the proposal and need confirming.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "kent",
+      "name": "Kent and Medway",
+      "group": "emerging",
+      "type": "Proposed strategic authority",
+      "nation": "England",
+      "lads": [
+        "Ashford",
+        "Canterbury",
+        "Dartford",
+        "Dover",
+        "Folkestone and Hythe",
+        "Gravesham",
+        "Maidstone",
+        "Sevenoaks",
+        "Swale",
+        "Thanet",
+        "Tonbridge and Malling",
+        "Tunbridge Wells",
+        "Medway"
+      ],
+      "status_note": "Budget 2026 (28 October 2026) says the government is in the final stages of agreeing a Strategic Authority for Kent and Medway, \"which will be Mayoral if the area's Local Government Reorganisation outcome is compatible with this and Foundation if not\".",
+      "unknowns": "Final arrangements are subject to agreement with local areas. The councils listed are the current districts; boundaries may change with local government reorganisation.",
+      "sources": [
+        {
+          "title": "GOV.UK: Budget 2026 (28 October 2026)",
+          "url": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+        }
+      ],
+      "confidence": "high"
     },
     {
       "id": "esess",

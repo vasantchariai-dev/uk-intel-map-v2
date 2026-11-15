@@ -3,4 +3,4 @@
 import { copyFile, mkdir } from 'node:fs/promises';
 
 await mkdir('public/data', { recursive: true });
-for (const name of ['regions', 'schemes', 'assets']) await copyFile(`data/${name}.json`, `public/data/${name}.json`);
+for (const name of ['regions', 'other-regions', 'schemes', 'assets']) await copyFile(`data/${name}.json`, `public/data/${name}.json`);

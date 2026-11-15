@@ -73,7 +73,7 @@ export interface MapApi {
   selectRegion(id: string | null, animate?: boolean, refitSame?: boolean): void;
   view(): { centre: [number, number]; zoom: number; allRegionsVisible: boolean };
   selectPoint(kind: 'scheme' | 'asset' | null, id?: string): void;
-  setLayer(name: 'councils' | 'assets' | 'catapults', visible: boolean): void;
+  setLayer(name: 'councils' | 'assets' | 'catapults' | 'others', visible: boolean): void;
   /** Limits the markers to these records. null shows everything. */
   setVisible(schemeIds: string[] | null, assetIds: string[] | null): void;
   refit(): void;
@@ -83,16 +83,21 @@ const colourMatch = (map: Record<string, string>, key: string) =>
   ['match', ['get', key], ...Object.entries(map).flat(), '#505a5f'] as unknown as maplibregl.ExpressionSpecification;
 
 export async function createMap(container: HTMLElement, handlers: MapHandlers, bottomInset: () => number): Promise<MapApi> {
-  const [style, regionData] = await Promise.all([
-    resolveStyle(),
-    fetch(`${BASE}data/regions.geojson`).then((r) => r.json() as Promise<GeoJSON.FeatureCollection>),
-  ]);
+  const geojson = (name: string) => fetch(`${BASE}data/${name}.geojson`).then((r) => r.json() as Promise<GeoJSON.FeatureCollection>);
+  const [style, regionData, otherData] = await Promise.all([resolveStyle(), geojson('regions'), geojson('other-regions')]);
   const features = regionData.features as RegionFeature[];
-  const bounds = new Map(features.map((f) => [f.properties.id, boundsOf(f)]));
+  const others = otherData.features as RegionFeature[];
+  const priorityIds = new Set(features.map((f) => f.properties.id));
+  const sourceOf = (id: string) => (priorityIds.has(id) ? 'regions' : 'others');
+  // Bounds of every region, priority and other, so any of them can be zoomed to.
+  const bounds = new Map([...features, ...others].map((f) => [f.properties.id, boundsOf(f)]));
   const all = [...bounds.values()].reduce<Bounds>(
     (a, b) => [Math.min(a[0], b[0]), Math.min(a[1], b[1]), Math.max(a[2], b[2]), Math.max(a[3], b[3])],
     [Infinity, Infinity, -Infinity, -Infinity],
   );
+  // The starting view stops at Inverness. The far north of Highland would
+  // otherwise shrink every other region; it is still there to pan or zoom to.
+  all[3] = Math.min(all[3], 57.9);
   // Padding is clamped so it can never be larger than the canvas: top plus bottom
   // stays within 60% of the height, and left plus right within 60% of the width.
   const padding = () => {
@@ -160,6 +165,29 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
   const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
   const regionColour = colourMatch(REGION_COLOURS, 'id');
   const state = (name: string) => ['boolean', ['feature-state', name], false] as maplibregl.ExpressionSpecification;
+
+  // Other regions: one grey for all of them, drawn under the priority regions.
+  const GREY = '#505a5f';
+  map.addSource('others', { type: 'geojson', data: otherData, promoteId: 'id' });
+  map.addLayer(
+    { id: 'other-fill', type: 'fill', source: 'others', paint: { 'fill-color': GREY, 'fill-opacity': ['case', state('selected'), 0.08, state('hover'), 0.45, 0.26] } },
+    firstLabel,
+  );
+  map.addLayer(
+    {
+      id: 'other-line',
+      type: 'line',
+      source: 'others',
+      layout: { 'line-join': 'round' },
+      paint: { 'line-color': GREY, 'line-width': ['case', state('selected'), 3, state('hover'), 2, 1.2], 'line-opacity': 1 },
+    },
+    firstLabel,
+  );
+  map.addSource('other-lads', { type: 'geojson', data: `${BASE}data/other-lads.geojson` });
+  map.addLayer(
+    { id: 'other-lads-line', type: 'line', source: 'other-lads', layout: { visibility: 'none' }, paint: { 'line-color': GREY, 'line-width': 0.8, 'line-dasharray': [3, 2] } },
+    firstLabel,
+  );
 
   map.addSource('regions', { type: 'geojson', data: regionData, promoteId: 'id' });
   map.addLayer(
@@ -298,18 +326,40 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
   map.on('zoom', toggleLabels);
   toggleLabels();
 
+  // Names of the other regions, in small type, drawn by the map itself: one label
+  // per region, placed on its largest part.
+  map.addSource('other-labels', {
+    type: 'geojson',
+    data: { type: 'FeatureCollection', features: others.map((f) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: labelPoint(f) }, properties: { name: f.properties.name } })) },
+  });
+  map.addLayer({
+    id: 'other-label',
+    type: 'symbol',
+    source: 'other-labels',
+    minzoom: 4.6,
+    maxzoom: 8.5,
+    layout: { 'text-field': ['get', 'name'], 'text-size': 11, 'text-max-width': 7, 'text-font': ['Noto Sans Regular'], 'text-padding': 4 },
+    paint: { 'text-color': '#0b0c0c', 'text-halo-color': 'rgba(255,255,255,0.9)', 'text-halo-width': 1.5 },
+  }, 'scheme-halo');
+
   // Hover and click.
   let hovered: string | null = null;
   const setHover = (id: string | null) => {
     if (hovered === id) return;
-    if (hovered) map.setFeatureState({ source: 'regions', id: hovered }, { hover: false });
+    if (hovered) map.setFeatureState({ source: sourceOf(hovered), id: hovered }, { hover: false });
     hovered = id;
-    if (id) map.setFeatureState({ source: 'regions', id }, { hover: true });
+    if (id) map.setFeatureState({ source: sourceOf(id), id }, { hover: true });
+  };
+  const regionLayers = () => (map.getLayoutProperty('other-fill', 'visibility') === 'none' ? ['region-fill'] : ['region-fill', 'other-fill']);
+  // Priority regions win where the pointer is over both.
+  const regionAt = (point: maplibregl.PointLike) => {
+    const hits = map.queryRenderedFeatures(point, { layers: regionLayers() });
+    return hits.find((f) => f.layer.id === 'region-fill') ?? hits[0];
   };
   const pointLayers = () => ['scheme-points', 'asset-points'].filter((id) => map.getLayer(id) && map.getLayoutProperty(id, 'visibility') !== 'none');
   map.on('mousemove', (e) => {
     const point = map.queryRenderedFeatures(e.point, { layers: pointLayers() })[0];
-    const region = point ? undefined : map.queryRenderedFeatures(e.point, { layers: ['region-fill'] })[0];
+    const region = point ? undefined : regionAt(e.point);
     setHover(region ? String(region.id) : null);
     map.getCanvas().style.cursor = point || region ? 'pointer' : '';
   });
@@ -322,7 +372,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       else handlers.onAsset(id);
       return;
     }
-    const region = map.queryRenderedFeatures(e.point, { layers: ['region-fill'] })[0];
+    const region = regionAt(e.point);
     if (region) handlers.onRegion(String(region.id));
   });
 
@@ -333,7 +383,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       selectedRegion = id;
       toggleLabels();
       for (const key of bounds.keys())
-        map.setFeatureState({ source: 'regions', id: key }, { selected: key === id, dim: id != null && key !== id });
+        map.setFeatureState({ source: sourceOf(key), id: key }, { selected: key === id, dim: id != null && key !== id });
       fit(animate);
     },
     selectPoint(kind, id) {
@@ -355,11 +405,16 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
         centre: map.getCenter().toArray(),
         zoom: map.getZoom(),
         // True when every region's bounding box is inside the visible map.
-        allRegionsVisible: [...bounds.values()].every((r) => b.contains([r[0], r[1]]) && b.contains([r[2], r[3]])),
+        allRegionsVisible: [...priorityIds].every((id) => {
+          const r = bounds.get(id)!;
+          return b.contains([r[0], r[1]]) && b.contains([r[2], r[3]]);
+        }),
       };
     },
     setLayer(name, visible) {
-      if (name === 'councils') map.setLayoutProperty('lads-line', 'visibility', visible ? 'visible' : 'none');
+      const value = visible ? 'visible' : 'none';
+      if (name === 'councils') for (const id of ['lads-line', 'other-lads-line']) map.setLayoutProperty(id, 'visibility', value);
+      else if (name === 'others') for (const id of ['other-fill', 'other-line', 'other-label']) map.setLayoutProperty(id, 'visibility', value);
       else {
         show[name] = visible;
         updateFilters();

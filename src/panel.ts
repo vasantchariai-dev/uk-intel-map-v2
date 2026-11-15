@@ -1,4 +1,4 @@
-import { assets, assetsIn, childrenOf, isMapped, regionById, regions, schemeById, schemeOnlyFilters, schemes, schemesIn, type Filters } from './data';
+import { assets, assetsIn, childrenOf, isMapped, otherRegions, regionById, regions, schemeById, schemeOnlyFilters, schemes, schemesIn, type Filters } from './data';
 import {
   CONFIDENCE_HELP,
   KIND_LABELS,
@@ -15,7 +15,7 @@ import {
   isCpc,
   shortValue,
 } from './labels';
-import { ASSET_KINDS, CATAPULTS, CONFIDENCES, SCHEME_TYPES, STAGES, THEMES, type Asset, type Region, type Scheme } from './schema';
+import { ASSET_KINDS, CATAPULTS, CONFIDENCES, OTHER_GROUPS, SCHEME_TYPES, STAGES, THEMES, type Asset, type OtherRegion, type Region, type Scheme } from './schema';
 
 type ImageInfo = NonNullable<Scheme['image']>;
 
@@ -85,7 +85,42 @@ export function renderOverview(): string {
   return `<h2 tabindex="-1">Priority regions</h2>
     <p class="lede">Choose a region on the map or in this list to see its investment sites, region-wide programmes and innovation assets.</p>
     <p class="hint">${schemes.length} schemes (${mapped} on the map, ${schemes.length - mapped} region-wide) and ${assets.length} universities, Catapult sites and research centres.</p>
-    ${list(rows)}`;
+    ${list(rows)}
+    <h2 class="section">Other regions</h2>
+    <p class="hint">Shown in grey. Not priority regions, so they carry no scheme records. Choose one to zoom to it.</p>
+    ${OTHER_GROUPS.map((group) => {
+      const items = otherRegions.filter((o) => o.group === group);
+      return `<h3>${GROUP_HEADINGS[group]} (${items.length})</h3>${list(items.map(otherRow))}`;
+    }).join('')}`;
+}
+
+const GROUP_HEADINGS: Record<(typeof OTHER_GROUPS)[number], string> = {
+  established: 'Established authorities in England',
+  emerging: 'Emerging authorities in England',
+  devolved: 'Deal areas and joint committees in Scotland, Wales and Northern Ireland',
+};
+
+function otherRow(o: OtherRegion): string {
+  return `<li><button type="button" class="row row-other" data-region="${o.id}">
+    <span class="row-name">${esc(o.name)}</span>
+    <span class="row-meta">${esc(o.type)} · ${esc(o.nation)} · ${plural(o.lads.length, 'council')}</span>
+  </button></li>`;
+}
+
+export function renderOther(o: OtherRegion): string {
+  return `<p><button type="button" class="link back" data-action="home">All regions</button></p>
+    <h2 tabindex="-1" class="region-heading" style="--region:#505a5f">${esc(o.name)}</h2>
+    <p class="lede">${esc(o.type)}</p>
+    <p class="hint">${esc(o.nation)} · ${plural(o.lads.length, 'council')}</p>
+    <p class="chips"><span class="chip">Not a priority region</span></p>
+    <h3>Status</h3>
+    <p>${esc(o.status_note)}</p>
+    ${o.unknowns ? `<div class="unknowns"><h3>What we don’t know</h3><p>${esc(o.unknowns)}</p></div>` : ''}
+    <h3>Councils (${o.lads.length})</h3>
+    <p>${o.lads.map(esc).join(', ')}.</p>
+    ${sources(o.sources)}
+    <p class="confidence" title="${esc(CONFIDENCE_HELP[o.confidence])}"><span class="chip chip-confidence-${o.confidence}">${capitalise(o.confidence)} confidence</span> ${esc(CONFIDENCE_HELP[o.confidence].split(': ')[1])}</p>
+    <p class="hint">No schemes or assets are recorded for this region. The boundary is built from ONS council boundaries (December 2025).</p>`;
 }
 
 // ---------- Schemes list with filters ----------
@@ -99,9 +134,9 @@ function checks(legend: string, name: string, options: readonly (readonly [strin
 export const activeFilterCount = (f: Filters) =>
   f.regions.length + f.themes.length + f.types.length + f.stages.length + f.confidence.length + f.catapults.length + Number(f.unknowns) + Number(f.nwf);
 
-export function renderList(f: Filters, found: { schemes: Scheme[]; assets: Asset[] }, filtersOpen: boolean): string {
+export function renderList(f: Filters, found: { schemes: Scheme[]; assets: Asset[] }, filtersOpen: boolean, others: OtherRegion[] = []): string {
   const active = activeFilterCount(f);
-  const total = found.schemes.length + found.assets.length;
+  const total = found.schemes.length + found.assets.length + others.length;
   const note = f.catapults.length
     ? 'Schemes are hidden while a Catapult filter is on.'
     : schemeOnlyFilters(f)
@@ -127,6 +162,7 @@ export function renderList(f: Filters, found: { schemes: Scheme[]; assets: Asset
     ${note ? `<p class="hint">${note}</p>` : ''}
     ${found.schemes.length ? `<h3>Schemes (${found.schemes.length})</h3>${list(found.schemes.map((s) => schemeRow(s, true)))}` : ''}
     ${found.assets.length ? `<h3>Innovation and R&amp;D assets (${found.assets.length})</h3>${list(found.assets.map((a) => assetRow(a, true)))}` : ''}
+    ${others.length ? `<h3>Other regions (${others.length})</h3>${list(others.map(otherRow))}` : ''}
     ${total ? '' : '<p>Nothing matches. Search covers names, other names, places and status text.</p>'}`;
 }
 

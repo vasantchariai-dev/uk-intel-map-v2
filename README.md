@@ -33,6 +33,7 @@ These files are the source of truth. The app fetches them when the page loads; n
 | File | What it holds |
 |---|---|
 | `data/regions.json` | The ten regions, their member councils, boundary source and National Wealth Fund partnership |
+| `data/other-regions.json` | Non-priority regions shown in grey: other combined authorities, emerging authorities, and deal areas in Scotland, Wales and Northern Ireland. No scheme records. |
 | `data/schemes.json` | Schemes, each with sources, a change history and a last-checked date |
 | `data/assets.json` | Universities, Catapult sites and research centres |
 
@@ -44,7 +45,7 @@ Rules: every record needs a source; never invent figures, dates or locations; ne
 
 | Command | What it does |
 |---|---|
-| `npm run boundaries` | Downloads ONS boundaries to `data/raw/` and rebuilds `public/data/regions.geojson` and `lads.geojson`. Writes `reports/boundaries.md`. |
+| `npm run boundaries` | Downloads ONS boundaries to `data/raw/` and rebuilds the boundary files in `public/data/` for the priority regions and the other regions. Fills in the councils of any other region defined by an ONS combined authority name. Writes `reports/boundaries.md`. |
 | `npm run catapults` | Rebuilds the Catapult sites in `data/assets.json` from the official network map at catapult.org.uk, geocoded by postcode. |
 | `npm run check-locations` | Geocodes each scheme's place and writes `reports/locations.md`. It never changes coordinates. |
 

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Innovation and R&D assets in the priority regions: universities, Catapult centres and other research and innovation centres. Compiled 14 November 2026. Universities, coordinates, websites, dates and student numbers come from Wikidata; other coordinates were geocoded with Nominatim (OpenStreetMap). Summaries are one-line descriptions, not sourced from board papers. Not exhaustive.",
-    "last_checked": "2026-11-14",
+    "last_checked": "2026-11-15",
     "vocab": {
       "kind": [
         "university",
@@ -11,10 +11,50 @@
       "loc_precision": [
         "site",
         "area"
+      ],
+      "catapult": [
+        "Cell and Gene Therapy",
+        "Satellite Applications",
+        "Offshore Renewable Energy",
+        "Medicines Discovery",
+        "Energy Systems",
+        "High Value Manufacturing",
+        "Digital",
+        "Connected Places",
+        "Semiconductor"
       ]
     }
   },
   "assets": [
+    {
+      "id": "bel-asset-catapult-digital-catapult-belfast",
+      "region": "bel",
+      "name": "Digital Catapult, Belfast",
+      "kind": "catapult",
+      "catapult": "Digital",
+      "centre": "",
+      "summary": "In the heart of Belfast, Northern Ireland’s Immersive Lab takes digital technology to the next level with the latest augmented and virtual reality equipment.",
+      "address": "Glandore, Arthur House, 41 Arthur Street, Belfast, BT1 4GB",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://digicatapult.org.uk/",
+      "lat": 54.59761,
+      "lng": -5.92794,
+      "loc_source": "postcodes.io (centre of postcode BT1 4GB)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
     {
       "id": "bel-asset-catalyst",
       "region": "bel",
@@ -39,9 +79,12 @@
         "caption": "Catalyst",
         "credit": "Ross",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Northern_Ireland_Science_Park_(detail)_-_geograph.org.uk_-_670970.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Northern_Ireland_Science_Park_(detail)_-_geograph.org.uk_-_670970.jpg",
+        "date": "2008"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-asset-ecit-institute-queen-s-university-belfast",
@@ -63,7 +106,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-asset-queen-s-university-belfast",
@@ -89,9 +134,12 @@
         "caption": "Queen's University Belfast",
         "credit": "Nick Birse",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Lanyon_Building,_Queen%27s_University,_Belfast.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lanyon_Building,_Queen%27s_University,_Belfast.jpg",
+        "date": "2017"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-asset-ulster-university-belfast-campus",
@@ -121,31 +169,99 @@
         "caption": "Ulster University, Belfast campus",
         "credit": "Ardfern",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Ulster,_Belfast_Campus,_July_2010_(07).JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Ulster,_Belfast_Campus,_July_2010_(07).JPG",
+        "date": "2010"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "ccr-asset-compound-semiconductor-applications-catapult",
+      "id": "ccr-asset-catapult-high-value-manufacturing-catapult-baglan",
       "region": "ccr",
-      "name": "Compound Semiconductor Applications Catapult",
+      "name": "High Value Manufacturing Catapult, Baglan",
       "kind": "catapult",
-      "summary": "Catapult centre for compound semiconductors. Marker placed at Imperial Park, Newport, not at the building.",
+      "catapult": "High Value Manufacturing",
+      "centre": "",
+      "summary": "High Value Manufacturing Catapult works with thousands of companies each year to boost the UK’s manufacturing performance.",
+      "address": "Bay Technology Centre, Baglan Energy Park, Baglan, Port Talbot, SA12 7AX",
+      "nearby": true,
+      "nearby_note": "Just outside the region boundary (about 9km).",
       "established": null,
       "students": null,
-      "website": "",
-      "lat": 51.55439,
-      "lng": -3.03667,
-      "loc_source": "Nominatim (Imperial Park)",
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 51.61977,
+      "lng": -3.82217,
+      "loc_source": "postcodes.io (centre of postcode SA12 7AX)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "OpenStreetMap (Nominatim geocode)",
-          "url": "https://www.openstreetmap.org/"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
-      "loc_precision": "area",
-      "image": null
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ccr-asset-catapult-satellite-applications-catapult-space-enterprise-lab-newport",
+      "region": "ccr",
+      "name": "Satellite Applications Catapult: Space Enterprise Lab Newport",
+      "kind": "catapult",
+      "catapult": "Satellite Applications",
+      "centre": "Space Enterprise Lab",
+      "summary": "The Satellite Applications Catapult’s Space Enterprise Labs are local places for space innovation that are digitally inclusive.",
+      "address": "Imperial Park Innovation Centre, Celtic Way, Newport, NP10 8BE, Wales",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sa.catapult.org.uk/",
+      "lat": 51.55394,
+      "lng": -3.04072,
+      "loc_source": "postcodes.io (centre of postcode NP10 8BE)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ccr-asset-catapult-semiconductor-catapult-newport",
+      "region": "ccr",
+      "name": "Semiconductor Catapult, Newport",
+      "kind": "catapult",
+      "catapult": "Semiconductor",
+      "centre": "",
+      "summary": "Newport is home to the world’s first Compound Semiconductor Cluster, and Semiconductor Catapult’s headquarters provides bespoke national facilities including Power Electronic, RF & Microwave, Photonics, and Advanced Packaging labs.",
+      "address": "Innovation Centre (IQE Building) Celtic Way, Imperial Park, Newport, NP10 8BE",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sc.catapult.org.uk/",
+      "lat": 51.55394,
+      "lng": -3.04072,
+      "loc_source": "postcodes.io (centre of postcode NP10 8BE)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "ccr-asset-cardiff-metropolitan-university",
@@ -171,9 +287,12 @@
         "caption": "Cardiff Metropolitan University",
         "credit": "Welshleprechaun",
         "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:UWIC_Llandaff_Cardiff.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:UWIC_Llandaff_Cardiff.JPG",
+        "date": "2010"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-asset-cardiff-university",
@@ -199,9 +318,12 @@
         "caption": "Cardiff University",
         "credit": "Stan Zurek",
         "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_University_main_building.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_University_main_building.jpg",
+        "date": "2005"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-asset-university-of-south-wales",
@@ -227,9 +349,70 @@
         "caption": "University of South Wales",
         "credit": "Pwimageglow",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_South_Wales,_Newport_city_centre_campus.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_South_Wales,_Newport_city_centre_campus.jpg",
+        "date": "2013"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
+    },
+    {
+      "id": "em-asset-catapult-nuclear-amrc-derby",
+      "region": "em",
+      "name": "Nuclear AMRC Derby",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "Nuclear AMRC",
+      "summary": "Nuclear AMRC offers companies facilities, engineering expertise and sector specialists to help develop innovative techniques and optimised processes for large-scale high-precision manufacturing.",
+      "address": "iHub, Infinity Park Way, Derby, DE24 9FU",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 52.87685,
+      "lng": -1.46787,
+      "loc_source": "postcodes.io (centre of postcode DE24 9FU)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "em-asset-catapult-satellite-applications-catapult-leicester",
+      "region": "em",
+      "name": "Satellite Applications Catapult, Leicester",
+      "kind": "catapult",
+      "catapult": "Satellite Applications",
+      "centre": "",
+      "summary": "Satellite Applications Catapult’s East Midlands location is situated at Leicester Space Park, contributing to a vibrant cluster community of scientists, students, technicians, engineers, and businesses.",
+      "address": "Space Commercialisation Engine Manufacturing Innovation Centre, Space Park Leicester, 92 Corporation Rd, Leicester, LE4 5SP",
+      "nearby": true,
+      "nearby_note": "Just outside the region boundary (about 15km).",
+      "established": null,
+      "students": null,
+      "website": "https://sa.catapult.org.uk/",
+      "lat": 52.65593,
+      "lng": -1.12952,
+      "loc_source": "postcodes.io (centre of postcode LE4 5SP)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "em-asset-biocity-nottingham",
@@ -251,7 +434,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-asset-ihub-infinity-park-derby",
@@ -273,7 +458,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-asset-nottingham-trent-university",
@@ -299,9 +486,12 @@
         "caption": "Nottingham Trent University",
         "credit": "Superhasn (English Wikipedia)",
         "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Byron_house_2.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Byron_house_2.JPG",
+        "date": "2008"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-asset-university-of-derby",
@@ -327,9 +517,12 @@
         "caption": "University of Derby",
         "credit": "Lianne99",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Derby_Library.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Derby_Library.jpg",
+        "date": "2019"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-asset-university-of-nottingham",
@@ -355,79 +548,215 @@
         "caption": "University of Nottingham",
         "credit": "Greentreepencil",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Nottingham,_Trent_Building.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nottingham,_Trent_Building.jpg",
+        "date": "2021"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "gcr-asset-advanced-forming-research-centre-afrc",
+      "id": "gcr-asset-catapult-cpi-glasgow",
       "region": "gcr",
-      "name": "Advanced Forming Research Centre (AFRC)",
+      "name": "CPI Glasgow",
       "kind": "catapult",
-      "summary": "University of Strathclyde research centre at Inchinnan. Part of the High Value Manufacturing Catapult.",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "The Medicines Manufacturing Innovation Centre is a unique, state-of-the-art facility offering transformative solutions in small molecule and fine chemical manufacturing.",
+      "address": "Medicines Manufacturing Innovation Centre 1 Netherton Square, Paisley, Glasgow, PA3 2EF",
+      "nearby": false,
+      "nearby_note": "",
       "established": null,
       "students": null,
-      "website": "",
-      "lat": 55.88448,
-      "lng": -4.44158,
-      "loc_source": "Nominatim",
-      "sources": [
-        {
-          "title": "OpenStreetMap (Nominatim geocode)",
-          "url": "https://www.openstreetmap.org/"
-        }
-      ],
-      "confidence": "medium",
-      "image": null,
-      "loc_precision": "site"
-    },
-    {
-      "id": "gcr-asset-national-manufacturing-institute-scotland-nmis",
-      "region": "gcr",
-      "name": "National Manufacturing Institute Scotland (NMIS)",
-      "kind": "catapult",
-      "summary": "Operated by the University of Strathclyde. Part of the High Value Manufacturing Catapult.",
-      "established": null,
-      "students": null,
-      "website": "",
+      "website": "https://hvm.catapult.org.uk/",
       "lat": 55.87342,
-      "lng": -4.41779,
-      "loc_source": "Nominatim",
+      "lng": -4.41819,
+      "loc_source": "postcodes.io (centre of postcode PA3 2EF)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "OpenStreetMap (Nominatim geocode)",
-          "url": "https://www.openstreetmap.org/"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
-      "image": null,
-      "loc_precision": "site"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
-      "id": "gcr-asset-offshore-renewable-energy-catapult-glasgow",
+      "id": "gcr-asset-catapult-nmis-advanced-forming-research-centre",
+      "region": "gcr",
+      "name": "NMIS Advanced Forming Research Centre",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "NMIS",
+      "summary": "The National Manufacturing Institute Scotland (NMIS) sits at the heart of the Advanced Manufacturing Innovation District Scotland, with its facilities helping to explore the future of manufacturing.",
+      "address": "Advanced Forming Research Centre, 85 Inchinnan Drive, Inchinnan, PA4 9LJ",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 55.8845,
+      "lng": -4.44181,
+      "loc_source": "postcodes.io (centre of postcode PA4 9LJ)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "gcr-asset-catapult-nmis-digital-process-manufacturing-centre",
+      "region": "gcr",
+      "name": "NMIS Digital Process Manufacturing Centre",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "NMIS",
+      "summary": "The National Manufacturing Institute Scotland (NMIS) sits at the heart of the Advanced Manufacturing Innovation District Scotland, with its facilities helping to explore the future of manufacturing.",
+      "address": "3 Riverside Way, Irvine, KA11 5DJ",
+      "nearby": true,
+      "nearby_note": "Just outside the region boundary (about 17km).",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 55.60366,
+      "lng": -4.63886,
+      "loc_source": "postcodes.io (centre of postcode KA11 5DJ)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "gcr-asset-catapult-nmis-scotland",
+      "region": "gcr",
+      "name": "NMIS Scotland",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "NMIS",
+      "summary": "The National Manufacturing Institute Scotland (NMIS) sits at the heart of the Advanced Manufacturing Innovation District Scotland, with its facilities helping to explore the future of manufacturing.",
+      "address": "3 Netherton Square Paisley, Renfrew, PA3 2EF",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 55.87342,
+      "lng": -4.41819,
+      "loc_source": "postcodes.io (centre of postcode PA3 2EF)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "gcr-asset-catapult-offshore-renewable-energy-catapult-glasgow",
       "region": "gcr",
       "name": "Offshore Renewable Energy Catapult, Glasgow",
       "kind": "catapult",
-      "summary": "Catapult office in the Inovo building.",
+      "catapult": "Offshore Renewable Energy",
+      "centre": "",
+      "summary": "Established in the heart of Glasgow’s Innovation District is Offshore Renewable Energy Catapult’s headquarters, home to some of the world’s most forward-thinking experts and engineers in the renewables industry and offering close ties to the University of Strathclyde.",
+      "address": "Inovo Building Inovo, 121 George St, Glasgow G1 1RD",
+      "nearby": false,
+      "nearby_note": "",
       "established": null,
       "students": null,
       "website": "https://ore.catapult.org.uk/",
-      "lat": 55.86036,
-      "lng": -4.24333,
-      "loc_source": "Nominatim (Inovo building)",
+      "lat": 55.86073,
+      "lng": -4.24407,
+      "loc_source": "postcodes.io (centre of postcode G1 1RD)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q30260912"
-        },
-        {
-          "title": "OpenStreetMap (Nominatim geocode)",
-          "url": "https://www.openstreetmap.org/"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "gcr-asset-catapult-satellite-applications-catapult-space-enterprise-lab-glasgow",
+      "region": "gcr",
+      "name": "Satellite Applications Catapult: Space Enterprise Lab Glasgow",
+      "kind": "catapult",
+      "catapult": "Satellite Applications",
+      "centre": "Space Enterprise Lab",
+      "summary": "The Satellite Applications Catapult’s Space Enterprise Labs are local places for space innovation that are digitally inclusive.",
+      "address": "Technology & Innovation Centre, University of Strathclyde, 99 George Street, Glasgow, G1 1RD",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sa.catapult.org.uk/",
+      "lat": 55.86073,
+      "lng": -4.24407,
+      "loc_source": "postcodes.io (centre of postcode G1 1RD)",
+      "loc_precision": "site",
       "image": null,
-      "loc_precision": "site"
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "gcr-asset-catapult-semiconductor-catapult-glasgow",
+      "region": "gcr",
+      "name": "Semiconductor Catapult, Glasgow",
+      "kind": "catapult",
+      "catapult": "Semiconductor",
+      "centre": "",
+      "summary": "Semiconductor Catapult Scotland provides design optimisation and manufacturing process for power electronics and packaging, with a specific focus on high power industries such as transport and energy.",
+      "address": "Technology and Innovation Centre, 99 George St, Glasgow, G1 1RD",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sc.catapult.org.uk/",
+      "lat": 55.86073,
+      "lng": -4.24407,
+      "loc_source": "postcodes.io (centre of postcode G1 1RD)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "gcr-asset-technology-and-innovation-centre-university-of-strathclyde",
@@ -453,9 +782,12 @@
         "caption": "Technology and Innovation Centre, University of Strathclyde",
         "credit": "Richard Sutcliffe",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Technology_and_Innovation_Centre_(geograph_5669956).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Technology_and_Innovation_Centre_(geograph_5669956).jpg",
+        "date": "2018"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-asset-glasgow-caledonian-university",
@@ -481,9 +813,12 @@
         "caption": "Glasgow Caledonian University",
         "credit": "Knwwsss",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:GCU_Campus_View.png"
+        "source_url": "https://commons.wikimedia.org/wiki/File:GCU_Campus_View.png",
+        "date": "2009"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-asset-glasgow-school-of-art",
@@ -509,9 +844,12 @@
         "caption": "Glasgow School of Art",
         "credit": "Stinglehammer",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Glasgow_School_of_Art_-_September_2017.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Glasgow_School_of_Art_-_September_2017.jpg",
+        "date": "2017"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-asset-university-of-glasgow",
@@ -537,9 +875,12 @@
         "caption": "University of Glasgow",
         "credit": "Diliff",
         "licence": "CC BY 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg",
+        "date": "2008"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-asset-university-of-strathclyde",
@@ -565,9 +906,12 @@
         "caption": "University of Strathclyde",
         "credit": "Flickr User StrathclydeGuy",
         "licence": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Campus.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Strathclyde_Campus.jpg",
+        "date": "2012"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-asset-university-of-the-west-of-scotland",
@@ -589,29 +933,212 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "ne-asset-offshore-renewable-energy-catapult-blyth",
+      "id": "ne-asset-catapult-cpi-national-formulation-centre",
+      "region": "ne",
+      "name": "CPI (National Formulation Centre)",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "The North East’s premier Science park boasts state-of-the-art facilities enabling and accelerating the development of innovative formulation technologies alongside flexible electronic products within Healthtech.",
+      "address": "The Coxon Building, John Walker Road, Sedgefield, TS21 3FE",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.66996,
+      "lng": -1.44728,
+      "loc_source": "postcodes.io (centre of postcode TS21 3FE)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-cpi-newcastle",
+      "region": "ne",
+      "name": "CPI Newcastle",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "CPI brings together academia, businesses, government and investors to translate bright ideas and research into the marketplace.",
+      "address": "The Catalyst, 3 Science Square Newcastle Helix, Newcastle-upon-Tyne, United Kingdom,NE4 5TG",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.97306,
+      "lng": -1.6254,
+      "loc_source": "postcodes.io (centre of postcode NE4 5TG)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-cpi-newton-aycliffe",
+      "region": "ne",
+      "name": "CPI Newton Aycliffe",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "CPI brings together academia, businesses, government and investors to translate bright ideas and research into the marketplace.",
+      "address": "Durham Way South, Aycliffe Business Park, Newton Aycliffe, DL5 6XN",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.60121,
+      "lng": -1.57196,
+      "loc_source": "postcodes.io (centre of postcode DL5 6XN)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-cpi-sedgefield",
+      "region": "ne",
+      "name": "CPI Sedgefield",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "The North East’s premier Science park boasts state-of-the-art facilities enabling and accelerating the development of innovative formulation technologies alongside flexible electronic products within Healthtech.",
+      "address": "The Neville Hamlin Building, Thomas Wright Way, Sedgefield, TS21 3FG",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.67006,
+      "lng": -1.45335,
+      "loc_source": "postcodes.io (centre of postcode TS21 3FG)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-digital-catapult-gateshead",
+      "region": "ne",
+      "name": "Digital Catapult, Gateshead",
+      "kind": "catapult",
+      "catapult": "Digital",
+      "centre": "",
+      "summary": "Gateshead is home to Digital Catapult’s unique digital production facility, the first of its kind in Europe.",
+      "address": "PROTO Abbott’s Hill, Baltic Business Quarter, Gateshead, NE8 3DF",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://digicatapult.org.uk/",
+      "lat": 54.9664,
+      "lng": -1.5962,
+      "loc_source": "postcodes.io (centre of postcode NE8 3DF)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-offshore-renewable-energy-catapult-blyth",
       "region": "ne",
       "name": "Offshore Renewable Energy Catapult, Blyth",
       "kind": "catapult",
-      "summary": "Catapult test and demonstration site for offshore wind, wave and tidal energy.",
-      "established": 2012,
+      "catapult": "Offshore Renewable Energy",
+      "centre": "",
+      "summary": "Offshore Renewable Energy Catapult’s cutting-edge testing and research facilities are coastally situated in Blyth, demonstrating the world’s largest offshore wind turbines and power trains.",
+      "address": "National Renewable Energy Centre Albert Street, Blyth, NE24 1LZ",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
       "students": null,
       "website": "https://ore.catapult.org.uk/",
-      "lat": 55.13125,
+      "lat": 55.13055,
       "lng": -1.50813,
-      "loc_source": "Wikidata",
+      "loc_source": "postcodes.io (centre of postcode NE24 1LZ)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q30260912"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "ne-asset-catapult-semiconductor-catapult-durham",
+      "region": "ne",
+      "name": "Semiconductor Catapult, Durham",
+      "kind": "catapult",
+      "catapult": "Semiconductor",
+      "centre": "",
+      "summary": "Semiconductor Catapult North East brings together companies and research institutes actively involved in compound semiconductor technologies across a range of industries, from telecoms to satellite communications and defence.",
+      "address": "NETPark North East Technology Park, Thomas Wright Way, Sedgefield, TS21 3FD",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sc.catapult.org.uk/",
+      "lat": 54.67032,
+      "lng": -1.45138,
+      "loc_source": "postcodes.io (centre of postcode TS21 3FD)",
+      "loc_precision": "site",
       "image": null,
-      "loc_precision": "site"
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "ne-asset-netpark",
@@ -633,7 +1160,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-newcastle-helix",
@@ -655,7 +1184,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-sunderland-software-centre",
@@ -677,7 +1208,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-durham-university",
@@ -703,9 +1236,12 @@
         "caption": "Durham University",
         "credit": "Benjamin Smith",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Durham_-_Castle_-_02.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Durham_-_Castle_-_02.jpg",
+        "date": "2026"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-newcastle-university",
@@ -731,9 +1267,12 @@
         "caption": "Newcastle University",
         "credit": "Chemical Engineer",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ncle_Union_2012.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ncle_Union_2012.jpg",
+        "date": "2012"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-northumbria-university",
@@ -759,9 +1298,12 @@
         "caption": "Northumbria University",
         "credit": "Peter McDermott",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Northumbria_University_(geograph_2248224).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Northumbria_University_(geograph_2248224).jpg",
+        "date": "2011"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-asset-university-of-sunderland",
@@ -783,29 +1325,125 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "sy-asset-advanced-manufacturing-research-centre-amrc",
+      "id": "sy-asset-catapult-amrc-rotherham",
       "region": "sy",
-      "name": "Advanced Manufacturing Research Centre (AMRC)",
+      "name": "AMRC Rotherham",
       "kind": "catapult",
-      "summary": "University of Sheffield research centre. Part of the High Value Manufacturing Catapult.",
-      "established": 2001,
+      "catapult": "High Value Manufacturing",
+      "centre": "AMRC",
+      "summary": "The AMRC has helped to regenerate the site of an old colliery works with an array of state-of-the-art machining centres and world-class manufacturing equipment.",
+      "address": "University of Sheffield AMRC Factory of the Future, Advanced Manufacturing Park, Wallis Way, Catcliffe, Rotherham S60 5TZ",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
       "students": null,
-      "website": "https://www.amrc.co.uk",
-      "lat": 53.39121,
-      "lng": -1.36272,
-      "loc_source": "Wikidata",
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 53.38757,
+      "lng": -1.37785,
+      "loc_source": "postcodes.io (centre of postcode S60 5TZ)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q56583645"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "sy-asset-catapult-amrc-sheffield",
+      "region": "sy",
+      "name": "AMRC Sheffield",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "AMRC",
+      "summary": "The AMRC work with companies of all sizes, including SMEs, start-ups and large-scale manufacturers to help them improve their productivity and save time, money and energy.",
+      "address": "Sheffield Business Park, Europa Avenue, Sheffield, S9 1ZA",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 53.39365,
+      "lng": -1.38357,
+      "loc_source": "postcodes.io (centre of postcode S9 1ZA)",
+      "loc_precision": "site",
       "image": null,
-      "loc_precision": "site"
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "sy-asset-catapult-nmis-sheffield",
+      "region": "sy",
+      "name": "NMIS Sheffield",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "NMIS",
+      "summary": "NMIS work to drive the future of manufacturing through innovation, accelerating productivity to grow the economy and developing a vibrant workforce to create happier, healthier, greener communities.",
+      "address": "NMIS (Sheffield), Sheffield Olympic Legacy Park, 14 Leeds Road, Sheffield, S9 3TY",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 53.39603,
+      "lng": -1.42838,
+      "loc_source": "postcodes.io (centre of postcode S9 3TY)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "sy-asset-catapult-nuclear-amrc-rotherham",
+      "region": "sy",
+      "name": "Nuclear AMRC Rotherham",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "Nuclear AMRC",
+      "summary": "Nuclear AMRC is found next to its sister centre in Rotherham and hosts an 8,000m² facility containing an open-plan workshop with state-of-the-art manufacturing equipment and a research factory for applied innovation in machining, which joins automation and other areas of large-scale manufacturing te",
+      "address": "Advanced Manufacturing Park University of Sheffield, Brunel Way, Catcliffe, Rotherham, S60 5WG",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 53.38664,
+      "lng": -1.37823,
+      "loc_source": "postcodes.io (centre of postcode S60 5WG)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "sy-asset-advanced-wellbeing-research-centre",
@@ -827,7 +1465,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-asset-translational-energy-research-centre",
@@ -849,7 +1489,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-asset-sheffield-hallam-university",
@@ -875,9 +1517,12 @@
         "caption": "Sheffield Hallam University",
         "credit": "St BC (English Wikipedia)",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:SHU_buildings.png"
+        "source_url": "https://commons.wikimedia.org/wiki/File:SHU_buildings.png",
+        "date": "2010"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-asset-university-of-sheffield",
@@ -903,35 +1548,70 @@
         "caption": "University of Sheffield",
         "credit": "Paolo Margari from Sheffield, United Kingdom / Italy",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Frederick_Mappin_Building.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Frederick_Mappin_Building.jpg",
+        "date": "2007"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "tv-asset-cpi-wilton-centre",
+      "id": "tv-asset-catapult-cpi-darlington",
       "region": "tv",
-      "name": "CPI, Wilton Centre",
+      "name": "CPI Darlington",
       "kind": "catapult",
-      "summary": "Centre for Process Innovation. Part of the High Value Manufacturing Catapult. Marker placed at Wilton International, not at the building.",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "CPI’s Darlington venue hosts the National Biologics Manufacturing Centre and the RNA Centre of Excellence & Training Academy, the only UK-based facilities currently capable of developing, manufacturing, and encapsulating messenger and self-amplifying RNA vaccines.",
+      "address": "National Biologics Manufacturing Centre 1 Union Square, Central Park, Darlington, DL1 1GL",
+      "nearby": false,
+      "nearby_note": "",
       "established": null,
       "students": null,
-      "website": "https://www.uk-cpi.com",
-      "lat": 54.5877,
-      "lng": -1.1176,
-      "loc_source": "Wikidata (Wilton International)",
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.52358,
+      "lng": -1.54461,
+      "loc_source": "postcodes.io (centre of postcode DL1 1GL)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q21006880"
-        },
-        {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q18163207"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
-      "loc_precision": "area",
-      "image": null
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "tv-asset-catapult-cpi-wilton",
+      "region": "tv",
+      "name": "CPI Wilton",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "CPI",
+      "summary": "Wilton is home to the National Industrial Biotechnology facility; this Teeside base specialises in the Agri-Food Tech markets and is the CPI headquarters, one of many locations across the North of England and Scotland.",
+      "address": "Wilton Centre Wilton, Redcar, United Kingdom, TS10 4RF",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 54.57614,
+      "lng": -1.1016,
+      "loc_source": "postcodes.io (centre of postcode TS10 4RF)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "tv-asset-materials-processing-institute",
@@ -953,7 +1633,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-asset-national-horizons-centre",
@@ -975,7 +1657,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-asset-teesside-university",
@@ -1001,79 +1685,157 @@
         "caption": "Teesside University",
         "credit": "LTees",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Teesside_University%27s_Phoenix_Building.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Teesside_University%27s_Phoenix_Building.JPG",
+        "date": "2012"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
-      "id": "wm-asset-energy-systems-catapult",
+      "id": "wm-asset-catapult-connected-places-catapult-birmingham",
       "region": "wm",
-      "name": "Energy Systems Catapult",
+      "name": "Connected Places Catapult, Birmingham",
       "kind": "catapult",
-      "summary": "Catapult centre for energy systems. Based in Birmingham.",
-      "established": 2015,
+      "catapult": "Connected Places",
+      "centre": "",
+      "summary": "Connected Places Catapult is the UK’s innovation accelerator for cities, transport and place leadership.",
+      "address": "STEAMhouse, Belmont Row, Birmingham, B4 7RQ",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://cp.catapult.org.uk/",
+      "lat": 52.48399,
+      "lng": -1.88191,
+      "loc_source": "postcodes.io (centre of postcode B4 7RQ)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "wm-asset-catapult-energy-systems-catapult-birmingham",
+      "region": "wm",
+      "name": "Energy Systems Catapult, Birmingham",
+      "kind": "catapult",
+      "catapult": "Energy Systems",
+      "centre": "",
+      "summary": "Energy Systems Catapult’s headquarters in the centre of Birmingham is a hive of energy expertise.",
+      "address": "7th Floor Cannon House, 18 Priory Queensway, Birmingham, B4 6BS",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
       "students": null,
       "website": "https://es.catapult.org.uk/",
-      "lat": 52.48301,
-      "lng": -1.89508,
-      "loc_source": "Wikidata",
+      "lat": 52.48266,
+      "lng": -1.89473,
+      "loc_source": "postcodes.io (centre of postcode B4 6BS)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q56584703"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
-      "image": null,
-      "loc_precision": "site"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
-      "id": "wm-asset-manufacturing-technology-centre-mtc",
+      "id": "wm-asset-catapult-high-value-manufacturing-catapult-birmingham",
       "region": "wm",
-      "name": "Manufacturing Technology Centre (MTC)",
+      "name": "High Value Manufacturing Catapult, Birmingham",
       "kind": "catapult",
-      "summary": "Part of the High Value Manufacturing Catapult. At Ansty Park, just outside the combined authority boundary.",
-      "established": 2010,
+      "catapult": "High Value Manufacturing",
+      "centre": "",
+      "summary": "The High Value Manufacturing Catapult works with thousands of companies each year to boost the UK’s manufacturing performance.",
+      "address": "iCentrum Innovation Birmingham Holt Street, Birmingham, B7 4BP",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
       "students": null,
-      "website": "http://www.the-mtc.org/",
-      "lat": 52.43071,
-      "lng": -1.40341,
-      "loc_source": "Nominatim",
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 52.48927,
+      "lng": -1.88825,
+      "loc_source": "postcodes.io (centre of postcode B7 4BP)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q30292183"
-        },
-        {
-          "title": "OpenStreetMap (Nominatim geocode)",
-          "url": "https://www.openstreetmap.org/"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
-      "image": null,
-      "loc_precision": "site"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
-      "id": "wm-asset-wmg-university-of-warwick",
+      "id": "wm-asset-catapult-mtc-coventry",
       "region": "wm",
-      "name": "WMG, University of Warwick",
+      "name": "MTC Coventry",
       "kind": "catapult",
-      "summary": "University of Warwick department. Part of the High Value Manufacturing Catapult.",
-      "established": 1980,
+      "catapult": "High Value Manufacturing",
+      "centre": "MTC",
+      "summary": "MTC Coventry is one of the largest public-sector investments in UK manufacturing, with impressive facilities proving innovative manufacturing processes and technologies in an agile environment.",
+      "address": "The Manufacturing Technology Centre Ansty Park, Coventry, CV7 9JU",
+      "nearby": true,
+      "nearby_note": "Just outside the region boundary (about 1km).",
+      "established": null,
       "students": null,
-      "website": "https://warwick.ac.uk/fac/sci/wmg",
-      "lat": 52.3833,
-      "lng": -1.561,
-      "loc_source": "Wikidata",
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 52.42533,
+      "lng": -1.40483,
+      "loc_source": "postcodes.io (centre of postcode CV7 9JU)",
+      "loc_precision": "site",
+      "image": null,
       "sources": [
         {
-          "title": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q7971155"
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
         }
       ],
-      "confidence": "medium",
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "wm-asset-catapult-wmg-coventry",
+      "region": "wm",
+      "name": "WMG Coventry",
+      "kind": "catapult",
+      "catapult": "High Value Manufacturing",
+      "centre": "WMG",
+      "summary": "WMG’s world-leading research and education group is embedded in the University of Warwick, helping to transform organisations and drive innovation through collaborative R&D, and education programmes.",
+      "address": "University of Warwick Coventry, CV4 7EZ",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://hvm.catapult.org.uk/",
+      "lat": 52.38701,
+      "lng": -1.55809,
+      "loc_source": "postcodes.io (centre of postcode CV4 7EZ)",
+      "loc_precision": "site",
       "image": null,
-      "loc_precision": "site"
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "wm-asset-birmingham-health-innovation-campus",
@@ -1095,7 +1857,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-aston-university",
@@ -1121,9 +1885,12 @@
         "caption": "Aston University",
         "credit": "Chemical Engineer",
         "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Uni_Lakeside_01.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Uni_Lakeside_01.JPG",
+        "date": "2010"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-birmingham-city-university",
@@ -1149,9 +1916,12 @@
         "caption": "Birmingham City University",
         "credit": "David Waterson (DWaterson)",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bar_42_UCE_Birmingham.JPG"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bar_42_UCE_Birmingham.JPG",
+        "date": "2006"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-coventry-university",
@@ -1177,9 +1947,12 @@
         "caption": "Coventry University",
         "credit": "See source page",
         "licence": "CC BY 2.5",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_University.jpeg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_University.jpeg",
+        "date": ""
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-newman-university",
@@ -1201,7 +1974,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-university-college-birmingham",
@@ -1223,7 +1998,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-university-of-birmingham",
@@ -1249,9 +2026,12 @@
         "caption": "University of Birmingham",
         "credit": "Simonham",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Webb_buildings_in_snow,_The_University_of_Birmingham,_Dec_2009.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aston_Webb_buildings_in_snow,_The_University_of_Birmingham,_Dec_2009.jpg",
+        "date": "2009"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-university-of-warwick",
@@ -1277,9 +2057,12 @@
         "caption": "University of Warwick",
         "credit": "See source page",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Warwick_University_House.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Warwick_University_House.jpg",
+        "date": ""
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-asset-university-of-wolverhampton",
@@ -1305,9 +2088,41 @@
         "caption": "University of Wolverhampton",
         "credit": "Gordon Griffiths",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Wolverhampton_-_geograph.org.uk_-_396324.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Wolverhampton_-_geograph.org.uk_-_396324.jpg",
+        "date": "2007"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
+    },
+    {
+      "id": "wy-asset-catapult-satellite-applications-catapult-space-enterprise-lab-leeds",
+      "region": "wy",
+      "name": "Satellite Applications Catapult: Space Enterprise Lab Leeds",
+      "kind": "catapult",
+      "catapult": "Satellite Applications",
+      "centre": "Space Enterprise Lab",
+      "summary": "The Satellite Applications Catapult’s Space Enterprise Labs are local places for space innovation that are digitally inclusive.",
+      "address": "University of Leeds at Nexus Building, Discovery Way, Leeds LS2 3AA",
+      "nearby": false,
+      "nearby_note": "",
+      "established": null,
+      "students": null,
+      "website": "https://sa.catapult.org.uk/",
+      "lat": 53.80541,
+      "lng": -1.55035,
+      "loc_source": "postcodes.io (centre of postcode LS2 3AA)",
+      "loc_precision": "site",
+      "image": null,
+      "sources": [
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "wy-asset-leeds-beckett-university",
@@ -1333,9 +2148,12 @@
         "caption": "Leeds Beckett University",
         "credit": "Chemical Engineer, cropped by Blackcat",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:LBU_entrance_cropped_2015_01.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:LBU_entrance_cropped_2015_01.jpg",
+        "date": "2015"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-asset-leeds-trinity-university",
@@ -1361,9 +2179,12 @@
         "caption": "Leeds Trinity University",
         "credit": "John Slater",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_Trinity_University_(geograph_3395276).jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_Trinity_University_(geograph_3395276).jpg",
+        "date": "2013"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-asset-university-of-bradford",
@@ -1389,9 +2210,12 @@
         "caption": "University of Bradford",
         "credit": "Chemical Engineer",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Bradford_Richmond_24_April_2017_01.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Bradford_Richmond_24_April_2017_01.jpg",
+        "date": "2017"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-asset-university-of-huddersfield",
@@ -1417,9 +2241,12 @@
         "caption": "University of Huddersfield",
         "credit": "University Of Huddersfield",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Queensgate_Campus_Top.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Queensgate_Campus_Top.jpg",
+        "date": "2008"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-asset-university-of-leeds",
@@ -1445,9 +2272,12 @@
         "caption": "University of Leeds",
         "credit": "Tim Green from Bradford",
         "licence": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Parkinson_Building,_Leeds_University,_England-12Sept2010.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Parkinson_Building,_Leeds_University,_England-12Sept2010.jpg",
+        "date": "2010"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-asset-york-science-park",
@@ -1469,7 +2299,9 @@
       ],
       "confidence": "medium",
       "image": null,
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-asset-university-of-york",
@@ -1495,9 +2327,12 @@
         "caption": "University of York",
         "credit": "Johnteslade (English Wikipedia)",
         "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:York_central_hall.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:York_central_hall.jpg",
+        "date": "2004"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-asset-york-st-john-university",
@@ -1523,9 +2358,12 @@
         "caption": "York St John University",
         "credit": "Robert Dawson",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:York_St_John_University.jpg"
+        "source_url": "https://commons.wikimedia.org/wiki/File:York_St_John_University.jpg",
+        "date": "2021"
       },
-      "loc_precision": "site"
+      "loc_precision": "site",
+      "history": [],
+      "last_checked": "2026-11-14"
     }
   ]
 }

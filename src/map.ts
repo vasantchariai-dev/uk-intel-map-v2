@@ -2,8 +2,8 @@ import type * as GeoJSON from 'geojson';
 import maplibregl, { type StyleSpecification } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { assets, isMapped, regions, schemes } from './data';
-import { ICON_PIXEL_RATIO, assetIcon, schemeIcon, toImageData } from './icons';
-import { GROUP_COLOURS, REGION_COLOURS, STAGE_CLASS, TYPE_GROUP, assetIconName, schemeIconName, type StageClass, type TypeGroup } from './labels';
+import { ICON_PIXEL_RATIO, assetIcon, cpcIcon, schemeIcon, toImageData } from './icons';
+import { GROUP_COLOURS, REGION_COLOURS, STAGE_CLASS, TYPE_GROUP, assetIconName, isCpc, schemeIconName, type StageClass, type TypeGroup } from './labels';
 import { ASSET_KINDS } from './schema';
 
 const BASE = import.meta.env.BASE_URL;
@@ -73,7 +73,10 @@ export interface MapApi {
   selectRegion(id: string | null, animate?: boolean, refitSame?: boolean): void;
   view(): { centre: [number, number]; zoom: number; allRegionsVisible: boolean };
   selectPoint(kind: 'scheme' | 'asset' | null, id?: string): void;
-  setLayer(name: 'councils' | 'assets', visible: boolean): void;
+  setLayer(name: 'councils' | 'assets' | 'catapults', visible: boolean): void;
+  /** Limits the markers to these records. null shows everything. */
+  setVisible(schemeIds: string[] | null, assetIds: string[] | null): void;
+  refit(): void;
 }
 
 const colourMatch = (map: Record<string, string>, key: string) =>
@@ -123,6 +126,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     const [prefix, a, b] = e.id.split('-');
     let el: HTMLCanvasElement | null = null;
     if (prefix === 's') el = schemeIcon(a as TypeGroup, b as StageClass);
+    else if (e.id === 'a-cpc') el = cpcIcon();
     else if (prefix === 'a' && (ASSET_KINDS as readonly string[]).includes(a)) el = assetIcon(a as (typeof ASSET_KINDS)[number]);
     if (el && !map.hasImage(e.id)) map.addImage(e.id, toImageData(el), { pixelRatio: ICON_PIXEL_RATIO });
   });
@@ -203,7 +207,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       features: assets.map((a) => ({
         type: 'Feature',
         geometry: { type: 'Point', coordinates: [a.lng, a.lat] },
-        properties: { id: a.id, icon: assetIconName(a) },
+        properties: { id: a.id, icon: assetIconName(a), catapult: a.kind === 'catapult', order: isCpc(a) ? 2 : a.kind === 'catapult' ? 1 : 0 },
       })),
     },
   });
@@ -251,7 +255,7 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     type: 'symbol',
     source: 'assets',
     minzoom: POINT_MIN_ZOOM,
-    layout: { 'icon-image': ['get', 'icon'], 'icon-allow-overlap': true },
+    layout: { 'icon-image': ['get', 'icon'], 'icon-allow-overlap': true, 'symbol-sort-key': ['get', 'order'] },
   });
   ring('scheme-selected', 'schemes', POINT_MIN_ZOOM);
   map.addLayer({
@@ -261,6 +265,17 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
     minzoom: POINT_MIN_ZOOM,
     layout: { 'icon-image': ['get', 'icon'], 'icon-allow-overlap': true, 'symbol-sort-key': ['get', 'order'] },
   });
+
+  // Which markers show: the layer toggles combined with the list filters.
+  const show = { assets: true, catapults: true };
+  let visible: { schemes: string[] | null; assets: string[] | null } = { schemes: null, assets: null };
+  const inList = (ids: string[] | null): maplibregl.ExpressionSpecification => (ids ? ['in', ['get', 'id'], ['literal', ids]] : true as unknown as maplibregl.ExpressionSpecification);
+  const updateFilters = () => {
+    const kind: maplibregl.ExpressionSpecification = ['case', ['==', ['get', 'catapult'], true], show.catapults, show.assets];
+    map.setFilter('asset-points', ['all', kind, inList(visible.assets)]);
+    map.setFilter('scheme-points', inList(visible.schemes) as maplibregl.FilterSpecification);
+    map.setFilter('scheme-halo', ['all', ['==', ['get', 'area'], true], inList(visible.schemes)]);
+  };
 
   // Region name labels are real buttons, so regions can be opened by keyboard.
   const names = new Map(regions.map((r) => [r.id, r.name]));
@@ -276,6 +291,8 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       handlers.onRegion(f.properties.id);
     });
     new maplibregl.Marker({ element: el }).setLngLat(labelPoint(f)).addTo(map);
+    // MapLibre labels every marker "Map marker"; the button's own text is the right name.
+    el.removeAttribute('aria-label');
   }
   const toggleLabels = () => container.classList.toggle('hide-region-labels', selectedRegion != null || map.getZoom() > 7.4);
   map.on('zoom', toggleLabels);
@@ -342,9 +359,18 @@ export async function createMap(container: HTMLElement, handlers: MapHandlers, b
       };
     },
     setLayer(name, visible) {
-      const value = visible ? 'visible' : 'none';
-      if (name === 'councils') map.setLayoutProperty('lads-line', 'visibility', value);
-      else for (const id of ['asset-points', 'asset-selected']) map.setLayoutProperty(id, 'visibility', value);
+      if (name === 'councils') map.setLayoutProperty('lads-line', 'visibility', visible ? 'visible' : 'none');
+      else {
+        show[name] = visible;
+        updateFilters();
+      }
+    },
+    setVisible(schemeIds, assetIds) {
+      visible = { schemes: schemeIds, assets: assetIds };
+      updateFilters();
+    },
+    refit: () => {
+      if (!pointSelected) fit(false);
     },
   };
 }

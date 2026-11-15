@@ -19,11 +19,24 @@ async function geocode(place) {
   const query = place.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
   if (!query) return null;
   if (!(query in cache)) {
-    const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=gb&q=' + encodeURIComponent(query);
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-    if (!res.ok) throw new Error(`Nominatim returned HTTP ${res.status} for "${query}"`);
-    const [hit] = await res.json();
-    cache[query] = hit ? { lat: +hit.lat, lng: +hit.lon, label: hit.display_name, kind: `${hit.category}/${hit.type}` } : null;
+    if (/^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$/i.test(query)) {
+      // A place given as a postcode goes to postcodes.io.
+      const res = await fetch('https://api.postcodes.io/postcodes/' + encodeURIComponent(query));
+      const hit = res.ok ? (await res.json()).result : null;
+      cache[query] = hit ? { lat: hit.latitude, lng: hit.longitude, label: `Postcode ${hit.postcode}`, kind: 'postcode' } : null;
+    } else {
+      const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=gb&q=' + encodeURIComponent(query);
+      let res;
+      for (let attempt = 0; attempt < 4; attempt++) {
+        res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+        if (res.status !== 429) break;
+        // Asked to slow down: wait a minute and try again.
+        await new Promise((resolve) => setTimeout(resolve, 60000));
+      }
+      if (!res.ok) throw new Error(`Nominatim returned HTTP ${res.status} for "${query}"`);
+      const [hit] = await res.json();
+      cache[query] = hit ? { lat: +hit.lat, lng: +hit.lon, label: hit.display_name, kind: `${hit.category}/${hit.type}` } : null;
+    }
     await writeFile(CACHE, JSON.stringify(cache, null, 1));
     await new Promise((resolve) => setTimeout(resolve, 1100));
   }

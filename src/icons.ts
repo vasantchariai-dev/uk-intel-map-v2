@@ -63,6 +63,31 @@ const ASSET_STYLE: Record<AssetKind, { fill: string; text: string; border: strin
   research: { fill: '#ffffff', text: '#0b0c0c', border: '#0b0c0c' },
 };
 
+/** Connected Places Catapult: a wider green badge reading "CPC". */
+export function cpcIcon(): HTMLCanvasElement {
+  const w = 34;
+  const h = 22;
+  const el = document.createElement('canvas');
+  el.width = w * SCALE;
+  el.height = h * SCALE;
+  const ctx = el.getContext('2d')!;
+  ctx.scale(SCALE, SCALE);
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.roundRect(0.5, 0.5, w - 1, h - 1, 5);
+  ctx.fill();
+  ctx.fillStyle = '#00703c';
+  ctx.beginPath();
+  ctx.roundRect(2.5, 2.5, w - 5, h - 5, 3);
+  ctx.fill();
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 11px Arial, Helvetica, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('CPC', w / 2, h / 2 + 0.5);
+  return el;
+}
+
 export function assetIcon(kind: AssetKind): HTMLCanvasElement {
   const size = 22;
   const { el, ctx } = canvas(size);

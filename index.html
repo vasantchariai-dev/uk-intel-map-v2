@@ -7,11 +7,11 @@
     <title>Regional growth intelligence map</title>
   </head>
   <body>
-    <a class="skip-link" href="#panel">Skip to list</a>
-    <div class="app">
+    <a class="skip-link" href="#panel-body">Skip to list</a>
+    <div class="app" id="app">
       <header class="header">
         <div class="header-title">
-          <h1><a href="#" data-action="home">Regional growth intelligence map</a></h1>
+          <h1><a href="#" id="home-link">Regional growth intelligence map</a></h1>
           <p id="last-checked"></p>
         </div>
         <form class="search" role="search" onsubmit="return false">
@@ -19,18 +19,22 @@
           <input id="search" type="search" autocomplete="off" placeholder="Name, place or status" />
         </form>
       </header>
-      <main class="main">
+      <main class="main" id="main">
         <div class="map-wrap">
-          <div id="map" role="application" aria-label="Map of priority regions. Everything on the map is also in the list."></div>
+          <div id="map"></div>
           <details class="legend" id="legend">
             <summary>Key and layers</summary>
             <div id="legend-body"></div>
           </details>
         </div>
-        <aside class="panel" id="panel" aria-label="Details">
-          <button class="sheet-handle" id="sheet-handle" type="button" aria-expanded="true">Hide details</button>
-          <div class="panel-body" id="panel-body" aria-live="polite"></div>
-        </aside>
+        <section class="panel" id="panel" aria-label="Details">
+          <div class="sheet-handle" id="sheet-handle">
+            <span class="grabber" aria-hidden="true"></span>
+            <button type="button" id="sheet-button" aria-expanded="false">Show list</button>
+          </div>
+          <nav class="tabs" id="tabs" aria-label="Views"></nav>
+          <div class="panel-body" id="panel-body" tabindex="-1"></div>
+        </section>
       </main>
     </div>
     <script type="module" src="/src/main.ts"></script>

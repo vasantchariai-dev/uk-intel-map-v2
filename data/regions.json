@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Priority regions for the CPC regional intelligence map. One entry per region. Boundary is built by dissolving the listed local authority districts (ONS LAD Dec 2025, names as LAD25NM). For English combined authorities, cross-check against ONS Combined Authorities (Dec 2025) boundaries.",
-    "last_checked": "2026-11-14"
+    "last_checked": "2026-11-15"
   },
   "regions": [
     {
@@ -11,11 +11,33 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Combined authority area",
-      "lads": ["Barnsley", "Doncaster", "Rotherham", "Sheffield"],
-      "governance_sources": [
-        {"label": "Meetings (ModernGov)", "url": "https://governance.southyorkshire-ca.gov.uk/", "notes": "Minutes published as HTML on the agenda page. Main board committee ID 137."}
+      "lads": [
+        "Barnsley",
+        "Doncaster",
+        "Rotherham",
+        "Sheffield"
       ],
-      "watch_notes": "Transport for City Regions £1.455bn programme heading to government. Airport freehold acquisition financials exempt."
+      "governance_sources": [
+        {
+          "label": "Meetings (ModernGov)",
+          "url": "https://governance.southyorkshire-ca.gov.uk/",
+          "notes": "Minutes published as HTML on the agenda page. Main board committee ID 137."
+        }
+      ],
+      "watch_notes": "Transport for City Regions £1.455bn programme heading to government. Airport freehold acquisition financials exempt.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "4 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": {
+        "wave": 2,
+        "agreed": "2026-09-07",
+        "source": {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        }
+      }
     },
     {
       "id": "wm",
@@ -24,11 +46,36 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Constituent members only (non-constituent members excluded)",
-      "lads": ["Birmingham", "Coventry", "Dudley", "Sandwell", "Solihull", "Walsall", "Wolverhampton"],
-      "governance_sources": [
-        {"label": "Meetings (ModernGov)", "url": "https://governance.wmca.org.uk/", "notes": "Papers are PDFs behind an Azure bot check that clears after a few seconds. WMCA Board ID 137, Investment Board ID 135."}
+      "lads": [
+        "Birmingham",
+        "Coventry",
+        "Dudley",
+        "Sandwell",
+        "Solihull",
+        "Walsall",
+        "Wolverhampton"
       ],
-      "watch_notes": "Medium-term plan shows c.£70m a year transport funding gap to 2030/31. Metro governance review under way."
+      "governance_sources": [
+        {
+          "label": "Meetings (ModernGov)",
+          "url": "https://governance.wmca.org.uk/",
+          "notes": "Papers are PDFs behind an Azure bot check that clears after a few seconds. WMCA Board ID 137, Investment Board ID 135."
+        }
+      ],
+      "watch_notes": "Medium-term plan shows c.£70m a year transport funding gap to 2030/31. Metro governance review under way.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "7 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": {
+        "wave": 1,
+        "agreed": "2025-10-21",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      }
     },
     {
       "id": "em",
@@ -37,11 +84,39 @@
       "type": "Mayoral combined county authority",
       "nation": "England",
       "boundary_rule": "Combined county authority area (Derby, Derbyshire, Nottingham, Nottinghamshire)",
-      "lads": ["Derby", "Amber Valley", "Bolsover", "Chesterfield", "Derbyshire Dales", "Erewash", "High Peak", "North East Derbyshire", "South Derbyshire", "Nottingham", "Ashfield", "Bassetlaw", "Broxtowe", "Gedling", "Mansfield", "Newark and Sherwood", "Rushcliffe"],
-      "governance_sources": [
-        {"label": "Meetings (ModernGov)", "url": "https://democracy.eastmidlands-cca.gov.uk/", "notes": "Minutes published as HTML. Board ID 137. Also Innovation Advisory Board ID 161, Investment Committee ID 142."}
+      "lads": [
+        "Derby",
+        "Amber Valley",
+        "Bolsover",
+        "Chesterfield",
+        "Derbyshire Dales",
+        "Erewash",
+        "High Peak",
+        "North East Derbyshire",
+        "South Derbyshire",
+        "Nottingham",
+        "Ashfield",
+        "Bassetlaw",
+        "Broxtowe",
+        "Gedling",
+        "Mansfield",
+        "Newark and Sherwood",
+        "Rushcliffe"
       ],
-      "watch_notes": "Actively seeking devolution of innovation funding. Accountable body for East Midlands Freeport and Investment Zone."
+      "governance_sources": [
+        {
+          "label": "Meetings (ModernGov)",
+          "url": "https://democracy.eastmidlands-cca.gov.uk/",
+          "notes": "Minutes published as HTML. Board ID 137. Also Innovation Advisory Board ID 161, Investment Committee ID 142."
+        }
+      ],
+      "watch_notes": "Actively seeking devolution of innovation funding. Accountable body for East Midlands Freeport and Investment Zone.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "17 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": null
     },
     {
       "id": "wy",
@@ -50,11 +125,34 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Combined authority area",
-      "lads": ["Bradford", "Calderdale", "Kirklees", "Leeds", "Wakefield"],
-      "governance_sources": [
-        {"label": "Meetings (ModernGov)", "url": "https://westyorkshire.moderngov.co.uk/", "notes": "Not yet tested by the agent."}
+      "lads": [
+        "Bradford",
+        "Calderdale",
+        "Kirklees",
+        "Leeds",
+        "Wakefield"
       ],
-      "watch_notes": "Mass Transit timeline and business case. Bus franchising phases April 2027 to October 2028."
+      "governance_sources": [
+        {
+          "label": "Meetings (ModernGov)",
+          "url": "https://westyorkshire.moderngov.co.uk/",
+          "notes": "Not yet tested by the agent."
+        }
+      ],
+      "watch_notes": "Mass Transit timeline and business case. Bus franchising phases April 2027 to October 2028.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "5 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": {
+        "wave": 1,
+        "agreed": "2025-10-21",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      }
     },
     {
       "id": "yny",
@@ -63,11 +161,24 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Combined authority area",
-      "lads": ["York", "North Yorkshire"],
-      "governance_sources": [
-        {"label": "Combined Authority website", "url": "https://yorknorthyorks-ca.gov.uk/", "notes": "Committee papers also mirrored on City of York and North Yorkshire Council democracy sites. Not yet tested by the agent."}
+      "lads": [
+        "York",
+        "North Yorkshire"
       ],
-      "watch_notes": "Three Mayoral Development Zones (York Central, Scarborough, Selby). Bioeconomy partnership with Tees Valley."
+      "governance_sources": [
+        {
+          "label": "Combined Authority website",
+          "url": "https://yorknorthyorks-ca.gov.uk/",
+          "notes": "Committee papers also mirrored on City of York and North Yorkshire Council democracy sites. Not yet tested by the agent."
+        }
+      ],
+      "watch_notes": "Three Mayoral Development Zones (York Central, Scarborough, Selby). Bioeconomy partnership with Tees Valley.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "2 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": null
     },
     {
       "id": "tv",
@@ -76,11 +187,27 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Combined authority area",
-      "lads": ["Darlington", "Hartlepool", "Middlesbrough", "Redcar and Cleveland", "Stockton-on-Tees"],
-      "governance_sources": [
-        {"label": "Democracy pages (WordPress PDFs)", "url": "https://democracy.teesvalley-ca.gov.uk/", "notes": "Cabinet papers and decision records are PDFs. Not ModernGov. Not yet tested by the agent."}
+      "lads": [
+        "Darlington",
+        "Hartlepool",
+        "Middlesbrough",
+        "Redcar and Cleveland",
+        "Stockton-on-Tees"
       ],
-      "watch_notes": "Best Value Inspection announced 15 October 2026, report to ministers by March 2027. Treat all Teesworks finance items as high-scrutiny."
+      "governance_sources": [
+        {
+          "label": "Democracy pages (WordPress PDFs)",
+          "url": "https://democracy.teesvalley-ca.gov.uk/",
+          "notes": "Cabinet papers and decision records are PDFs. Not ModernGov. Not yet tested by the agent."
+        }
+      ],
+      "watch_notes": "Best Value Inspection announced 15 October 2026, report to ministers by March 2027. Treat all Teesworks finance items as high-scrutiny.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "5 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": null
     },
     {
       "id": "ne",
@@ -89,11 +216,36 @@
       "type": "Mayoral combined authority",
       "nation": "England",
       "boundary_rule": "Combined authority area",
-      "lads": ["County Durham", "Gateshead", "Newcastle upon Tyne", "North Tyneside", "Northumberland", "South Tyneside", "Sunderland"],
-      "governance_sources": [
-        {"label": "Combined Authority downloads", "url": "https://www.northeast-ca.gov.uk/", "notes": "Delegated decision reports published as PDFs under /downloads/. Cabinet packs also hosted by member councils. Not yet tested by the agent."}
+      "lads": [
+        "County Durham",
+        "Gateshead",
+        "Newcastle upon Tyne",
+        "North Tyneside",
+        "Northumberland",
+        "South Tyneside",
+        "Sunderland"
       ],
-      "watch_notes": "Mayoral Development Zones model (Newcastle-Gateshead, Riverside Sunderland). Crown Works Studios subsidy referred to CMA."
+      "governance_sources": [
+        {
+          "label": "Combined Authority downloads",
+          "url": "https://www.northeast-ca.gov.uk/",
+          "notes": "Delegated decision reports published as PDFs under /downloads/. Cabinet packs also hosted by member councils. Not yet tested by the agent."
+        }
+      ],
+      "watch_notes": "Mayoral Development Zones model (Newcastle-Gateshead, Riverside Sunderland). Crown Works Studios subsidy referred to CMA.",
+      "boundary_source": {
+        "title": "ONS: Combined Authorities (December 2025) boundaries",
+        "url": "https://geoportal.statistics.gov.uk/"
+      },
+      "boundary_note": "7 councils. Matches the ONS combined authority boundary.",
+      "nwf_partnership": {
+        "wave": 2,
+        "agreed": "2026-09-07",
+        "source": {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        }
+      }
     },
     {
       "id": "gcr",
@@ -102,11 +254,37 @@
       "type": "City region (no mayor)",
       "nation": "Scotland",
       "boundary_rule": "Eight member councils",
-      "lads": ["Glasgow City", "East Dunbartonshire", "East Renfrewshire", "Inverclyde", "North Lanarkshire", "Renfrewshire", "South Lanarkshire", "West Dunbartonshire"],
-      "governance_sources": [
-        {"label": "Glasgow City Council committee system (Northgate)", "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/latestMeetings.asp", "notes": "Not ModernGov. GCR Cabinet bodyid=1827. Documents via submissiondocuments.asp then viewSelectedDocument.asp?c=<code> (PDF)."}
+      "lads": [
+        "Glasgow City",
+        "East Dunbartonshire",
+        "East Renfrewshire",
+        "Inverclyde",
+        "North Lanarkshire",
+        "Renfrewshire",
+        "South Lanarkshire",
+        "West Dunbartonshire"
       ],
-      "watch_notes": "Draft Regional Empowerment Framework out to consultation, final March 2027. No mayor proposed."
+      "governance_sources": [
+        {
+          "label": "Glasgow City Council committee system (Northgate)",
+          "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/latestMeetings.asp",
+          "notes": "Not ModernGov. GCR Cabinet bodyid=1827. Documents via submissiondocuments.asp then viewSelectedDocument.asp?c=<code> (PDF)."
+        }
+      ],
+      "watch_notes": "Draft Regional Empowerment Framework out to consultation, final March 2027. No mayor proposed.",
+      "boundary_source": {
+        "title": "Glasgow City Region: member councils",
+        "url": "https://glasgowcityregion.co.uk/who-we-are/partners/"
+      },
+      "boundary_note": "Eight member councils of Glasgow City Region.",
+      "nwf_partnership": {
+        "wave": 1,
+        "agreed": "2025-10-21",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      }
     },
     {
       "id": "bel",
@@ -115,11 +293,28 @@
       "type": "City deal area",
       "nation": "Northern Ireland",
       "boundary_rule": "Belfast Region City Deal: six councils",
-      "lads": ["Belfast", "Antrim and Newtownabbey", "Ards and North Down", "Lisburn and Castlereagh", "Mid and East Antrim", "Newry, Mourne and Down"],
-      "governance_sources": [
-        {"label": "Belfast City Council (ModernGov)", "url": "https://minutes.belfastcity.gov.uk/", "notes": "City Growth and Regeneration Committee ID 165; Strategic Policy and Resources ID 163. The ModGov connector fails to parse meeting lists here; use the browser."}
+      "lads": [
+        "Belfast",
+        "Antrim and Newtownabbey",
+        "Ards and North Down",
+        "Lisburn and Castlereagh",
+        "Mid and East Antrim",
+        "Newry, Mourne and Down"
       ],
-      "watch_notes": "Northern Ireland repeatedly left out of GB funding streams; council chasing NIO and DoF for clarity."
+      "governance_sources": [
+        {
+          "label": "Belfast City Council (ModernGov)",
+          "url": "https://minutes.belfastcity.gov.uk/",
+          "notes": "City Growth and Regeneration Committee ID 165; Strategic Policy and Resources ID 163. The ModGov connector fails to parse meeting lists here; use the browser."
+        }
+      ],
+      "watch_notes": "Northern Ireland repeatedly left out of GB funding streams; council chasing NIO and DoF for clarity.",
+      "boundary_source": {
+        "title": "Belfast Region City Deal memorandum of understanding (phase 3)",
+        "url": "https://minutes.belfastcity.gov.uk/documents/s101181/Appendix 1 BRCD MoU Phase 3.pdf"
+      },
+      "boundary_note": "Six councils of the Belfast Region City Deal. It covers the city deal area, from Ballymena in the north to Newry in the south, not Belfast city alone.",
+      "nwf_partnership": null
     },
     {
       "id": "ccr",
@@ -128,11 +323,39 @@
       "type": "Corporate joint committee",
       "nation": "Wales",
       "boundary_rule": "Corporate joint committee: ten councils",
-      "lads": ["Blaenau Gwent", "Bridgend", "Caerphilly", "Cardiff", "Merthyr Tydfil", "Monmouthshire", "Newport", "Rhondda Cynon Taf", "Torfaen", "Vale of Glamorgan"],
-      "governance_sources": [
-        {"label": "CJC governance papers (WordPress PDFs)", "url": "https://www.cardiffcapitalregion.wales/about-ccr/governance-papers/", "notes": "Papers listed per meeting with PDF links under /wp-content/uploads/YYYY/MM/. Pre-2020 regional cabinet papers are on Cardiff Council ModernGov."}
+      "lads": [
+        "Blaenau Gwent",
+        "Bridgend",
+        "Caerphilly",
+        "Cardiff",
+        "Merthyr Tydfil",
+        "Monmouthshire",
+        "Newport",
+        "Rhondda Cynon Taf",
+        "Torfaen",
+        "Vale of Glamorgan"
       ],
-      "watch_notes": "Older City Deal investments maturing and being repaid; focus moving to Investment Zone (compound semiconductors)."
+      "governance_sources": [
+        {
+          "label": "CJC governance papers (WordPress PDFs)",
+          "url": "https://www.cardiffcapitalregion.wales/about-ccr/governance-papers/",
+          "notes": "Papers listed per meeting with PDF links under /wp-content/uploads/YYYY/MM/. Pre-2020 regional cabinet papers are on Cardiff Council ModernGov."
+        }
+      ],
+      "watch_notes": "Older City Deal investments maturing and being repaid; focus moving to Investment Zone (compound semiconductors).",
+      "boundary_source": {
+        "title": "South East Wales Corporate Joint Committee Regulations 2021 (SI 2021/343)",
+        "url": "https://www.legislation.gov.uk/wsi/2021/343/made"
+      },
+      "boundary_note": "Ten constituent councils of the South East Wales Corporate Joint Committee.",
+      "nwf_partnership": {
+        "wave": 2,
+        "agreed": "2026-09-07",
+        "source": {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        }
+      }
     }
   ]
 }

@@ -4,3 +4,6 @@ data/raw
 .env
 .env.local
 .DS_Store
+public/data/regions.json
+public/data/schemes.json
+public/data/assets.json

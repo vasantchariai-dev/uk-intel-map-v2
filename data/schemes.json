@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Scheme register for the CPC regional intelligence map. One record per scheme. First compiled 14 November 2026 from board papers (read directly) and public sources (web).",
-    "last_checked": "2026-11-14",
+    "last_checked": "2026-11-15",
     "vocab": {
       "type": [
         "fund",
@@ -45,6 +45,10 @@
         "high",
         "medium",
         "low"
+      ],
+      "nwf_wave": [
+        1,
+        2
       ]
     },
     "notes": "Coordinates are approximate and must be checked during the build (see brief). value_gbp_m is only filled where a single headline figure is clear; otherwise see value_note. confidence = how well the record is supported: high (primary paper read), medium (official or trade press), low (secondary or AI-generated summary; verify)."
@@ -84,13 +88,8 @@
         }
       ],
       "confidence": "high",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Robin_Hood_Airport_2006-04-02.jpg?width=800",
-        "caption": "Doncaster Sheffield Airport terminal, 2006",
-        "credit": "Dbertman",
-        "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Robin_Hood_Airport_2006-04-02.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-tcr",
@@ -121,7 +120,9 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-krn",
@@ -152,7 +153,9 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-investment-zone",
@@ -178,7 +181,7 @@
       "lat": 53.39,
       "lng": -1.39,
       "loc_precision": "area",
-      "place": "Sheffield–Rotherham corridor",
+      "place": "Sheffield Business Park, Sheffield",
       "sources": [
         {
           "title": "GOV.UK: South Yorkshire named as first UK Investment Zone",
@@ -189,7 +192,15 @@
           "url": "https://invest.southyorkshire-ca.gov.uk/SCRInvest/media/PDF-library/The-South-Yorkshire-Investment-Zone.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Sheffield–Rotherham corridor\" to \"Sheffield Business Park, Sheffield\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "sy-compass",
@@ -220,7 +231,9 @@
           "url": "https://www.thechemicalengineer.com/news/south-yorkshire-investment-zone-focuses-on-advanced-manufacturing-mag"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-amp",
@@ -255,7 +268,9 @@
           "url": "https://www.rothbiz.co.uk/2023/07/news-8139-south-yorkshire-investment.html"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-programme-approvals-oct26",
@@ -287,7 +302,9 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-bus-franchising",
@@ -317,7 +334,9 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "sy-outcomes-lnrs",
@@ -349,7 +368,9 @@
           "url": "https://governance.southyorkshire-ca.gov.uk/ieListDocuments.aspx?CId=137&MId=2892"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-bemdc",
@@ -370,9 +391,9 @@
       "value_note": "£11bn of regeneration across 422ha; claims of 50,000 jobs and 20,000 homes.",
       "funding": "Mixed public and private",
       "stage": "delivering",
-      "status": "Established by Order (SI 2026/405) and launched at UKREiiF on 19 May 2026 with land acquisition and planning powers. Senior leadership announced September 2026. Covers five sites including the Sports Quarter and Central Heart fringe.",
+      "status": "Established in law. The Establishment Order (SI 2026/405) was made on 14 April 2026 and came into force on 11 May 2026. Launched at UKREiiF on 19 May 2026 with land acquisition and planning powers. Senior leadership announced September 2026. WMCA lists the Sports Quarter, Knowledge Quarter, Curzon Street, Smithfield, Digbeth and Central Heart in its area.",
       "status_date": "2026-09-09",
-      "unknowns": "Business plan, capital budget, planning powers in practice.",
+      "unknowns": "Business plan, capital budget, planning powers in practice. WMCA's own web page still describes the corporation as proposed, which is out of date.",
       "lat": 52.478,
       "lng": -1.865,
       "loc_precision": "area",
@@ -385,9 +406,25 @@
         {
           "title": "Housing Today: development corporation to lead £11bn regeneration",
           "url": "https://www.housingtoday.co.uk/news/ukreiif-2026-west-midlands-mayor-launches-development-corporation-to-lead-11bn-east-birmingham-regeneration/5142340.article"
+        },
+        {
+          "title": "Birmingham East Mayoral Development Corporation (Establishment) Order 2026 (SI 2026/405)",
+          "url": "https://www.legislation.gov.uk/uksi/2026/405/made"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Confirmed against the Order: in force 11 May 2026. \"Expected by 2027\" in other sources is out of date.",
+          "source": "https://www.legislation.gov.uk/uksi/2026/405/made"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "wm-sports-quarter",
@@ -404,13 +441,13 @@
         "culture",
         "transport"
       ],
-      "value_gbp_m": 2000,
-      "value_note": "c.£2bn privately led scheme; 62,000-seat stadium; c.8,400 jobs claimed by the club.",
+      "value_gbp_m": null,
+      "value_note": "Figures conflict. c.£2bn privately led scheme (Place Midlands). c.£4bn GDV on c.49ha in the scheme entry of the WMCA Investment Prospectus 2025, which also calls it the \"£2.9 billion Sports Quarter\" in its corridor summary. £3bn on the WMCA development corporation page. 62,000-seat stadium and c.8,400 jobs claimed by the club; the prospectus says 60,000.",
       "funding": "Knighthead Capital Management (private); government funding for a new Metro line",
       "stage": "business_case",
       "status": "Heatherwick Studio and MANICA design unveiled November 2025; planning application expected 2026. Includes training facilities, women's stadium, arena and housing on the 48-acre former Wheels site. Within BEMDC.",
       "status_date": "2026-07-01",
-      "unknowns": "Planning submission date; Metro extension cost and timing.",
+      "unknowns": "Headline value is unresolved (£2bn, £2.9bn, £3bn and £4bn all appear). Planning submission date; Metro extension cost and timing.",
       "lat": 52.475,
       "lng": -1.864,
       "loc_precision": "site",
@@ -423,9 +460,43 @@
         {
           "title": "Football Ground Guide: new stadium latest",
           "url": "https://footballgroundguide.com/news/new-birmingham-city-stadium-latest"
+        },
+        {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        },
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "National Wealth Fund support recorded: Receiving advisory guidance and support through the strategic partnership (September 2026).",
+          "source": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        },
+        {
+          "date": "2026-11-15",
+          "change": "Value set to unknown: sources give £2bn, £2.9bn, £3bn and £4bn. Linked to the development corporation.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "nwf_support": {
+        "type": "Receiving advisory guidance and support through the strategic partnership (September 2026)",
+        "source": {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        }
+      },
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway"
     },
     {
       "id": "wm-investment-zone",
@@ -461,7 +532,9 @@
           "url": "https://www.investwestmidlands.com/wp-content/uploads/2025/02/West-Midlands-Investment-Zone.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-bkq",
@@ -477,24 +550,42 @@
         "commercialisation",
         "growth"
       ],
-      "value_gbp_m": null,
-      "value_note": "£70m anchor investment from Bruntwood SciTech and Woodbourne Group; c.20,000 jobs estimated.",
+      "value_gbp_m": 4200,
+      "value_note": "c.£4.2bn GDV on c.210ha (WMCA Investment Prospectus 2025); the WMCA development corporation page rounds this to £4bn. This is development value, not public funding. £70m anchor investment from Bruntwood SciTech and Woodbourne Group; more than 20,000 jobs.",
       "funding": "Investment Zone; tax site; business rates retention",
       "stage": "delivering",
       "status": "Health, medtech and digital cluster from Aston and BCU universities through Duddeston and Nechells, next to HS2 Curzon Street. Inside BEMDC area.",
       "status_date": "2025-03-06",
-      "unknowns": "Site area quoted inconsistently (130ha and 210ha in different WMCA documents).",
+      "unknowns": "Site area quoted inconsistently: 130ha in an earlier WMCA document and c.210ha in the 2025 prospectus.",
       "lat": 52.487,
       "lng": -1.886,
       "loc_precision": "area",
-      "place": "Eastside / Aston, Birmingham",
+      "place": "Aston University, Birmingham",
       "sources": [
         {
           "title": "WMCA: Key development sites and corridors",
           "url": "https://www.wmca.org.uk/documents/research-and-insights/west-midlands-futures-green-paper/west-midlands-futures-green-paper/chapter-2-places-and-the-spatial-development-strategy/key-development-sites-and-corridors-of-opportunity/"
+        },
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Added £4.2bn GDV from the WMCA prospectus. Linked to the development corporation.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway"
     },
     {
       "id": "wm-gigapark",
@@ -512,11 +603,11 @@
         "energy"
       ],
       "value_gbp_m": null,
-      "value_note": "",
+      "value_note": "£2.5bn scale on c.250ha (WMCA Investment Prospectus 2025).",
       "funding": "Investment Zone; tax site; business rates retention",
       "stage": "delivering",
-      "status": "240ha battery and EV manufacturing site at Coventry Airport. Note: partly in Warwick District, outside WMCA constituent boundary.",
-      "status_date": "",
+      "status": "Coventry and Warwick Investment Zone: c.240ha straddling the Coventry and Warwick boundary, with over 183ha qualifying for tax incentives. Greenpower Park has planning permission for up to 530,000 sq m of battery manufacturing and is seeking an anchor investor. Outline planning consent in place. Partly in Warwick District, outside the WMCA constituent boundary.",
+      "status_date": "2025-10-21",
       "unknowns": "Anchor occupier.",
       "lat": 52.3697,
       "lng": -1.4797,
@@ -526,16 +617,39 @@
         {
           "title": "WMCA: Key development sites and corridors",
           "url": "https://www.wmca.org.uk/documents/research-and-insights/west-midlands-futures-green-paper/west-midlands-futures-green-paper/chapter-2-places-and-the-spatial-development-strategy/key-development-sites-and-corridors-of-opportunity/"
+        },
+        {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        },
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coventry_Airport_july06.JPG?width=800",
-        "caption": "Coventry Airport, 2006",
-        "credit": "Snowmanradio (English Wikipedia)",
-        "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_Airport_july06.JPG"
-      }
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "National Wealth Fund support recorded: Greenpower Park confirmed for support under the strategic partnership (October 2025).",
+          "source": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        },
+        {
+          "date": "2026-11-15",
+          "change": "Status and scale added from the WMCA prospectus. Status date is 21 October 2025, when the National Wealth Fund named Greenpower Park.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "nwf_support": {
+        "type": "Greenpower Park confirmed for support under the strategic partnership (October 2025)",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      },
+      "corridor": "Coventry Growth Arc",
+      "parent": "wm-investment-zone"
     },
     {
       "id": "wm-gic",
@@ -551,12 +665,12 @@
         "growth"
       ],
       "value_gbp_m": null,
-      "value_note": "",
+      "value_note": "c.£225m GDV (WMCA Investment Prospectus 2025).",
       "funding": "Investment Zone (no tax incentives)",
       "stage": "delivering",
-      "status": "Delivered by City of Wolverhampton Council and University of Wolverhampton; green industries and advanced manufacturing.",
-      "status_date": "",
-      "unknowns": "",
+      "status": "Part of the West Midlands Investment Zone. Delivered by City of Wolverhampton Council and the University of Wolverhampton. Initial phases at Six Mile Green: up to 20,000 sq m of new commercial floorspace. Hybrid planning application submitted in September 2025.",
+      "status_date": "2025-10-21",
+      "unknowns": "Planning decision. Status date is the file date of the WMCA prospectus (October 2025).",
       "lat": 52.592,
       "lng": -2.118,
       "loc_precision": "area",
@@ -565,9 +679,23 @@
         {
           "title": "WMCA: Investment Zone funding to create manufacturing jobs",
           "url": "https://www.wmca.org.uk/news/investment-zone-funding-to-create-hundreds-of-cutting-edge-manufacturing-jobs/"
+        },
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Status, value and planning position added from the WMCA prospectus.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "corridor": "Wolverhampton-Walsall Growth Cluster",
+      "parent": "wm-investment-zone"
     },
     {
       "id": "wm-investment-programme",
@@ -598,7 +726,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-crsts",
@@ -628,7 +758,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-cif-rif",
@@ -662,7 +794,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37914/IB%20MInutes%2019.10.26%20DRAFT.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-coventry-station",
@@ -698,8 +832,11 @@
         "caption": "Coventry railway station",
         "credit": "Nigel Thompson",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_railway_station,_West_Midlands_-_geograph.org.uk_-_7263990.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Coventry_railway_station,_West_Midlands_-_geograph.org.uk_-_7263990.jpg",
+        "date": "2022"
+      },
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-mell-square",
@@ -723,7 +860,7 @@
       "lat": 52.413,
       "lng": -1.779,
       "loc_precision": "site",
-      "place": "Solihull town centre",
+      "place": "Mell Square, Solihull",
       "sources": [
         {
           "title": "WMCA Board, 13 November 2026: agenda",
@@ -736,8 +873,18 @@
         "caption": "Mell Square, Solihull, before redevelopment",
         "credit": "Elliott Brown from Birmingham, United Kingdom",
         "licence": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:TK_Maxx,_Mell_Square,_Solihull_(5718216715).jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:TK_Maxx,_Mell_Square,_Solihull_(5718216715).jpg",
+        "date": "2011"
+      },
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Solihull town centre\" to \"Mell Square, Solihull\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=137&MId=2150"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "corridor": "Birmingham and North Solihull Gateway"
     },
     {
       "id": "wm-metro-review",
@@ -770,7 +917,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37919/Metro%20-%20Future%20Delivery.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-bus",
@@ -800,7 +949,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37927/Bus%20Update%20Report.pdf"
         }
       ],
-      "confidence": "low"
+      "confidence": "low",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wm-construction-skills",
@@ -828,7 +979,9 @@
           "url": "https://governance.wmca.org.uk/documents/s37913/Minutes%20Investment%20Board%2021.09.26%20APPROVED.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-lipf",
@@ -860,7 +1013,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-connected-factories",
@@ -889,7 +1044,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-investment-zone",
@@ -928,7 +1085,9 @@
           "url": "https://www.eastmidlands-cca.gov.uk/content/uploads/2025/06/EMCCA-Spatial-Vision-FINAL.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-freeport",
@@ -965,13 +1124,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/East_Midlands2.JPG?width=800",
-        "caption": "East Midlands Airport",
-        "credit": "Emeraude (English Wikipedia)",
-        "licence": "Public domain",
-        "source_url": "https://commons.wikimedia.org/wiki/File:East_Midlands2.JPG"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-ratcliffe",
@@ -996,7 +1150,7 @@
       "lat": 52.864,
       "lng": -1.255,
       "loc_precision": "site",
-      "place": "Rushcliffe, Nottinghamshire",
+      "place": "Ratcliffe-on-Soar Power Station, Nottinghamshire",
       "sources": [
         {
           "title": "TheBusinessDesk: Freeport in talks with potential investors",
@@ -1006,11 +1160,20 @@
       "confidence": "medium",
       "image": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ratcliffe-on-Soar_Power_Station_with_coal_train%2C_26th_March_2007.jpg?width=800",
-        "caption": "Ratcliffe-on-Soar power station, 2007",
+        "caption": "Ratcliffe-on-Soar power station",
         "credit": "MaltaGC",
         "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Ratcliffe-on-Soar_Power_Station_with_coal_train,_26th_March_2007.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ratcliffe-on-Soar_Power_Station_with_coal_train,_26th_March_2007.jpg",
+        "date": "2007"
+      },
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Rushcliffe, Nottinghamshire\" to \"Ratcliffe-on-Soar Power Station, Nottinghamshire\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.thebusinessdesk.com/eastmidlands/news/2087355-freeport-in-talks-with-potential-investors-to-create-tens-of-thousands-of-jobs"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "em-step-fusion",
@@ -1050,13 +1213,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Upper_Ings_Lane_-_geograph.org.uk_-_285251.jpg?width=800",
-        "caption": "West Burton power stations, the site for STEP",
-        "credit": "Richard Croft",
-        "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:View_from_Upper_Ings_Lane_-_geograph.org.uk_-_285251.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-trent-supercluster",
@@ -1089,7 +1247,9 @@
           "url": "https://www.eastmidlands-cca.gov.uk/news/step-fusion-construction"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-energy-plans",
@@ -1121,7 +1281,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-brrz",
@@ -1152,7 +1314,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-becketwell",
@@ -1183,7 +1347,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-peak-resort",
@@ -1207,14 +1373,22 @@
       "lat": 53.29,
       "lng": -1.45,
       "loc_precision": "area",
-      "place": "Near Chesterfield (verify)",
+      "place": "Unstone, Chesterfield (verify)",
       "sources": [
         {
           "title": "EMCCA Board, 12 October 2026",
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Near Chesterfield (verify)\" to \"Unstone, Chesterfield (verify)\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "em-visitor-economy",
@@ -1243,7 +1417,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-team-derby",
@@ -1271,7 +1447,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-alstom",
@@ -1308,8 +1486,11 @@
         "caption": "Litchurch Lane Works, Derby",
         "credit": "mattbuck",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Derby_MMB_02_Litchurch_Lane_Works.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Derby_MMB_02_Litchurch_Lane_Works.jpg",
+        "date": "2011"
+      },
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "em-a38-a46",
@@ -1337,7 +1518,9 @@
           "url": "https://democracy.eastmidlands-cca.gov.uk/ieListDocuments.aspx?CId=137&MId=284&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-mass-transit",
@@ -1371,9 +1554,42 @@
         {
           "title": "WYCA: Region-wide consultation on Mass Transit benefits",
           "url": "https://www.westyorks-ca.gov.uk/news/region-wide-consultation-asks-how-best-to-maximise-mass-transit-benefits"
+        },
+        {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        },
+        {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
+        },
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "National Wealth Fund support recorded: Confirmed for support under the strategic partnership (October 2025); receiving advisory guidance and support (September 2026).",
+          "source": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        },
+        {
+          "date": "2026-11-15",
+          "change": "Listed as one of six nationally significant projects in the March 2026 pipeline.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "nwf_support": {
+        "type": "Confirmed for support under the strategic partnership (October 2025); receiving advisory guidance and support (September 2026)",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      },
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)"
     },
     {
       "id": "wy-investment-zone",
@@ -1405,7 +1621,9 @@
           "url": "https://www.westyorks-ca.gov.uk/news/mayor-kickstarts-delivery-of-160-million-investment-zone-with-new-support-for-hundreds-of-healthtech-firms"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-leeds-innovation-village",
@@ -1446,11 +1664,14 @@
       "confidence": "medium",
       "image": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leeds_General_Infirmary_2013-09-30_15-52-05.jpg?width=800",
-        "caption": "Leeds General Infirmary, 2013",
+        "caption": "Leeds General Infirmary",
         "credit": "astroman3D",
         "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_General_Infirmary_2013-09-30_15-52-05.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leeds_General_Infirmary_2013-09-30_15-52-05.jpg",
+        "date": "2013"
+      },
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-nhic-huddersfield",
@@ -1480,9 +1701,22 @@
         {
           "title": "Kirklees Cabinet: Gasworks Street, West Yorkshire Investment Zone",
           "url": "https://democracy.kirklees.gov.uk/documents/s70596/20260324 Item 2 - Cabinet Report Huddersfield Investment Zone Gasworks Stv3final.pdf"
+        },
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Listed as one of six nationally significant projects in the March 2026 pipeline.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)"
     },
     {
       "id": "wy-bradford-dhez",
@@ -1514,13 +1748,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Bradford_Richmond_24_April_2017_01.jpg?width=800",
-        "caption": "University of Bradford, 2017",
-        "credit": "Chemical Engineer",
-        "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Bradford_Richmond_24_April_2017_01.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-investment-pipeline",
@@ -1555,7 +1784,9 @@
           "url": "https://www.westyorks-ca.gov.uk/media/lxvhy3ra/west-yorkshire-investment-prospectus.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-ferrybridge",
@@ -1587,13 +1818,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Knottingley_-_Ferrybridge_Power_Station.jpg?width=800",
-        "caption": "Ferrybridge power station, before demolition",
-        "credit": "Dave Bevis",
-        "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Knottingley_-_Ferrybridge_Power_Station.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-lba-parkway",
@@ -1622,13 +1848,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LBIA_Airside_2.jpg?width=800",
-        "caption": "Leeds Bradford Airport",
-        "credit": "Mtaylor848",
-        "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:LBIA_Airside_2.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "wy-bus-franchising",
@@ -1658,7 +1879,9 @@
           "url": "https://www.publicsectorexecutive.com/articles/west-yorkshire-mass-transit-plans-set-green-light"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-york-central",
@@ -1694,13 +1917,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/York_railway_station_and_Royal_York_Hotel_-_April_10_2005.jpg?width=800",
-        "caption": "York railway station, next to the York Central site, 2005",
-        "credit": "Tagishsimon (English Wikipedia)",
-        "licence": "CC BY-SA 3.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:York_railway_station_and_Royal_York_Hotel_-_April_10_2005.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-scarborough-mdz",
@@ -1729,7 +1947,9 @@
           "url": "https://www.thisisthecoast.co.uk/news/local-news/scarborough-to-become-first-coastal-mayoral-development-zone/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-selby-growth-zone",
@@ -1760,7 +1980,9 @@
           "url": "https://yorknorthyorks-ca.gov.uk/partners-welcome-creation-of-three-mayoral-development-zones-to-drive-regeneration-across-region/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-drax-ai",
@@ -1784,7 +2006,7 @@
       "lat": 53.736,
       "lng": -0.997,
       "loc_precision": "site",
-      "place": "Drax Power Station, Selby",
+      "place": "Drax Power Station",
       "sources": [
         {
           "title": "Yorkshire Post: why was the AI growth zone bid knocked back?",
@@ -1797,8 +2019,17 @@
         "caption": "Drax power station",
         "credit": "David Wright",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Drax_Power_Station_-_geograph.org.uk_-_955513.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Drax_Power_Station_-_geograph.org.uk_-_955513.jpg",
+        "date": "2008"
+      },
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Drax Power Station, Selby\" to \"Drax Power Station\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.yorkshirepost.co.uk/news/opinion/columnists/why-was-north-yorkshires-bid-to-become-an-ai-growth-zone-knocked-back-9278035"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "yny-bioyorkshire",
@@ -1830,7 +2061,9 @@
           "url": "https://www.york.ac.uk/news-and-events/news/2025/research/northern-partnership-bio-based-economic-future/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-transport-settlement",
@@ -1858,7 +2091,9 @@
           "url": "https://yorknorthyorks-ca.gov.uk/first-long-term-deal-backed-by-record-investment-to-boost-regions-transport-network/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "yny-carbon-negative",
@@ -1893,7 +2128,9 @@
           "url": "https://yorknorthyorks-ca.gov.uk/green-investment-initiative-for-york-and-north-yorkshire-backed-by-2-8-million-government-funding/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-teesworks",
@@ -1931,13 +2168,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bran_Sands_dunes_and_Corus_Redcar_-_geograph.org.uk_-_1706064.jpg?width=800",
-        "caption": "Former Redcar steelworks, now the Teesworks site",
-        "credit": "Alan Murray-Rust",
-        "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Bran_Sands_dunes_and_Corus_Redcar_-_geograph.org.uk_-_1706064.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-best-value-inspection",
@@ -1967,7 +2199,9 @@
           "url": "https://www.gov.uk/government/news/best-value-inspection-confirmed-at-tees-valley-combined-authority"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-nzt-power",
@@ -2000,7 +2234,9 @@
           "url": "https://www.teesworks.co.uk/news/landmark-decision-on-4bn-net-zero-project-at-teesworks"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-freeport",
@@ -2022,14 +2258,22 @@
       "lat": 54.585,
       "lng": -1.17,
       "loc_precision": "area",
-      "place": "South Bank / Teesworks",
+      "place": "South Bank, Middlesbrough",
       "sources": [
         {
           "title": "TVCA: Teesside Freeport",
           "url": "https://teesvalley-ca.gov.uk/about/leadership/mayor/the-mayors-priorities/teesside-freeport/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"South Bank / Teesworks\" to \"South Bank, Middlesbrough\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://teesvalley-ca.gov.uk/about/leadership/mayor/the-mayors-priorities/teesside-freeport/"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "tv-investment-zone",
@@ -2058,7 +2302,9 @@
           "url": "https://teesvalley-ca.gov.uk/news/creative-talent-industrial-strength-and-digital-growth-the-investment-vision-for-tees-valley/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-transport-plan",
@@ -2086,7 +2332,9 @@
           "url": "https://railwaynews.net/tees-valley-approves-256m-rail-infrastructure-plan.html"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "tv-darlington-station",
@@ -2125,8 +2373,11 @@
         "caption": "Darlington station",
         "credit": "Matt Buck",
         "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Darlington_Bank_Top_station.jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Darlington_Bank_Top_station.jpg",
+        "date": "2021"
+      },
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-mdz-newcastle-gateshead",
@@ -2151,7 +2402,7 @@
       "lat": 54.966,
       "lng": -1.608,
       "loc_precision": "area",
-      "place": "Newcastle and Gateshead quaysides",
+      "place": "Quayside, Newcastle upon Tyne",
       "sources": [
         {
           "title": "North East CA: Newcastle-Gateshead MDZ",
@@ -2162,7 +2413,15 @@
           "url": "https://www.placenorthwest.co.uk/why-investors-should-look-to-north-east-england-in-2026/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Newcastle and Gateshead quaysides\" to \"Quayside, Newcastle upon Tyne\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.northeast-ca.gov.uk/mayoral-development-zone"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "ne-forth-yards",
@@ -2184,14 +2443,22 @@
       "lat": 54.966,
       "lng": -1.62,
       "loc_precision": "site",
-      "place": "Forth Yards, Newcastle",
+      "place": "Forth Banks, Newcastle upon Tyne",
       "sources": [
         {
           "title": "North East CA: new MDZ aims to be boldest in the country",
           "url": "https://www.northeast-ca.gov.uk/news/housing-and-land/new-mayoral-development-zone-aims-to-be-boldest-and-most-ambitious-in-the-country"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Forth Yards, Newcastle\" to \"Forth Banks, Newcastle upon Tyne\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.northeast-ca.gov.uk/news/housing-and-land/new-mayoral-development-zone-aims-to-be-boldest-and-most-ambitious-in-the-country"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "ne-gateshead-quays",
@@ -2221,13 +2488,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Sage_Gateshead.jpg?width=800",
-        "caption": "The Glasshouse (formerly Sage Gateshead), next to the arena site",
-        "credit": "William Nicholson from London / Paris, England / France",
-        "licence": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:The_Sage_Gateshead.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-crown-works",
@@ -2252,7 +2514,7 @@
       "lat": 54.91,
       "lng": -1.418,
       "loc_precision": "site",
-      "place": "Pallion riverside, Sunderland",
+      "place": "Pallion, Sunderland",
       "sources": [
         {
           "title": "Yahoo/LDRS: Crown Works moves ahead",
@@ -2263,7 +2525,15 @@
           "url": "https://gov.uk/cma-cases/referral-of-the-proposed-subsidy-to-sunderland-city-council-by-the-north-east-mayoral-strategic-authority"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Pallion riverside, Sunderland\" to \"Pallion, Sunderland\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://uk.news.yahoo.com/crown-works-studios-moves-ahead-145528529.html"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "ne-investment-zone",
@@ -2295,7 +2565,9 @@
           "url": "https://www.northeast-ca.gov.uk/news/economy/the-north-east-combined-authority-in-16-8-million-push-to-power-green-energy"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-netpark",
@@ -2326,7 +2598,9 @@
           "url": "https://www.northeast-ca.gov.uk/downloads/3429/250210-delegated-decision-report-ne-investment-zones-netpark-phase-3a.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ne-leamside",
@@ -2350,14 +2624,22 @@
       "lat": 54.85,
       "lng": -1.5,
       "loc_precision": "area",
-      "place": "Leamside corridor",
+      "place": "Leamside, County Durham",
       "sources": [
         {
           "title": "North East CA: delegated decision, Leamside Investment Corridor",
           "url": "https://www.northeast-ca.gov.uk/downloads/3904/250710-delegated-decision-report-leamside-investment-corridor.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"Leamside corridor\" to \"Leamside, County Durham\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://www.northeast-ca.gov.uk/downloads/3904/250710-delegated-decision-report-leamside-investment-corridor.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "gcr-empowerment",
@@ -2389,7 +2671,9 @@
           "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-investment-zone",
@@ -2404,13 +2688,13 @@
         "commercialisation",
         "growth"
       ],
-      "value_gbp_m": 190,
-      "value_note": "£190m over ten years (UK and Scottish governments) per Renfrewshire Council; GCR's own site still cites £160m programme funding, so reconcile. Up to £25m extra from Scottish Enterprise proposed; NDR retention worth up to £162m over 25 years.",
+      "value_gbp_m": null,
+      "value_note": "Figures conflict. £160m: the standard ten-year Investment Zone envelope, noted in our first compilation; no source page was re-read for it. £190m over ten years from the UK and Scottish governments (Renfrewshire Council). \"£500 million Investment Zone\" on Glasgow City Region's own partners page; our reading, not confirmed, is that this adds retained rates and leveraged investment. Up to £25m extra from Scottish Enterprise proposed; non-domestic rates retention worth up to £162m over 25 years.",
       "funding": "UK and Scottish governments; Scottish Enterprise; retained non-domestic rates",
       "stage": "delivering",
       "status": "Advanced manufacturing: space, semiconductors, maritime. Six projects. Grant agreements to be executed Q3 2026/27. NDR retention sites at AMIDS/Airport, Glasgow Clyde and Eurocentral.",
       "status_date": "2026-11-17",
-      "unknowns": "Scottish Enterprise board approval (November 2026).",
+      "unknowns": "Headline value is unresolved (£160m, £190m or £500m). Scottish Enterprise board approval (November 2026).",
       "lat": 55.87,
       "lng": -4.3,
       "loc_precision": "region",
@@ -2423,9 +2707,21 @@
         {
           "title": "Renfrewshire Council: tax incentives at AMIDS and Glasgow Airport",
           "url": "https://www.renfrewshire.gov.uk/news/2026/tax-incentives-now-available-new-businesses-locating-amids-and-glasgow-airport"
+        },
+        {
+          "title": "Glasgow City Region: partners",
+          "url": "https://glasgowcityregion.co.uk/who-we-are/partners/"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Value set to unknown: sources give £160m, £190m and £500m.",
+          "source": "https://glasgowcityregion.co.uk/who-we-are/partners/"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "gcr-amids",
@@ -2459,13 +2755,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/GlasgowAirportFromAir.jpg?width=800",
-        "caption": "Glasgow Airport from the air",
-        "credit": "Jim Smillie",
-        "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:GlasgowAirportFromAir.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-lgf",
@@ -2499,7 +2790,9 @@
           "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "gcr-clyde-mission",
@@ -2523,14 +2816,22 @@
       "lat": 55.857,
       "lng": -4.28,
       "loc_precision": "area",
-      "place": "River Clyde corridor",
+      "place": "Broomielaw, Glasgow",
       "sources": [
         {
           "title": "GCR Cabinet, 17 November 2026: Clyde Mission masterplan",
           "url": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Place name changed from \"River Clyde corridor\" to \"Broomielaw, Glasgow\" so it can be geocoded. Coordinates not changed.",
+          "source": "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/Agenda.asp?meetingid=20605"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "gcr-clyde-metro",
@@ -2557,9 +2858,32 @@
         {
           "title": "Glasgow City Council: Clyde Metro",
           "url": "https://www.glasgow.gov.uk/article/2558/Clyde-Metro"
+        },
+        {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        },
+        {
+          "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
+          "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "National Wealth Fund support recorded: Confirmed for support under the strategic partnership (October 2025); receiving advisory guidance and support (September 2026).",
+          "source": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      ],
+      "last_checked": "2026-11-15",
+      "nwf_support": {
+        "type": "Confirmed for support under the strategic partnership (October 2025); receiving advisory guidance and support (September 2026)",
+        "source": {
+          "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
+          "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
+        }
+      }
     },
     {
       "id": "bel-pbgf",
@@ -2582,15 +2906,23 @@
       "unknowns": "Any government commitment.",
       "lat": 54.597,
       "lng": -5.93,
-      "loc_precision": "area",
-      "place": "Belfast",
+      "loc_precision": "region",
+      "place": "Belfast (city-wide)",
       "sources": [
         {
           "title": "Belfast City Growth and Regeneration Committee, 11 November 2026",
           "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Moved off the map: this is city-wide, not a site. Now listed under region-wide.",
+          "source": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "bel-brcd",
@@ -2623,7 +2955,9 @@
           "url": "https://minutes.belfastcity.gov.uk/documents/s126788/Item 4 g BRCD Update Report March 26 Final.pdf"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-gii",
@@ -2656,13 +2990,8 @@
         }
       ],
       "confidence": "medium",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Titanic_Belfast_side_view.jpg?width=800",
-        "caption": "Titanic Quarter, Belfast",
-        "credit": "See source page",
-        "licence": "CC BY-SA 4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Titanic_Belfast_side_view.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-amic",
@@ -2694,7 +3023,9 @@
           "url": "https://economy-ni.gov.uk/node/57481"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-ireach",
@@ -2724,7 +3055,9 @@
           "url": "https://economy-ni.gov.uk/node/57481"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-belfast-stories",
@@ -2753,7 +3086,9 @@
           "url": "https://www.belfastcity.gov.uk/news/%c2%a3250-000-community-and-creative-grant-launched-to"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "bel-funding-clarity",
@@ -2776,15 +3111,23 @@
       "unknowns": "Allocations and delivery route.",
       "lat": 54.597,
       "lng": -5.93,
-      "loc_precision": "area",
-      "place": "Belfast",
+      "loc_precision": "region",
+      "place": "Belfast (city-wide)",
       "sources": [
         {
           "title": "Belfast City Growth and Regeneration Committee, 11 November 2026",
           "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Moved off the map: this is city-wide, not a site. Now listed under region-wide.",
+          "source": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
+        }
+      ],
+      "last_checked": "2026-11-15"
     },
     {
       "id": "bel-city-centre",
@@ -2818,7 +3161,9 @@
           "url": "https://minutes.belfastcity.gov.uk/ieListDocuments.aspx?CId=165&MId=12381&Ver=4"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-investment-zone",
@@ -2854,7 +3199,9 @@
           "url": "https://semiconductor-today.com/news_items/2026/oct/ccr-051026.shtml"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-wider-investment-fund",
@@ -2886,7 +3233,9 @@
           "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-kla",
@@ -2917,7 +3266,9 @@
           "url": "https://www.cardiffandsouthwalesadvertiser.com/?p=3475"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-csconnected",
@@ -2949,7 +3300,9 @@
           "url": "https://semiconductor-today.com/news_items/2026/jun/csconnected-050626.shtml"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-metro-central",
@@ -2983,8 +3336,11 @@
         "caption": "Cardiff Central station",
         "credit": "Jeremy Segrott from Cardiff, Wales, UK",
         "licence": "CC BY 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_Central_station_(26526139271).jpg"
-      }
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cardiff_Central_station_(26526139271).jpg",
+        "date": "2016"
+      },
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-northern-valleys",
@@ -3014,7 +3370,9 @@
           "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/10/item-6-cardiff-capital-region-city-deal-202627-quarter-1-performance-report.pdf"
         }
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "history": [],
+      "last_checked": "2026-11-14"
     },
     {
       "id": "ccr-aberthaw",
@@ -3046,13 +3404,851 @@
         }
       ],
       "confidence": "high",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aberthaw_B_power_station_-_geograph.org.uk_-_414146.jpg?width=800",
-        "caption": "Aberthaw B power station",
-        "credit": "Christopher Ware",
-        "licence": "CC BY-SA 2.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Aberthaw_B_power_station_-_geograph.org.uk_-_414146.jpg"
-      }
+      "history": [],
+      "last_checked": "2026-11-14"
+    },
+    {
+      "aliases": [
+        "Birmingham Smithfield"
+      ],
+      "value_gbp_m": null,
+      "value_note": "£1.9bn (WMCA Investment Prospectus 2025); \"£2bn\" on the WMCA development corporation page.",
+      "funding": "",
+      "unknowns": "Phasing and what is on site. The prospectus gives no detail beyond the headline value. Marker is a geocode of \"Smithfield, Birmingham\".",
+      "confidence": "high",
+      "id": "wm-smithfield",
+      "region": "wm",
+      "name": "Smithfield, Birmingham",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "housing",
+        "culture"
+      ],
+      "stage": "approved",
+      "status": "WMCA's prospectus reports recent investments announced at the £1.9bn Smithfield development. Next to the Bullring. Inside the Birmingham East Mayoral Development Corporation area.",
+      "status_date": "2025-10-21",
+      "lat": 52.4744,
+      "lng": -1.8922,
+      "loc_precision": "area",
+      "place": "Smithfield, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
+        }
+      ],
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Curzon Street",
+        "HS2 terminus"
+      ],
+      "value_gbp_m": null,
+      "value_note": "",
+      "funding": "",
+      "unknowns": "Opening date and station cost are not stated in the sources read. Marker is a geocode of Curzon Street, not the station footprint.",
+      "confidence": "high",
+      "id": "wm-curzon-street",
+      "region": "wm",
+      "name": "HS2 Curzon Street station and surroundings",
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "stage": "delivering",
+      "status": "HS2 terminus in Birmingham. WMCA says HS2 will put central Birmingham 49 minutes from central London. The station and the adjoining Central Heart site are inside the Birmingham East Mayoral Development Corporation area.",
+      "status_date": "2025-10-21",
+      "lat": 52.4827,
+      "lng": -1.8825,
+      "loc_precision": "area",
+      "place": "Curzon Street, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
+        }
+      ],
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Central Heart",
+        "Martineau Galleries",
+        "City Arcade"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Up to 5,000 homes, around 8,000 jobs and more than 400,000 sq m of commercial floorspace. No investment value stated.",
+      "funding": "",
+      "unknowns": "Investment value, development partners and timetable.",
+      "confidence": "high",
+      "id": "wm-central-heart",
+      "region": "wm",
+      "name": "Birmingham Central Heart",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "stage": "pipeline",
+      "status": "Prospectus launched at MIPIM on 10 March 2026. Eight sites across four hectares between the Bullring, New Street station, Colmore Business District and HS2 Curzon Street: Martineau Galleries, Martineau Place, Cherry Street, Cannon Street, Carrs Lane, Union Street, 42 High Street and City Arcade. Developed by Birmingham City Council with landowners, developers and business improvement districts.",
+      "status_date": "2026-03-10",
+      "lat": 52.4803,
+      "lng": -1.8952,
+      "loc_precision": "area",
+      "place": "Martineau Place, Birmingham",
+      "sources": [
+        {
+          "title": "Invest West Midlands: Birmingham launches Central Heart at MIPIM, 10 March 2026",
+          "url": "https://www.investwestmidlands.com/news/2026/03/10/birmingham-central-heart-investment-opportunity/"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
+        }
+      ],
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.investwestmidlands.com/news/2026/03/10/birmingham-central-heart-investment-opportunity/"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Digbeth",
+        "Warwick Bar",
+        "Digbeth Loc",
+        "Typhoo Wharf"
+      ],
+      "value_gbp_m": null,
+      "value_note": "c.£3.2bn to £4.1bn GDV across c.40ha and 10 key sites; more than 300,000 sq m of commercial space and potentially more than 6,000 homes over 15 years.",
+      "funding": "",
+      "unknowns": "Which sites have partners. The value is a range.",
+      "confidence": "high",
+      "id": "wm-digbeth",
+      "region": "wm",
+      "name": "Digbeth Creative Quarter",
+      "type": "capital_project",
+      "themes": [
+        "culture",
+        "growth",
+        "housing"
+      ],
+      "stage": "pipeline",
+      "status": "Creative and cultural quarter, home to the BBC's new regional headquarters, the MasterChef studios and Digbeth Loc. Partners sought for sites including Warwick Bar (9ha, Homes England), Typhoo Wharf and Digbeth High Street. Most sites have full or outline planning permission.",
+      "status_date": "2025-10-21",
+      "lat": 52.4754,
+      "lng": -1.8846,
+      "loc_precision": "area",
+      "place": "Custard Factory, Digbeth, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
+        }
+      ],
+      "parent": "wm-bemdc",
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Arden Cross",
+        "HS2 Interchange",
+        "UK Central"
+      ],
+      "value_gbp_m": 3200,
+      "value_note": "c.£3.2bn GDV; 3,000 homes; c.140ha.",
+      "funding": "",
+      "unknowns": "Local Plan allocation and start date. Marker is a geocode of Middle Bickenhill, the nearest named place.",
+      "confidence": "high",
+      "id": "wm-arden-cross",
+      "region": "wm",
+      "name": "Arden Cross, Solihull (HS2 Interchange)",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "innovation",
+        "housing"
+      ],
+      "stage": "pipeline",
+      "status": "Regeneration site at the HS2 Interchange, anchored by a University of Warwick-led health tech campus. Arden Cross Limited (Birmingham City Council, Coleshill Estate and Packington Estate) with development partner Muse Places. Masterplan supported by Solihull Council; proposed for allocation in the Solihull Local Plan.",
+      "status_date": "2025-10-21",
+      "lat": 52.4471,
+      "lng": -1.7035,
+      "loc_precision": "area",
+      "place": "Middle Bickenhill, Solihull",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "East Birmingham Metro",
+        "Adderley Park station"
+      ],
+      "value_gbp_m": null,
+      "value_note": "No scheme cost stated. The prospectus cites a £2.4bn regional transport capital programme, which covers much more than this extension.",
+      "funding": "",
+      "unknowns": "Cost, route and opening date. The £2.4bn June 2025 Spending Review allocation quoted elsewhere was not verified against a primary source.",
+      "confidence": "high",
+      "id": "wm-metro-sports-quarter",
+      "region": "wm",
+      "name": "Metro extension to the Sports Quarter",
+      "type": "transport",
+      "themes": [
+        "transport",
+        "growth"
+      ],
+      "stage": "approved",
+      "status": "WMCA's prospectus says funding has been secured for improvements to Adderley Park station and to extend the Metro line to the Sports Quarter, with an aim of further extension to Arden Cross and the airport.",
+      "status_date": "2025-10-21",
+      "lat": 52.4831,
+      "lng": -1.8554,
+      "loc_precision": "area",
+      "place": "Adderley Park railway station",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        },
+        {
+          "title": "WMCA: Birmingham East Mayoral Development Corporation",
+          "url": "https://www.wmca.org.uk/what-we-do/birmingham-east-mayoral-development-corporation"
+        }
+      ],
+      "parent": "wm-sports-quarter",
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Futures Fund",
+        "West Midlands Investment Partnership"
+      ],
+      "value_gbp_m": 3800,
+      "value_note": "£3.8bn: £800m from WMCA, £1.1bn committed by the West Midlands Pension Fund and £1.7bn from Homes England. Do not add this to scheme values: it funds them.",
+      "funding": "WMCA, West Midlands Pension Fund, Homes England",
+      "unknowns": "First investments and governance. The National Wealth Fund is quoted in support but is not listed as a funder.",
+      "confidence": "high",
+      "id": "wm-futures-fund",
+      "region": "wm",
+      "name": "West Midlands Futures Fund",
+      "type": "fund",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "stage": "delivering",
+      "status": "Launched by the Mayor at UKREiiF on 19 May 2026. Managed through the new West Midlands Investment Partnership. Aimed at the four growth corridors in the Investment Prospectus, described as a £20bn pipeline. The National Wealth Fund's chief executive backed it through the strategic partnership.",
+      "status_date": "2026-05-19",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "Invest West Midlands: Mayor launches £3.8bn Futures Fund, 19 May 2026",
+          "url": "https://www.investwestmidlands.com/news/2026/05/19/mayor-launches-3-8bn-futures-fund-war-chest-to-supercharge-west-midlands-economy/"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.investwestmidlands.com/news/2026/05/19/mayor-launches-3-8bn-futures-fund-war-chest-to-supercharge-west-midlands-economy/"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Paradise Birmingham",
+        "Paradise Circus"
+      ],
+      "value_gbp_m": 1200,
+      "value_note": "£1.2bn scheme.",
+      "funding": "",
+      "unknowns": "Current phase and remaining plots.",
+      "confidence": "high",
+      "id": "wm-paradise",
+      "region": "wm",
+      "name": "Paradise, Birmingham",
+      "type": "capital_project",
+      "themes": [
+        "growth"
+      ],
+      "stage": "delivering",
+      "status": "WMCA's prospectus says the latest building of the £1.2bn Paradise scheme has opened, with further investment opportunities available. Early phases delivered.",
+      "status_date": "2025-10-21",
+      "lat": 52.4792,
+      "lng": -1.9052,
+      "loc_precision": "site",
+      "place": "Paradise, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Ladywood"
+      ],
+      "value_gbp_m": 2500,
+      "value_note": "£2.5bn; 60ha; an estimated target of 12,000 homes over 20 years.",
+      "funding": "",
+      "unknowns": "First phase and planning timetable.",
+      "confidence": "high",
+      "id": "wm-ladywood",
+      "region": "wm",
+      "name": "Ladywood estate regeneration",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "stage": "approved",
+      "status": "Berkeley St Joseph has completed the development agreement for the £2.5bn Ladywood regeneration. The commitment is to replace or refurbish 70% of existing homes.",
+      "status_date": "2025-10-21",
+      "lat": 52.477,
+      "lng": -1.9278,
+      "loc_precision": "area",
+      "place": "Ladywood, Birmingham",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Birmingham and North Solihull Gateway",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Tyseley Energy Park",
+        "National Centre for the Decarbonisation of Heat"
+      ],
+      "value_gbp_m": null,
+      "value_note": "49ha; plan for 221,500 sq m and almost 4,500 jobs; £20m National Centre for Decarbonisation of Heat.",
+      "funding": "",
+      "unknowns": "Funding and timetable. Marker is a geocode of Tyseley railway station.",
+      "confidence": "high",
+      "id": "wm-tyseley",
+      "region": "wm",
+      "name": "Tyseley Green Energy Innovation District",
+      "type": "capital_project",
+      "themes": [
+        "energy",
+        "innovation"
+      ],
+      "stage": "pipeline",
+      "status": "Led by the Tyseley Alliance: Birmingham City Council, University of Birmingham, Crown Estate and Tyseley Energy Park Ltd. Hosts the Birmingham Energy Innovation Centre and a hydrogen refuelling pilot.",
+      "status_date": "2025-10-21",
+      "lat": 52.4539,
+      "lng": -1.8386,
+      "loc_precision": "area",
+      "place": "Tyseley railway station",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Innovation, Clusters and Smart Energy",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Coventry City Centre South"
+      ],
+      "value_gbp_m": 450,
+      "value_note": "£450m GDV; c.6.5ha; 1,575 homes.",
+      "funding": "",
+      "unknowns": "Build-to-rent investor for the first phase. Marker is a geocode of Bull Yard, inside the site.",
+      "confidence": "high",
+      "id": "wm-city-centre-south",
+      "region": "wm",
+      "name": "City Centre South, Coventry",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "stage": "delivering",
+      "status": "On site. Delivered by The Hill Group with Coventry City Council. First homes due in the final quarter of 2027. Reserved matters consent for phase one; outline for phase two.",
+      "status_date": "2025-10-21",
+      "lat": 52.4059,
+      "lng": -1.5122,
+      "loc_precision": "area",
+      "place": "Bull Yard, Coventry",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Coventry Growth Arc",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [],
+      "value_gbp_m": 40,
+      "value_note": "c.£40m GDV; c.3ha; c.400 homes.",
+      "funding": "",
+      "unknowns": "Grant outcome.",
+      "confidence": "high",
+      "id": "wm-portersfield",
+      "region": "wm",
+      "name": "Portersfield, Dudley",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "stage": "pipeline",
+      "status": "Site cleared next to Dudley town centre and the new interchange. Resolution to grant planning for 242 build-to-rent homes; further applications due in 2026. Grant support from Homes England and WMCA under negotiation.",
+      "status_date": "2025-10-21",
+      "lat": 52.5109,
+      "lng": -2.0788,
+      "loc_precision": "site",
+      "place": "Portersfield, Dudley",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Black Country Growth Corridor",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [],
+      "value_gbp_m": null,
+      "value_note": "More than £500m GDV; c.22ha; almost 1,400 homes and 12,000 sq m of new retail floorspace.",
+      "funding": "",
+      "unknowns": "Development partner.",
+      "confidence": "high",
+      "id": "wm-west-bromwich",
+      "region": "wm",
+      "name": "West Bromwich town centre",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "stage": "pipeline",
+      "status": "Sandwell Council seeks a strategic development partner. Masterplan and adopted interim planning statement in place.",
+      "status_date": "2025-10-21",
+      "lat": 52.5165,
+      "lng": -1.9947,
+      "loc_precision": "area",
+      "place": "West Bromwich Central tram stop",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Black Country Growth Corridor",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Smithgate",
+        "Brewers Yard",
+        "St George's"
+      ],
+      "value_gbp_m": 400,
+      "value_note": "c.£400m GDV; c.6.2ha; over 1,500 homes across three sites.",
+      "funding": "",
+      "unknowns": "Start dates.",
+      "confidence": "high",
+      "id": "wm-wolverhampton-city-centre",
+      "region": "wm",
+      "name": "Wolverhampton city centre (Smithgate, St George's, Brewers Yard)",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth"
+      ],
+      "stage": "pipeline",
+      "status": "City of Wolverhampton Council with ECF and Capital & Centric. Smithgate has hybrid planning permission (2024); Brewers Yard has permission (2023); St George's is a Local Plan allocation.",
+      "status_date": "2025-10-21",
+      "lat": 52.5875,
+      "lng": -2.1203,
+      "loc_precision": "area",
+      "place": "Wolverhampton railway station",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Wolverhampton-Walsall Growth Cluster",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "SPARK",
+        "Walsall Growth Zone"
+      ],
+      "value_gbp_m": null,
+      "value_note": "More than £300m GDV; 64ha of employment land.",
+      "funding": "",
+      "unknowns": "Occupiers. Marker is a geocode of Bentley, Walsall, beside the junction.",
+      "confidence": "high",
+      "id": "wm-m6-junction-10",
+      "region": "wm",
+      "name": "M6 Junction 10 employment area, Walsall",
+      "type": "capital_project",
+      "themes": [
+        "growth"
+      ],
+      "stage": "pipeline",
+      "status": "Walsall Council seeks development partners, occupiers and forward funding. Unlocked by £78m of M6 upgrades and £26m of local road works. Allocated employment land. Henry Boot Developments is delivering SPARK.",
+      "status_date": "2025-10-21",
+      "lat": 52.5875,
+      "lng": -2.0251,
+      "loc_precision": "area",
+      "place": "Bentley, Walsall",
+      "sources": [
+        {
+          "title": "WMCA: West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "corridor": "Wolverhampton-Walsall Growth Cluster",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "South Bank new town"
+      ],
+      "value_gbp_m": null,
+      "value_note": "35,000 jobs and up to 13,000 homes. No investment value stated.",
+      "funding": "",
+      "unknowns": "New Town decision; investment value. Marker is a geocode of Leeds Dock, inside the South Bank.",
+      "confidence": "high",
+      "id": "wy-leeds-south-bank",
+      "region": "wy",
+      "name": "Leeds South Bank",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "housing"
+      ],
+      "stage": "pipeline",
+      "status": "One of six nationally significant projects in the West Yorkshire pipeline. If selected as a \"New Town\", the project will continue to double the size of the city centre.",
+      "status_date": "2026-03-13",
+      "lat": 53.7912,
+      "lng": -1.5332,
+      "loc_precision": "area",
+      "place": "Leeds Dock, Leeds",
+      "sources": [
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "City Village",
+        "Southern Gateway",
+        "Bradford new station"
+      ],
+      "value_gbp_m": null,
+      "value_note": "Up to 1,000 homes at City Village. No investment value stated.",
+      "funding": "",
+      "unknowns": "Station location and timetable; investment value. Marker is a geocode of the Oastler Shopping Centre, in the City Village area.",
+      "confidence": "high",
+      "id": "wy-bradford-city-village",
+      "region": "wy",
+      "name": "Bradford City Village and Southern Gateway",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "housing",
+        "transport"
+      ],
+      "stage": "pipeline",
+      "status": "One of six nationally significant projects. City Village: a new city centre neighbourhood. Southern Gateway: regeneration around a new city centre rail station, part of Northern Powerhouse Rail.",
+      "status_date": "2026-03-13",
+      "lat": 53.7964,
+      "lng": -1.7577,
+      "loc_precision": "area",
+      "place": "Oastler Shopping Centre, Bradford",
+      "sources": [
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [],
+      "value_gbp_m": null,
+      "value_note": "1,000 affordable homes. No investment value stated.",
+      "funding": "",
+      "unknowns": "Investment value and phasing. Marker is a geocode of Wakefield Cathedral, in the city centre.",
+      "confidence": "high",
+      "id": "wy-wakefield-city-centre",
+      "region": "wy",
+      "name": "Wakefield city centre masterplan",
+      "type": "capital_project",
+      "themes": [
+        "growth",
+        "housing",
+        "culture"
+      ],
+      "stage": "pipeline",
+      "status": "One of six nationally significant projects. A masterplan to reshape the city centre with a new quarter, a public square, a library and leisure facilities.",
+      "status_date": "2026-03-13",
+      "lat": 53.683,
+      "lng": -1.4968,
+      "loc_precision": "area",
+      "place": "Wakefield Cathedral",
+      "sources": [
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "aliases": [
+        "Clifton Business Park",
+        "Woodhouse",
+        "Thornhills",
+        "A641"
+      ],
+      "value_gbp_m": null,
+      "value_note": "3,000 homes; 46,000 sq m of commercial floorspace; 1,300 jobs at Clifton Business Park. The A641 scheme is given as £75m on one page and £68m on another.",
+      "funding": "",
+      "unknowns": "A641 cost (£68m or £75m in the same document).",
+      "confidence": "high",
+      "id": "wy-calderdale-garden-communities",
+      "region": "wy",
+      "name": "Calderdale New Garden Communities and Clifton Business Park",
+      "type": "capital_project",
+      "themes": [
+        "housing",
+        "growth",
+        "transport"
+      ],
+      "stage": "pipeline",
+      "status": "One of six nationally significant projects. New homes at Woodhouse and Thornhills, a business park at Clifton and the A641 improvement scheme around Brighouse.",
+      "status_date": "2026-03-13",
+      "lat": 53.7122,
+      "lng": -1.7777,
+      "loc_precision": "area",
+      "place": "Clifton, Brighouse",
+      "sources": [
+        {
+          "title": "West Yorkshire Combined Authority: Infrastructure pipeline, March 2026",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "corridor": "Nationally significant projects (West Yorkshire pipeline)",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf"
+        }
+      ],
+      "last_checked": "2026-11-15"
+    },
+    {
+      "id": "wm-lipf",
+      "region": "wm",
+      "name": "West Midlands Local Innovation Partnerships Fund",
+      "aliases": [
+        "LIPF",
+        "Local Innovation Partnerships Fund"
+      ],
+      "type": "fund",
+      "themes": [
+        "innovation",
+        "commercialisation",
+        "growth"
+      ],
+      "value_gbp_m": 50,
+      "value_note": "£50m from the Department for Science, Innovation and Technology through UKRI. WMCA expects it to unlock another £190m of private investment and create or safeguard 2,000 jobs.",
+      "funding": "DSIT through UK Research and Innovation",
+      "stage": "approved",
+      "status": "Announced by the Mayor on 19 March 2026 as the region’s biggest innovation deal from government. Backs clusters in advanced manufacturing, health and life sciences, and creative immersive technologies.",
+      "status_date": "2026-03-19",
+      "unknowns": "Project list and delivery timetable. Delivery partners were not confirmed from the page read.",
+      "lat": 52.48,
+      "lng": -1.9,
+      "loc_precision": "region",
+      "place": "West Midlands",
+      "sources": [
+        {
+          "title": "WMCA: New £50m innovation fund backs growth in the West Midlands, 19 March 2026",
+          "url": "https://www.wmca.org.uk/news/new-50m-innovation-fund-backs-growth-in-the-west-midlands/"
+        }
+      ],
+      "confidence": "high",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "change": "Record added.",
+          "source": "https://www.wmca.org.uk/news/new-50m-innovation-fund-backs-growth-in-the-west-midlands/"
+        }
+      ],
+      "last_checked": "2026-11-15"
     }
   ]
 }

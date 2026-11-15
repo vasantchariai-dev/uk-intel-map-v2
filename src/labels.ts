@@ -95,6 +95,8 @@ export const KIND_PLURALS: Record<AssetKind, string> = {
   research: 'Research and innovation centres',
 };
 export const KIND_LETTER: Record<AssetKind, string> = { university: 'U', catapult: 'C', research: 'R' };
+/** Connected Places Catapult sites get their own marker: that's us. */
+export const isCpc = (a: Asset) => a.catapult === 'Connected Places';
 export const CONFIDENCE_HELP: Record<string, string> = {
   high: 'High confidence: the primary paper was read.',
   medium: 'Medium confidence: from official sources or trade press.',
@@ -102,6 +104,7 @@ export const CONFIDENCE_HELP: Record<string, string> = {
 };
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+export const NO_DATE = 'Date not known';
 export function formatDate(iso: string): string {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
   return m ? `${+m[3]} ${MONTHS[+m[2] - 1]} ${m[1]}` : '';
@@ -128,4 +131,4 @@ export function esc(text: string | number | null | undefined): string {
 }
 
 export const schemeIconName = (s: Scheme) => `s-${TYPE_GROUP[s.type]}-${STAGE_CLASS[s.stage]}`;
-export const assetIconName = (a: Asset) => `a-${a.kind}`;
+export const assetIconName = (a: Asset) => (isCpc(a) ? 'a-cpc' : `a-${a.kind}`);

@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "npm run validate && tsc --noEmit && vite build",
+    "dev": "node scripts/sync-data.mjs && vite",
+    "build": "npm run validate && node scripts/sync-data.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
     "validate": "tsx scripts/validate.ts",
     "boundaries": "node scripts/fetch-boundaries.mjs && node scripts/build-boundaries.mjs",
-    "check-locations": "node --disable-warning=ExperimentalWarning scripts/check-locations.mjs"
+    "check-locations": "node --disable-warning=ExperimentalWarning scripts/check-locations.mjs",
+    "test:e2e": "npm run build && node --test \"tests/*.test.mjs\"",
+    "catapults": "node --disable-warning=ExperimentalWarning scripts/fetch-catapults.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^5.24.1",
@@ -18,7 +20,9 @@
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.6.6",
+    "axe-core": "^4.14.0",
     "mapshaper": "^0.7.101",
+    "playwright": "^1.63.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.8"

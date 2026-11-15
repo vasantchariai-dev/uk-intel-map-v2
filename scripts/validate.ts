@@ -1,7 +1,7 @@
 // npm run validate: checks the data files against the zod schemas.
 import { readFileSync } from 'node:fs';
 import { z } from 'zod';
-import { regionSchema, schemeSchema, assetSchema, SCHEME_TYPES, THEMES, STAGES, LOC_PRECISIONS, CONFIDENCES, ASSET_KINDS } from '../src/schema';
+import { regionSchema, schemeSchema, assetSchema, SCHEME_TYPES, THEMES, STAGES, LOC_PRECISIONS, CONFIDENCES, ASSET_KINDS, CATAPULTS } from '../src/schema';
 
 const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
 const errors: string[] = [];
@@ -36,6 +36,7 @@ sameVocab('stage', vocab.stage, STAGES);
 sameVocab('loc_precision', vocab.loc_precision, LOC_PRECISIONS);
 sameVocab('confidence', vocab.confidence, CONFIDENCES);
 sameVocab('asset kind', assetsFile._meta.vocab.kind, ASSET_KINDS);
+sameVocab('catapult', assetsFile._meta.vocab.catapult, CATAPULTS);
 
 const regions = parseAll('region', regionSchema, regionsFile.regions);
 const schemes = parseAll('scheme', schemeSchema, schemesFile.schemes);
@@ -58,6 +59,7 @@ for (const s of schemes) {
 }
 for (const a of assets) {
   if (!regionIds.has(a.region)) errors.push(`asset ${a.id}: unknown region "${a.region}"`);
+  if (a.kind === 'catapult' && !a.catapult) errors.push(`asset ${a.id}: a Catapult site needs a "catapult" field`);
 }
 
 for (const w of warnings) console.warn('Warning: ' + w);

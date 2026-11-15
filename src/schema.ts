@@ -8,6 +8,17 @@ export const STAGES = ['proposed', 'pipeline', 'business_case', 'approved', 'del
 export const LOC_PRECISIONS = ['site', 'area', 'region'] as const;
 export const CONFIDENCES = ['high', 'medium', 'low'] as const;
 export const ASSET_KINDS = ['university', 'catapult', 'research'] as const;
+export const CATAPULTS = [
+  'Cell and Gene Therapy',
+  'Satellite Applications',
+  'Offshore Renewable Energy',
+  'Medicines Discovery',
+  'Energy Systems',
+  'High Value Manufacturing',
+  'Digital',
+  'Connected Places',
+  'Semiconductor',
+] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use an ISO date (YYYY-MM-DD)');
 const lat = z.number().min(49).max(61);
@@ -21,7 +32,11 @@ export const imageSchema = z.object({
   credit: z.string().min(1),
   licence: z.string().min(1),
   source_url: z.url(),
+  /** Year the photo was taken, where Wikimedia Commons records it. */
+  date: z.string().regex(/^(\d{4})?$/).optional(),
 });
+
+const historySchema = z.array(z.object({ date: isoDate, change: z.string().min(1), source: z.url() }));
 
 export const regionSchema = z.object({
   id: z.string().regex(/^[a-z]+$/),
@@ -33,6 +48,9 @@ export const regionSchema = z.object({
   lads: z.array(z.string().min(1)).min(1),
   governance_sources: z.array(z.object({ label: z.string(), url: z.url(), notes: z.string() })),
   watch_notes: z.string(),
+  boundary_source: sourceSchema,
+  boundary_note: z.string().min(1),
+  nwf_partnership: z.object({ wave: z.union([z.literal(1), z.literal(2)]), agreed: isoDate, source: sourceSchema }).nullable(),
 });
 
 export const schemeSchema = z.object({
@@ -57,8 +75,11 @@ export const schemeSchema = z.object({
   confidence: z.enum(CONFIDENCES),
   image: imageSchema.optional(),
   parent: z.string().optional(),
-  history: z.array(z.object({ date: isoDate, change: z.string(), source: z.url() })).optional(),
-  last_checked: isoDate.optional(),
+  /** Growth corridor or grouping used by the region's prospectus or pipeline. */
+  corridor: z.string().optional(),
+  nwf_support: z.object({ type: z.string().min(1), source: sourceSchema }).optional(),
+  history: historySchema,
+  last_checked: isoDate,
 });
 
 export const assetSchema = z.object({
@@ -66,6 +87,12 @@ export const assetSchema = z.object({
   region: z.string(),
   name: z.string().min(1),
   kind: z.enum(ASSET_KINDS),
+  /** Catapult sites only: which of the nine Catapults, and the centre within it. */
+  catapult: z.enum(CATAPULTS).optional(),
+  centre: z.string().optional(),
+  address: z.string().optional(),
+  nearby: z.boolean().optional(),
+  nearby_note: z.string().optional(),
   summary: z.string(),
   established: z.number().int().nullable(),
   students: z.number().int().nullable(),
@@ -77,6 +104,8 @@ export const assetSchema = z.object({
   image: imageSchema.nullable(),
   sources: z.array(sourceSchema).min(1, 'Every asset needs at least one source'),
   confidence: z.enum(CONFIDENCES),
+  history: historySchema,
+  last_checked: isoDate,
 });
 
 export type Region = z.infer<typeof regionSchema>;

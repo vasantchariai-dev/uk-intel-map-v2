@@ -33,3 +33,36 @@ Cross-check: ONS Combined Authorities (December 2025) Boundaries EN BGC.
 ONS combined authority names in the file: Cambridgeshire and Peterborough; Devon and Torbay; East Midlands; Greater Lincolnshire; Greater Manchester; Hull and East Yorkshire; Lancashire; Liverpool City Region; North East; South Yorkshire; Tees Valley; West Midlands; West Yorkshire; West of England; York and North Yorkshire.
 
 Note: West Midlands is built from constituent members only, which is how ONS draws it too.
+
+## Other regions
+
+| Region | Rule | Councils | Area (km²) |
+|---|---|---|---|
+| Greater Manchester | ONS combined authority "Greater Manchester" | 10 | 1272 |
+| Liverpool City Region | ONS combined authority "Liverpool City Region" | 6 | 729 |
+| West of England | ONS combined authority "West of England" | 3 | 955 |
+| Cambridgeshire and Peterborough | ONS combined authority "Cambridgeshire and Peterborough" | 6 | 3384 |
+| Hull and East Yorkshire | ONS combined authority "Hull and East Yorkshire" | 2 | 2467 |
+| Greater Lincolnshire | ONS combined authority "Greater Lincolnshire" | 9 | 6949 |
+| Lancashire | ONS combined authority "Lancashire" | 14 | 3055 |
+| Devon and Torbay | ONS combined authority "Devon and Torbay" | 9 | 6608 |
+| Greater London | ONS codes starting E09 | 33 | 1568 |
+| Cornwall | Listed councils | 1 | 3536 |
+| Milton Keynes | Listed councils | 1 | 308 |
+| Cumbria | Listed councils | 2 | 6800 |
+| Cheshire and Warrington | Listed councils | 3 | 2259 |
+| Norfolk and Suffolk | Listed councils | 12 | 9146 |
+| Greater Essex | Listed councils | 14 | 3656 |
+| Sussex and Brighton | Listed councils | 13 | 3774 |
+| Hampshire and the Solent | Listed councils | 14 | 4136 |
+| Surrey | Listed councils | 11 | 1665 |
+| Edinburgh and South East Scotland | Listed councils | 6 | 7760 |
+| Aberdeen City Region | Listed councils | 2 | 6475 |
+| Tay Cities | Listed councils | 3 | 7595 |
+| Ayrshire | Listed councils | 3 | 3365 |
+| Stirling and Clackmannanshire | Listed councils | 2 | 2401 |
+| Inverness and Highland | Listed councils | 1 | 26025 |
+| North Wales | Listed councils | 6 | 6153 |
+| Mid Wales | Listed councils | 2 | 6960 |
+| South West Wales | Listed councils | 4 | 4791 |
+| Derry and Strabane | Listed councils | 1 | 1243 |

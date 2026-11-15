@@ -53,6 +53,23 @@ export const regionSchema = z.object({
   nwf_partnership: z.object({ wave: z.union([z.literal(1), z.literal(2)]), agreed: isoDate, source: sourceSchema }).nullable(),
 });
 
+export const OTHER_GROUPS = ['established', 'emerging', 'devolved'] as const;
+/** A non-priority region: drawn in grey, listed and zoomable, with no scheme records. */
+export const otherRegionSchema = z.object({
+  id: z.string().regex(/^[a-z]+$/),
+  name: z.string().min(1),
+  group: z.enum(OTHER_GROUPS),
+  type: z.string().min(1),
+  nation: z.enum(['England', 'Scotland', 'Wales', 'Northern Ireland']),
+  lads: z.array(z.string().min(1)).min(1, 'Run npm run boundaries to fill in the councils'),
+  cauth: z.string().optional(),
+  lad_code_prefix: z.string().optional(),
+  status_note: z.string().min(1),
+  unknowns: z.string(),
+  sources: z.array(sourceSchema).min(1),
+  confidence: z.enum(CONFIDENCES),
+});
+
 export const schemeSchema = z.object({
   id: z.string().regex(/^[a-z]+-[a-z0-9-]+$/),
   region: z.string(),
@@ -111,6 +128,7 @@ export const assetSchema = z.object({
 export type Region = z.infer<typeof regionSchema>;
 export type Scheme = z.infer<typeof schemeSchema>;
 export type Asset = z.infer<typeof assetSchema>;
+export type OtherRegion = z.infer<typeof otherRegionSchema>;
 export type SchemeType = (typeof SCHEME_TYPES)[number];
 export type Stage = (typeof STAGES)[number];
 export type AssetKind = (typeof ASSET_KINDS)[number];

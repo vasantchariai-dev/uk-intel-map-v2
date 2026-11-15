@@ -7,7 +7,8 @@ import { createRequire } from 'node:module';
 import { chromium } from 'playwright';
 import { preview } from 'vite';
 
-const UK = { west: -8.7, east: 1.8, south: 49.8, north: 60.9 };
+// South is generous: on a phone the sheet covers the lower map, so the centre sits below the regions.
+const UK = { west: -8.7, east: 1.8, south: 47, north: 60.9 };
 const SIZES = [
   [1366, 768],
   [1920, 1080],
@@ -140,6 +141,26 @@ test('council boundaries switch on when a region is opened', async () => {
   await page.close();
 });
 
+test('other regions are listed in grey, zoomable and searchable', async () => {
+  const others = JSON.parse(readFileSync('data/other-regions.json', 'utf8')).regions;
+  const { page, problems } = await open(1366, 768);
+  assert.equal(await page.$$eval('.row-other', (els) => els.length), others.length);
+  const before = (await page.evaluate(() => window.mapView())).zoom;
+  await page.click('[data-region="cumbria"]');
+  await page.waitForFunction(() => document.querySelector('#panel-body h2').textContent === 'Cumbria');
+  assert.match(await page.textContent('#panel-body'), /Not a priority region/);
+  assert.match(await page.textContent('#panel-body'), /Cumberland, Westmorland and Furness/);
+  await page.waitForTimeout(1500);
+  assert.ok((await page.evaluate(() => window.mapView())).zoom > before + 1, 'the map zooms in to the region');
+  await page.reload();
+  await page.waitForFunction(() => typeof window.mapView === 'function');
+  assert.equal(await page.textContent('#panel-body h2'), 'Cumbria');
+  await page.fill('#search', 'Hull');
+  await page.waitForSelector('[data-region="hey"]');
+  assert.deepEqual(problems, []);
+  await page.close();
+});
+
 test('on a phone the sheet starts at about a quarter of the screen', async () => {
   const { page } = await open(390, 844);
   const fraction = await page.evaluate(() => document.getElementById('panel').offsetHeight / document.getElementById('main').clientHeight);
@@ -152,7 +173,7 @@ test('on a phone the sheet starts at about a quarter of the screen', async () =>
 
 test('no serious accessibility problems on the main views (axe-core)', async () => {
   const { page } = await open(1366, 768);
-  for (const hash of ['', '#region=wm', '#region=wm&scheme=wm-bkq', '#region=wm&asset=wm-asset-catapult-connected-places-catapult-birmingham', '#view=list', '#view=compare', '#view=moved']) {
+  for (const hash of ['', '#region=wm', '#region=sussex', '#region=wm&scheme=wm-bkq', '#region=wm&asset=wm-asset-catapult-connected-places-catapult-birmingham', '#view=list', '#view=compare', '#view=moved']) {
     await page.goto(url + hash);
     await page.waitForTimeout(300);
     if (hash === '#view=list') await page.click('#filters summary');

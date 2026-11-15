@@ -1,9 +1,9 @@
 import './style.css';
-import { assetById, filterAssets, filterSchemes, lastChecked, loadData, regionById, schemeById, type Filters } from './data';
+import { assetById, filterAssets, filterSchemes, lastChecked, loadData, otherById, regionById, schemeById, searchOthers, type Filters } from './data';
 import { assetIcon, cpcIcon, schemeIcon } from './icons';
 import { GROUP_COLOURS, GROUP_LABELS, KIND_LABELS, STAGE_CLASS_LABELS, formatDate, type StageClass, type TypeGroup } from './labels';
 import { createMap, type MapApi } from './map';
-import { activeFilterCount, renderAsset, renderCompare, renderList, renderMoved, renderOverview, renderRegion, renderScheme, schemeSummary, toCsv } from './panel';
+import { activeFilterCount, renderAsset, renderCompare, renderList, renderMoved, renderOther, renderOverview, renderRegion, renderScheme, schemeSummary, toCsv } from './panel';
 import { ASSET_KINDS } from './schema';
 
 type View = 'regions' | 'list' | 'compare' | 'moved';
@@ -49,7 +49,7 @@ function readState(): State {
   const region = params.get('region');
   const scheme = params.get('scheme');
   const asset = params.get('asset');
-  if (region && regionById.has(region)) state.region = region;
+  if (region && (regionById.has(region) || otherById.has(region))) state.region = region;
   if (scheme && schemeById.has(scheme)) state.scheme = scheme;
   else if (asset && assetById.has(asset)) state.asset = asset;
   return state;
@@ -101,9 +101,10 @@ function apply(userAction: boolean) {
   const results = state.view === 'list' ? currentResults() : null;
   if (scheme) panelBody.innerHTML = renderScheme(scheme, backLabel);
   else if (asset) panelBody.innerHTML = renderAsset(asset, backLabel);
-  else if (results) panelBody.innerHTML = renderList(state.filters, results, filtersOpen);
+  else if (results) panelBody.innerHTML = renderList(state.filters, results, filtersOpen, searchOthers(state.filters));
   else if (state.view === 'compare') panelBody.innerHTML = renderCompare();
   else if (state.view === 'moved') panelBody.innerHTML = renderMoved(state.movedRegion);
+  else if (state.region && otherById.has(state.region)) panelBody.innerHTML = renderOther(otherById.get(state.region)!);
   else if (state.region) panelBody.innerHTML = renderRegion(regionById.get(state.region)!);
   else panelBody.innerHTML = renderOverview();
 
@@ -113,7 +114,8 @@ function apply(userAction: boolean) {
     ([view, label]) => `<button type="button" data-view="${view}"${view === state.view ? ' aria-current="page"' : ''}>${label}</button>`,
   ).join('');
   const viewLabel = VIEWS.find(([v]) => v === state.view)![1];
-  document.title = [item?.name ?? (state.view === 'regions' ? state.region && regionById.get(state.region)!.name : viewLabel), 'Regional growth intelligence map'].filter(Boolean).join(' – ');
+  const regionName = state.region ? (regionById.get(state.region) ?? otherById.get(state.region))!.name : undefined;
+  document.title = [item?.name ?? (state.view === 'regions' ? regionName : viewLabel), 'Regional growth intelligence map'].filter(Boolean).join(' – ');
 
   const focus = pendingFocus;
   pendingFocus = undefined;
@@ -277,14 +279,17 @@ function buildLegend() {
     <h3>Stage (shape)</h3><ul>${stages.join('')}
       <li><span class="halo-key" style="--c:${GROUP_COLOURS.policy}"></span>Soft halo: covers an area</li></ul>
     <h3>Innovation and R&amp;D assets</h3><ul>${kinds.join('')}<li>${img(cpcIcon(), 20)}Connected Places Catapult</li></ul>
+    <h3>Regions</h3><ul><li><span class="swatch swatch-priority"></span>Priority region (own colour)</li><li><span class="swatch swatch-other"></span>Other region</li></ul>
     <h3>Layers</h3>
     <label><input type="checkbox" id="toggle-catapults" checked /> Catapult network</label>
     <label><input type="checkbox" id="toggle-assets" checked /> Universities and research centres</label>
+    <label><input type="checkbox" id="toggle-others" checked /> Other regions (grey)</label>
     <label><input type="checkbox" id="toggle-councils" /> Show council boundaries</label>
     <p>Locations are approximate. Markers appear when you zoom in or choose a region. The number beside each region name is its count of mapped sites. Council boundaries switch on when you open a region.</p>`;
   const onToggle = (id: string, fn: (checked: boolean) => void) => $<HTMLInputElement>(id).addEventListener('change', (e) => fn((e.target as HTMLInputElement).checked));
   onToggle('toggle-assets', (v) => map?.setLayer('assets', v));
   onToggle('toggle-catapults', (v) => map?.setLayer('catapults', v));
+  onToggle('toggle-others', (v) => map?.setLayer('others', v));
   onToggle('toggle-councils', (v) => {
     councilsChoice = v;
     map?.setLayer('councils', v);

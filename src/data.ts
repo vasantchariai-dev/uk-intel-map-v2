@@ -1,4 +1,4 @@
-import type { Asset, Region, Scheme } from './schema';
+import type { Asset, OtherRegion, Region, Scheme } from './schema';
 
 // The JSON files in data/ are the source of truth. They are checked by
 // `npm run validate` before every build, copied to public/data/ and fetched
@@ -6,11 +6,14 @@ import type { Asset, Region, Scheme } from './schema';
 export let regions: Region[] = [];
 export let schemes: Scheme[] = [];
 export let assets: Asset[] = [];
+/** Non-priority regions: grey on the map, listed and zoomable, no schemes. */
+export let otherRegions: OtherRegion[] = [];
 export let lastChecked = '';
 
 export const regionById = new Map<string, Region>();
 export const schemeById = new Map<string, Scheme>();
 export const assetById = new Map<string, Asset>();
+export const otherById = new Map<string, OtherRegion>();
 
 export async function loadData(): Promise<void> {
   const get = async (name: string) => {
@@ -18,10 +21,12 @@ export async function loadData(): Promise<void> {
     if (!res.ok) throw new Error(`Could not load ${name}.json (${res.status})`);
     return res.json();
   };
-  const [r, s, a] = await Promise.all([get('regions'), get('schemes'), get('assets')]);
+  const [r, s, a, o] = await Promise.all([get('regions'), get('schemes'), get('assets'), get('other-regions')]);
   regions = r.regions;
   schemes = s.schemes;
   assets = a.assets;
+  otherRegions = o.regions;
+  for (const x of otherRegions) otherById.set(x.id, x);
   lastChecked = s._meta.last_checked;
   for (const x of regions) regionById.set(x.id, x);
   for (const x of schemes) schemeById.set(x.id, x);
@@ -69,6 +74,12 @@ export function filterSchemes(f: Filters): Scheme[] {
       (!f.nwf || Boolean(s.nwf_support)) &&
       matches(f.q, [s.name, ...s.aliases, s.place, s.status, s.corridor, regionById.get(s.region)?.name]),
   );
+}
+
+/** Other regions only appear in search results, never under filters. */
+export function searchOthers(f: Filters): OtherRegion[] {
+  if (!f.q || schemeOnlyFilters(f) || f.catapults.length || f.regions.length) return [];
+  return otherRegions.filter((o) => matches(f.q, [o.name, o.type, ...o.lads]));
 }
 
 export function filterAssets(f: Filters): Asset[] {

@@ -1,0 +1,729 @@
+{
+  "_meta": {
+    "description": "Other regions shown on the map in grey: established combined authorities, emerging strategic authorities, and deal areas and joint committees in Scotland, Wales and Northern Ireland. They are not priority regions and carry no scheme records. Boundaries are built from member councils (ONS LAD December 2025). An entry with \"cauth\" is matched to the ONS combined authority of that name and its \"lads\" list is filled in by the boundary build. Not exhaustive.",
+    "last_checked": "2026-11-15",
+    "vocab": {
+      "group": [
+        "established",
+        "emerging",
+        "devolved"
+      ]
+    }
+  },
+  "regions": [
+    {
+      "id": "gm",
+      "name": "Greater Manchester",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Greater Manchester",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Bolton",
+        "Bury",
+        "Manchester",
+        "Oldham",
+        "Rochdale",
+        "Salford",
+        "Stockport",
+        "Tameside",
+        "Trafford",
+        "Wigan"
+      ]
+    },
+    {
+      "id": "lcr",
+      "name": "Liverpool City Region",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Liverpool City Region",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Halton",
+        "Knowsley",
+        "Liverpool",
+        "Sefton",
+        "St. Helens",
+        "Wirral"
+      ]
+    },
+    {
+      "id": "woe",
+      "name": "West of England",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "West of England",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Bath and North East Somerset",
+        "Bristol, City of",
+        "South Gloucestershire"
+      ]
+    },
+    {
+      "id": "cpca",
+      "name": "Cambridgeshire and Peterborough",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Cambridgeshire and Peterborough",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Cambridge",
+        "East Cambridgeshire",
+        "Fenland",
+        "Huntingdonshire",
+        "Peterborough",
+        "South Cambridgeshire"
+      ]
+    },
+    {
+      "id": "hey",
+      "name": "Hull and East Yorkshire",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Hull and East Yorkshire",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "East Riding of Yorkshire",
+        "Kingston upon Hull, City of"
+      ]
+    },
+    {
+      "id": "glincs",
+      "name": "Greater Lincolnshire",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Greater Lincolnshire",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Boston",
+        "East Lindsey",
+        "Lincoln",
+        "North East Lincolnshire",
+        "North Kesteven",
+        "North Lincolnshire",
+        "South Holland",
+        "South Kesteven",
+        "West Lindsey"
+      ]
+    },
+    {
+      "id": "lancs",
+      "name": "Lancashire",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Lancashire",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Blackburn with Darwen",
+        "Blackpool",
+        "Burnley",
+        "Chorley",
+        "Fylde",
+        "Hyndburn",
+        "Lancaster",
+        "Pendle",
+        "Preston",
+        "Ribble Valley",
+        "Rossendale",
+        "South Ribble",
+        "West Lancashire",
+        "Wyre"
+      ]
+    },
+    {
+      "id": "dt",
+      "name": "Devon and Torbay",
+      "group": "established",
+      "type": "Combined authority",
+      "nation": "England",
+      "cauth": "Devon and Torbay",
+      "status_note": "Established combined authority, in the ONS December 2025 boundary file.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Combined Authorities (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "East Devon",
+        "Exeter",
+        "Mid Devon",
+        "North Devon",
+        "South Hams",
+        "Teignbridge",
+        "Torbay",
+        "Torridge",
+        "West Devon"
+      ]
+    },
+    {
+      "id": "london",
+      "name": "Greater London",
+      "group": "established",
+      "type": "Greater London Authority",
+      "nation": "England",
+      "lad_code_prefix": "E09",
+      "status_note": "The Greater London Authority: the Mayor of London and the London Assembly. Covers the 32 London boroughs and the City of London.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "ONS: Local Authority Districts (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        }
+      ],
+      "confidence": "high",
+      "lads": [
+        "Barking and Dagenham",
+        "Barnet",
+        "Bexley",
+        "Brent",
+        "Bromley",
+        "Camden",
+        "City of London",
+        "Croydon",
+        "Ealing",
+        "Enfield",
+        "Greenwich",
+        "Hackney",
+        "Hammersmith and Fulham",
+        "Haringey",
+        "Harrow",
+        "Havering",
+        "Hillingdon",
+        "Hounslow",
+        "Islington",
+        "Kensington and Chelsea",
+        "Kingston upon Thames",
+        "Lambeth",
+        "Lewisham",
+        "Merton",
+        "Newham",
+        "Redbridge",
+        "Richmond upon Thames",
+        "Southwark",
+        "Sutton",
+        "Tower Hamlets",
+        "Waltham Forest",
+        "Wandsworth",
+        "Westminster"
+      ]
+    },
+    {
+      "id": "cornwall",
+      "name": "Cornwall",
+      "group": "established",
+      "type": "Council with a county devolution deal",
+      "nation": "England",
+      "lads": [
+        "Cornwall"
+      ],
+      "status_note": "Cornwall Council has a devolution deal with government. The first was agreed in 2015; a further Level 2 deal was published on 22 November 2023. There is no combined authority or mayor.",
+      "unknowns": "What has changed since the 2023 deal was not checked. The Isles of Scilly are a separate council and are not shown.",
+      "sources": [
+        {
+          "title": "GOV.UK: Cornwall devolution deal (Kevambos Digresennans Kernow) 2023",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal-kevambos-digresennans-kernow-2023"
+        },
+        {
+          "title": "GOV.UK: Cornwall devolution deal (2015)",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "mk",
+      "name": "Milton Keynes",
+      "group": "established",
+      "type": "Unitary council",
+      "nation": "England",
+      "lads": [
+        "Milton Keynes"
+      ],
+      "status_note": "Milton Keynes City Council area. Shown because Connected Places Catapult is based here (Unity Place, 200 Grafton Gate, per the Catapult Network map).",
+      "unknowns": "Any devolution or strategic authority plans covering Milton Keynes were not looked up.",
+      "sources": [
+        {
+          "title": "ONS: Local Authority Districts (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        },
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "cumbria",
+      "name": "Cumbria",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Cumberland",
+        "Westmorland and Furness"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cw",
+      "name": "Cheshire and Warrington",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Cheshire East",
+        "Cheshire West and Chester",
+        "Warrington"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2027.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ns",
+      "name": "Norfolk and Suffolk",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Breckland",
+        "Broadland",
+        "Great Yarmouth",
+        "King's Lynn and West Norfolk",
+        "North Norfolk",
+        "Norwich",
+        "South Norfolk",
+        "Babergh",
+        "East Suffolk",
+        "Ipswich",
+        "Mid Suffolk",
+        "West Suffolk"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "essex",
+      "name": "Greater Essex",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Basildon",
+        "Braintree",
+        "Brentwood",
+        "Castle Point",
+        "Chelmsford",
+        "Colchester",
+        "Epping Forest",
+        "Harlow",
+        "Maldon",
+        "Rochford",
+        "Tendring",
+        "Uttlesford",
+        "Southend-on-Sea",
+        "Thurrock"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "sussex",
+      "name": "Sussex and Brighton",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Brighton and Hove",
+        "Eastbourne",
+        "Hastings",
+        "Lewes",
+        "Rother",
+        "Wealden",
+        "Adur",
+        "Arun",
+        "Chichester",
+        "Crawley",
+        "Horsham",
+        "Mid Sussex",
+        "Worthing"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "hants",
+      "name": "Hampshire and the Solent",
+      "group": "emerging",
+      "type": "Emerging mayoral strategic authority",
+      "nation": "England",
+      "lads": [
+        "Basingstoke and Deane",
+        "East Hampshire",
+        "Eastleigh",
+        "Fareham",
+        "Gosport",
+        "Hart",
+        "Havant",
+        "New Forest",
+        "Rushmoor",
+        "Test Valley",
+        "Winchester",
+        "Portsmouth",
+        "Southampton",
+        "Isle of Wight"
+      ],
+      "status_note": "On the Devolution Priority Programme. In July 2025 the government said the area had met the legal tests to proceed and planned the first mayoral election for May 2026.",
+      "unknowns": "Not in the ONS December 2025 combined authority file. Whether the authority is now established, and whether the election date has moved since July 2025, was not checked.",
+      "sources": [
+        {
+          "title": "GOV.UK: Full steam ahead for Devolution Priority Programme, 17 July 2025",
+          "url": "https://www.gov.uk/government/news/full-steam-ahead-for-devolution-priority-programme"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "surrey",
+      "name": "Surrey",
+      "group": "emerging",
+      "type": "County reorganising into two unitary councils",
+      "nation": "England",
+      "lads": [
+        "Elmbridge",
+        "Epsom and Ewell",
+        "Guildford",
+        "Mole Valley",
+        "Reigate and Banstead",
+        "Runnymede",
+        "Spelthorne",
+        "Surrey Heath",
+        "Tandridge",
+        "Waverley",
+        "Woking"
+      ],
+      "status_note": "Not on the Devolution Priority Programme. The Secretary of State decided, subject to Parliamentary approval, to replace the county and its 11 districts with two unitary councils.",
+      "unknowns": "Start date of the new councils, and the plan and timetable for a strategic authority covering Surrey, were not confirmed from the page read. The boundary shown is the current county.",
+      "sources": [
+        {
+          "title": "GOV.UK: Local government reorganisation in Surrey",
+          "url": "https://www.gov.uk/government/consultations/local-government-reorganisation-in-surrey"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "esess",
+      "name": "Edinburgh and South East Scotland",
+      "group": "devolved",
+      "type": "City region deal area",
+      "nation": "Scotland",
+      "lads": [
+        "City of Edinburgh",
+        "East Lothian",
+        "Fife",
+        "Midlothian",
+        "Scottish Borders",
+        "West Lothian"
+      ],
+      "status_note": "Edinburgh and South East Scotland City Region Deal: six councils with the UK and Scottish governments.",
+      "unknowns": "No official page listing the six councils could be read; the membership is from our own knowledge and needs confirming. Fife is also a partner in the Tay Cities deal.",
+      "sources": [
+        {
+          "title": "GOV.UK: Bayes Centre opens as part of Edinburgh and South East Scotland City Region Deal",
+          "url": "https://www.gov.uk/government/news/bayes-centre-opens-as-part-of-edinburgh-and-south-east-scotland-city-region-deal"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "acr",
+      "name": "Aberdeen City Region",
+      "group": "devolved",
+      "type": "City region deal area",
+      "nation": "Scotland",
+      "lads": [
+        "Aberdeen City",
+        "Aberdeenshire"
+      ],
+      "status_note": "Aberdeen City Region Deal (2016): Aberdeen City Council, Aberdeenshire Council and Opportunity North East with the UK and Scottish governments.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "GOV.UK: City Deal: Aberdeen City Region",
+          "url": "https://www.gov.uk/government/publications/city-deal-aberdeen-city-region"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "tay",
+      "name": "Tay Cities",
+      "group": "devolved",
+      "type": "City region deal area",
+      "nation": "Scotland",
+      "lads": [
+        "Angus",
+        "Dundee City",
+        "Perth and Kinross"
+      ],
+      "status_note": "£700 million Tay Cities Region Deal (signed December 2020): Angus, Dundee City, Fife, and Perth and Kinross councils.",
+      "unknowns": "Fife is a partner here too but is drawn under Edinburgh and South East Scotland, so this outline leaves it out.",
+      "sources": [
+        {
+          "title": "GOV.UK: Tay Cities Region Deal",
+          "url": "https://www.gov.uk/government/publications/tay-cities-region-deal"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ayr",
+      "name": "Ayrshire",
+      "group": "devolved",
+      "type": "Growth deal area",
+      "nation": "Scotland",
+      "lads": [
+        "East Ayrshire",
+        "North Ayrshire",
+        "South Ayrshire"
+      ],
+      "status_note": "£251 million Ayrshire Growth Deal (signed November 2020).",
+      "unknowns": "The three Ayrshire councils are from our own knowledge; the page read does not list them.",
+      "sources": [
+        {
+          "title": "GOV.UK: Ayrshire Growth Deal",
+          "url": "https://www.gov.uk/government/publications/ayrshire-growth-deal"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "stir",
+      "name": "Stirling and Clackmannanshire",
+      "group": "devolved",
+      "type": "City region deal area",
+      "nation": "Scotland",
+      "lads": [
+        "Stirling",
+        "Clackmannanshire"
+      ],
+      "status_note": "Stirling and Clackmannanshire City Region Deal (full deal published February 2020).",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "GOV.UK: Stirling and Clackmannanshire City Region Deal",
+          "url": "https://www.gov.uk/government/publications/stirling-and-clackmannanshire-city-region-deal"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "high",
+      "name": "Inverness and Highland",
+      "group": "devolved",
+      "type": "City region deal area",
+      "nation": "Scotland",
+      "lads": [
+        "Highland"
+      ],
+      "status_note": "Inverness and Highland City Region Deal (2016): the Highland Council with the UK and Scottish governments.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "GOV.UK: Inverness and Highland City Region Deal",
+          "url": "https://www.gov.uk/government/publications/inverness-and-highland-city-region-deal"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "nwales",
+      "name": "North Wales",
+      "group": "devolved",
+      "type": "Corporate joint committee",
+      "nation": "Wales",
+      "lads": [
+        "Conwy",
+        "Denbighshire",
+        "Flintshire",
+        "Gwynedd",
+        "Isle of Anglesey",
+        "Wrexham"
+      ],
+      "status_note": "North Wales Corporate Joint Committee: six constituent councils.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "North Wales Corporate Joint Committee Regulations 2021 (SI 2021/339)",
+          "url": "https://www.legislation.gov.uk/wsi/2021/339/made"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "mwales",
+      "name": "Mid Wales",
+      "group": "devolved",
+      "type": "Corporate joint committee",
+      "nation": "Wales",
+      "lads": [
+        "Ceredigion",
+        "Powys"
+      ],
+      "status_note": "Mid Wales Corporate Joint Committee: two constituent councils.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "Mid Wales Corporate Joint Committee Regulations 2021 (SI 2021/342)",
+          "url": "https://www.legislation.gov.uk/wsi/2021/342/made"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "swwales",
+      "name": "South West Wales",
+      "group": "devolved",
+      "type": "Corporate joint committee",
+      "nation": "Wales",
+      "lads": [
+        "Carmarthenshire",
+        "Neath Port Talbot",
+        "Pembrokeshire",
+        "Swansea"
+      ],
+      "status_note": "South West Wales Corporate Joint Committee: four constituent councils.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "South West Wales Corporate Joint Committee Regulations 2021 (SI 2021/352)",
+          "url": "https://www.legislation.gov.uk/wsi/2021/352/made"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "dcs",
+      "name": "Derry and Strabane",
+      "group": "devolved",
+      "type": "City deal area",
+      "nation": "Northern Ireland",
+      "lads": [
+        "Derry City and Strabane"
+      ],
+      "status_note": "Derry-Londonderry and Strabane City Region City Deal, signed in September 2024.",
+      "unknowns": "",
+      "sources": [
+        {
+          "title": "GOV.UK: Statement on the signing of the Derry-Londonderry and Strabane City Region City Deal",
+          "url": "https://www.gov.uk/government/news/statement-by-the-secretary-of-state-on-the-official-signing-of-derry-londonderry-and-strabane-city-region-city-deal"
+        }
+      ],
+      "confidence": "high"
+    }
+  ]
+}

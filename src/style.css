@@ -105,6 +105,10 @@ label[for="moved-region"] { font-weight: bold; margin-right: 8px; }
 .row-region { border-left: 8px solid var(--region); padding-left: 12px; }
 .row-region .row-name { font-size: 18px; }
 
+.row-other { border-left: 8px solid #b1b4b6; padding-left: 12px; }
+.panel h2.section { margin-top: 32px; padding-top: 20px; border-top: 2px solid var(--black); }
+.swatch { width: 22px; height: 14px; border: 2px solid #882255; background: rgba(136, 34, 85, 0.2); }
+.swatch-other { border: 1px solid #505a5f; background: rgba(80, 90, 95, 0.15); }
 .link { padding: 0; text-align: left; font: inherit; color: var(--blue); background: none; border: 0; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 .link:hover { color: #003078; }
 .back::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border: solid currentColor; border-width: 0 0 2px 2px; transform: rotate(45deg) translateY(-2px); }

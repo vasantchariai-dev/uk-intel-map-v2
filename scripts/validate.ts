@@ -1,7 +1,7 @@
 // npm run validate: checks the data files against the zod schemas.
 import { readFileSync } from 'node:fs';
 import { z } from 'zod';
-import { regionSchema, schemeSchema, assetSchema, SCHEME_TYPES, THEMES, STAGES, LOC_PRECISIONS, CONFIDENCES, ASSET_KINDS, CATAPULTS } from '../src/schema';
+import { regionSchema, otherRegionSchema, schemeSchema, assetSchema, SCHEME_TYPES, THEMES, STAGES, LOC_PRECISIONS, CONFIDENCES, ASSET_KINDS, CATAPULTS } from '../src/schema';
 
 const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
 const errors: string[] = [];
@@ -41,10 +41,11 @@ sameVocab('catapult', assetsFile._meta.vocab.catapult, CATAPULTS);
 const regions = parseAll('region', regionSchema, regionsFile.regions);
 const schemes = parseAll('scheme', schemeSchema, schemesFile.schemes);
 const assets = parseAll('asset', assetSchema, assetsFile.assets);
+const others = parseAll('other region', otherRegionSchema, read('data/other-regions.json').regions);
 
 const regionIds = new Set(regions.map((r) => r.id));
 const ids = new Set<string>();
-for (const record of [...regions, ...schemes, ...assets]) {
+for (const record of [...regions, ...others, ...schemes, ...assets]) {
   if (ids.has(record.id)) errors.push(`Duplicate id: ${record.id}`);
   ids.add(record.id);
 }
@@ -68,4 +69,4 @@ if (errors.length) {
   for (const e of errors) console.error('  - ' + e);
   process.exit(1);
 }
-console.log(`Valid: ${regions.length} regions, ${schemes.length} schemes, ${assets.length} assets. ${warnings.length} warning(s).`);
+console.log(`Valid: ${regions.length} priority regions, ${others.length} other regions, ${schemes.length} schemes, ${assets.length} assets. ${warnings.length} warning(s).`);

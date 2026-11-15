@@ -275,6 +275,52 @@
       ]
     },
     {
+      "id": "cornwall",
+      "name": "Cornwall",
+      "group": "established",
+      "type": "Council with a county devolution deal",
+      "nation": "England",
+      "lads": [
+        "Cornwall"
+      ],
+      "status_note": "Cornwall Council has a devolution deal with government. The first was agreed in 2015; a further Level 2 deal was published on 22 November 2023. There is no combined authority or mayor.",
+      "unknowns": "What has changed since the 2023 deal was not checked. The Isles of Scilly are a separate council and are not shown.",
+      "sources": [
+        {
+          "title": "GOV.UK: Cornwall devolution deal (Kevambos Digresennans Kernow) 2023",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal-kevambos-digresennans-kernow-2023"
+        },
+        {
+          "title": "GOV.UK: Cornwall devolution deal (2015)",
+          "url": "https://www.gov.uk/government/publications/cornwall-devolution-deal"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "mk",
+      "name": "Milton Keynes",
+      "group": "established",
+      "type": "Unitary council",
+      "nation": "England",
+      "lads": [
+        "Milton Keynes"
+      ],
+      "status_note": "Milton Keynes City Council area. Shown because Connected Places Catapult is based here (Unity Place, 200 Grafton Gate, per the Catapult Network map).",
+      "unknowns": "Any devolution or strategic authority plans covering Milton Keynes were not looked up.",
+      "sources": [
+        {
+          "title": "ONS: Local Authority Districts (December 2025) boundaries",
+          "url": "https://geoportal.statistics.gov.uk/"
+        },
+        {
+          "title": "Catapult Network: map of locations",
+          "url": "https://catapult.org.uk/about-us/why-the-catapult-network/"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "cumbria",
       "name": "Cumbria",
       "group": "emerging",

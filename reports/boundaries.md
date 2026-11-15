@@ -47,6 +47,8 @@ Note: West Midlands is built from constituent members only, which is how ONS dra
 | Lancashire | ONS combined authority "Lancashire" | 14 | 3055 |
 | Devon and Torbay | ONS combined authority "Devon and Torbay" | 9 | 6608 |
 | Greater London | ONS codes starting E09 | 33 | 1568 |
+| Cornwall | Listed councils | 1 | 3536 |
+| Milton Keynes | Listed councils | 1 | 308 |
 | Cumbria | Listed councils | 2 | 6800 |
 | Cheshire and Warrington | Listed councils | 3 | 2259 |
 | Norfolk and Suffolk | Listed councils | 12 | 9146 |

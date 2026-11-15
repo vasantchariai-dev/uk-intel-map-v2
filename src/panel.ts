@@ -15,7 +15,7 @@ import {
   isCpc,
   shortValue,
 } from './labels';
-import { ASSET_KINDS, CATAPULTS, CONFIDENCES, OTHER_GROUPS, SCHEME_TYPES, STAGES, THEMES, type Asset, type OtherRegion, type Region, type Scheme } from './schema';
+import { ASSET_KINDS, CATAPULTS, CONFIDENCES, DOCUMENT_KINDS, OTHER_GROUPS, SCHEME_TYPES, STAGES, THEMES, type Asset, type OtherRegion, type Region, type Scheme } from './schema';
 
 type ImageInfo = NonNullable<Scheme['image']>;
 
@@ -96,7 +96,7 @@ export function renderOverview(): string {
 
 const GROUP_HEADINGS: Record<(typeof OTHER_GROUPS)[number], string> = {
   established: 'Established authorities in England',
-  emerging: 'Emerging authorities in England',
+  emerging: 'Emerging and proposed authorities in England',
   devolved: 'Deal areas and joint committees in Scotland, Wales and Northern Ireland',
 };
 
@@ -182,6 +182,12 @@ export function toCsv(found: { schemes: Scheme[]; assets: Asset[] }): string {
 
 // ---------- Region panel ----------
 
+const DOCUMENT_HEADINGS: Record<(typeof DOCUMENT_KINDS)[number], string> = {
+  growth_plan: 'Growth plans and economic strategies',
+  prospectus: 'Investment prospectuses and pipelines',
+  transport_plan: 'Transport plans',
+};
+
 export function renderRegion(r: Region): string {
   const inRegion = schemesIn(r.id);
   const sites = inRegion.filter(isMapped);
@@ -223,6 +229,16 @@ export function renderRegion(r: Region): string {
       const items = regionAssets.filter((a) => a.kind === kind);
       return items.length ? `<h4>${heading(kind, items.length)}</h4>${list(items.map((a) => assetRow(a, false)))}` : '';
     }).join('')}
+    <h3>Plans and prospectuses</h3>
+    ${DOCUMENT_KINDS.map((kind) => {
+      const items = r.documents.filter((x) => x.kind === kind);
+      return `<h4>${DOCUMENT_HEADINGS[kind]}</h4>${
+        items.length
+          ? `<ul class="links">${items.map((x) => `<li>${external(x.url, x.title)}<br /><span class="hint">${esc(x.dated)}${x.note ? `. ${esc(x.note)}` : ''}</span></li>`).join('')}</ul>`
+          : '<p class="hint">None found.</p>'
+      }`;
+    }).join('')}
+    ${r.documents_gaps ? `<p class="hint"><strong>Gaps:</strong> ${esc(r.documents_gaps)}</p>` : ''}
     <h3>Governance papers</h3>
     <ul class="links">${r.governance_sources.map((g) => `<li>${external(g.url, g.label)}</li>`).join('')}</ul>
     <p><button type="button" class="button button-secondary" data-action="print">Print region brief</button></p>`;

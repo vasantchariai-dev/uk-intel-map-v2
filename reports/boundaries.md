@@ -45,10 +45,12 @@ Note: West Midlands is built from constituent members only, which is how ONS dra
 | Hull and East Yorkshire | ONS combined authority "Hull and East Yorkshire" | 2 | 2467 |
 | Greater Lincolnshire | ONS combined authority "Greater Lincolnshire" | 9 | 6949 |
 | Lancashire | ONS combined authority "Lancashire" | 14 | 3055 |
-| Devon and Torbay | ONS combined authority "Devon and Torbay" | 9 | 6608 |
 | Greater London | ONS codes starting E09 | 33 | 1568 |
-| Cornwall | Listed councils | 1 | 3536 |
 | Milton Keynes | Listed councils | 1 | 308 |
+| Buckinghamshire | Listed councils | 1 | 1560 |
+| Warwickshire | Listed councils | 5 | 1971 |
+| Devon, Plymouth and Torbay | Listed councils | 10 | 6688 |
+| Cornwall | Listed councils | 1 | 3536 |
 | Cumbria | Listed councils | 2 | 6800 |
 | Cheshire and Warrington | Listed councils | 3 | 2259 |
 | Norfolk and Suffolk | Listed councils | 12 | 9146 |
@@ -56,6 +58,12 @@ Note: West Midlands is built from constituent members only, which is how ONS dra
 | Sussex and Brighton | Listed councils | 13 | 3774 |
 | Hampshire and the Solent | Listed councils | 14 | 4136 |
 | Surrey | Listed councils | 11 | 1665 |
+| Hertfordshire | Listed councils | 10 | 1637 |
+| Leicester, Leicestershire and Rutland | Listed councils | 9 | 2542 |
+| Stoke and Staffordshire | Listed councils | 9 | 2708 |
+| Thames Valley | Listed councils | 12 | 4087 |
+| Wessex | Listed councils | 4 | 9333 |
+| Kent and Medway | Listed councils | 13 | 3725 |
 | Edinburgh and South East Scotland | Listed councils | 6 | 7760 |
 | Aberdeen City Region | Listed councils | 2 | 6475 |
 | Tay Cities | Listed councils | 3 | 7595 |

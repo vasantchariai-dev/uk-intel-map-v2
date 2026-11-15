@@ -38,6 +38,8 @@ export const imageSchema = z.object({
 
 const historySchema = z.array(z.object({ date: isoDate, change: z.string().min(1), source: z.url() }));
 
+export const DOCUMENT_KINDS = ['growth_plan', 'prospectus', 'transport_plan'] as const;
+
 export const regionSchema = z.object({
   id: z.string().regex(/^[a-z]+$/),
   name: z.string().min(1),
@@ -51,6 +53,12 @@ export const regionSchema = z.object({
   boundary_source: sourceSchema,
   boundary_note: z.string().min(1),
   nwf_partnership: z.object({ wave: z.union([z.literal(1), z.literal(2)]), agreed: isoDate, source: sourceSchema }).nullable(),
+  /** Growth plans, investment prospectuses and transport plans. Every link was opened and checked. */
+  documents: z.array(
+    z.object({ kind: z.enum(DOCUMENT_KINDS), title: z.string().min(1), url: z.url(), dated: z.string().min(1), note: z.string() }),
+  ),
+  /** What we looked for and could not find. */
+  documents_gaps: z.string(),
 });
 
 export const OTHER_GROUPS = ['established', 'emerging', 'devolved'] as const;

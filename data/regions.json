@@ -37,7 +37,24 @@
           "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
           "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "South Yorkshire's Plan for Business Growth and Greater Opportunity 2025–2035 (Growth Plan)",
+          "url": "https://www.southyorkshire-ca.gov.uk/getmedia/65cac841-bc17-4ea3-8219-db0736691097/SY-Growth-Plan-2026_FINAL.pdf",
+          "dated": "File dated September 2026",
+          "note": "91 pages."
+        },
+        {
+          "kind": "prospectus",
+          "title": "South Yorkshire Investment Playbook",
+          "url": "https://www.southyorkshire-ca.gov.uk/getmedia/ea4aadd3-4711-4ae3-ba46-a244c565da2a/South-Yorkshire-Investment-Playbook_Diagnostic_September-2026.pdf",
+          "dated": "September 2026",
+          "note": "The file name calls it a diagnostic, so it may not be a full prospectus."
+        }
+      ],
+      "documents_gaps": "No published Local Transport Plan found. October 2026 board papers describe it as emerging."
     },
     {
       "id": "wm",
@@ -75,7 +92,38 @@
           "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
           "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "West Midlands Growth Plan: launch announcement",
+          "url": "https://www.wmca.org.uk/news/west-midlands-mayor-unveils-plan-to-turbocharge-the-economy-and-put-an-extra-8-600-in-people-s-pockets/",
+          "dated": "21 July 2025",
+          "note": "The announcement, not the plan itself."
+        },
+        {
+          "kind": "prospectus",
+          "title": "West Midlands Investment Prospectus 2025",
+          "url": "https://cloudcdn.wmca.org.uk/documents/wmca/pdf/wmca-investment-prospectus_digital-reduced.pdf",
+          "dated": "File dated October 2025",
+          "note": "Four growth corridors. The source for our corridor field."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Reimagining transport in the West Midlands: Local Transport Plan core strategy",
+          "url": "https://cloudcdn.wmca.org.uk/documents/tfwm/pdf/wm-ltp-2023-core-strategy-v2-1-reduced.pdf",
+          "dated": "File dated February 2023",
+          "note": ""
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Journeys for Everyone: the West Midlands Local Transport Plan (TfWM page)",
+          "url": "https://www.tfwm.org.uk/who-we-are/our-strategy/local-transport-plan/",
+          "dated": "Not dated",
+          "note": ""
+        }
+      ],
+      "documents_gaps": "The Growth Plan document itself was not found, only its launch announcement."
     },
     {
       "id": "em",
@@ -116,7 +164,38 @@
         "url": "https://geoportal.statistics.gov.uk/"
       },
       "boundary_note": "17 councils. Matches the ONS combined authority boundary.",
-      "nwf_partnership": null
+      "nwf_partnership": null,
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "East Midlands Growth Plan",
+          "url": "https://www.eastmidlands-cca.gov.uk/content/uploads/2025/10/East_midlands_growth_plan_launch_full.pdf",
+          "dated": "File dated October 2025",
+          "note": "77 pages. Ten-year plan."
+        },
+        {
+          "kind": "prospectus",
+          "title": "Irresistible to Investment: A Vision for Growth",
+          "url": "https://www.eastmidlands-cca.gov.uk/content/uploads/2025/06/EMCCA-Spatial-Vision-FINAL.pdf",
+          "dated": "File dated June 2025",
+          "note": "A spatial vision, the nearest thing to a prospectus found."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Mayor's Transport Plan: draft",
+          "url": "https://www.eastmidlands-cca.gov.uk/content/uploads/2025/11/EMCCA-Mayors-Transport-Plan-Draft-6.1-compressed.pdf",
+          "dated": "Uploaded November 2025",
+          "note": "Draft. Not opened; linked from the page below."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "The Mayor's Big Transport Conversation (plan page)",
+          "url": "https://www.eastmidlands-cca.gov.uk/what-we-do/transport/mayors-transport-plan/",
+          "dated": "Not dated",
+          "note": "Consultation closed; 36,489 people took part. The plan will run to 2040."
+        }
+      ],
+      "documents_gaps": "The final Mayor's Transport Plan has not been published."
     },
     {
       "id": "wy",
@@ -152,7 +231,31 @@
           "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
           "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "West Yorkshire Local Growth Plan (page)",
+          "url": "https://www.westyorks-ca.gov.uk/about-us/our-vision-and-mission/local-growth-plan/",
+          "dated": "Not dated",
+          "note": ""
+        },
+        {
+          "kind": "prospectus",
+          "title": "Infrastructure pipeline: Delivering a brighter future",
+          "url": "https://www.westyorks-ca.gov.uk/media/2w2c5u0i/infrastructure-pipeline-march-2026.pdf",
+          "dated": "March 2026",
+          "note": "Six nationally significant projects. The source for four of our records."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "The Mayor's West Yorkshire Local Transport Plan",
+          "url": "https://www.westyorks-ca.gov.uk/media/qpmbpsv4/the-mayors-west-yorkshire-local-transport-plan.pdf",
+          "dated": "File dated February 2026",
+          "note": "128 pages. Replaces Transport Strategy 2040."
+        }
+      ],
+      "documents_gaps": "The May 2026 investment prospectus was not found on the combined authority site."
     },
     {
       "id": "yny",
@@ -178,7 +281,38 @@
         "url": "https://geoportal.statistics.gov.uk/"
       },
       "boundary_note": "2 councils. Matches the ONS combined authority boundary.",
-      "nwf_partnership": null
+      "nwf_partnership": null,
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "York and North Yorkshire Local Growth Plan",
+          "url": "https://yorknorthyorks-ca.gov.uk/wp-content/uploads/2025/10/York-and-North-Yorkshire-Local-Growth-Plan.pdf",
+          "dated": "File dated October 2025",
+          "note": "108 pages."
+        },
+        {
+          "kind": "prospectus",
+          "title": "Investment Strategy",
+          "url": "https://yorknorthyorks-ca.gov.uk/wp-content/uploads/2025/12/YNCYA-Investment-Strategy.pdf",
+          "dated": "File dated December 2025",
+          "note": ""
+        },
+        {
+          "kind": "prospectus",
+          "title": "Invest in the Great North: investment prospectus",
+          "url": "https://yorknorthyorks-ca.gov.uk/wp-content/uploads/2026/05/TGN-investment-prospectus.pdf",
+          "dated": "File dated May 2026",
+          "note": "Covers the whole North, not this region alone."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Mayor's Local Transport Plan (page)",
+          "url": "https://yorknorthyorks-ca.gov.uk/mayors-local-transport-plan/",
+          "dated": "Not dated",
+          "note": "In development."
+        }
+      ],
+      "documents_gaps": "No final Local Transport Plan document found."
     },
     {
       "id": "tv",
@@ -207,7 +341,38 @@
         "url": "https://geoportal.statistics.gov.uk/"
       },
       "boundary_note": "5 councils. Matches the ONS combined authority boundary.",
-      "nwf_partnership": null
+      "nwf_partnership": null,
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "Tees Valley Local Growth Plan (page)",
+          "url": "https://teesvalley-ca.gov.uk/about/local-growth-plan/",
+          "dated": "Not dated",
+          "note": ""
+        },
+        {
+          "kind": "growth_plan",
+          "title": "Local Growth Plan: Cabinet report",
+          "url": "https://teesvalley-ca.gov.uk/about/wp-content/uploads/sites/2/2024/12/13-Item-13-Local-Growth-Plan.pdf",
+          "dated": "December 2024",
+          "note": "Draft priorities, before submission to government."
+        },
+        {
+          "kind": "prospectus",
+          "title": "Tees Valley Investment Plan (page)",
+          "url": "https://teesvalley-ca.gov.uk/about/tees-valley-investment-plan/",
+          "dated": "Not dated",
+          "note": "An investment plan, not a site prospectus."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Tees Valley Strategic Transport Plan",
+          "url": "https://teesvalley-ca.gov.uk/about/wp-content/uploads/sites/2/2023/07/STP-Main-Report-Design-Jan20-4.pdf",
+          "dated": "January 2020",
+          "note": "Older: adopted in 2020."
+        }
+      ],
+      "documents_gaps": "No investment prospectus found. The transport plan dates from 2020."
     },
     {
       "id": "ne",
@@ -245,7 +410,38 @@
           "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
           "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "Creating Real Opportunity: the North East Local Growth Plan 2025–2035",
+          "url": "https://www.northeast-ca.gov.uk/downloads/6931/the-north-east-local-growth-plan-msa-update.pdf",
+          "dated": "File dated April 2026",
+          "note": "Updated edition, 44 pages."
+        },
+        {
+          "kind": "prospectus",
+          "title": "North East England's Mayor unveils £14 billion of investment opportunities",
+          "url": "https://www.northeast-ca.gov.uk/news/finance-and-investment/north-east-england-s-mayor-unveils-14-billion-of-investment-opportunities",
+          "dated": "Not dated",
+          "note": "The announcement of the Investment Prospectus, not the prospectus itself."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "North East Local Transport Plan: Delivering Green Transport",
+          "url": "https://www.northeast-ca.gov.uk/downloads/3553/delivering-green-transport-north-east-local-transport-plan.pdf",
+          "dated": "File dated March 2025",
+          "note": "100 pages."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "North East Local Transport Plan: delivery plan",
+          "url": "https://www.northeast-ca.gov.uk/downloads/3635/north-east-local-transport-plan-delivery-plan.pdf",
+          "dated": "File dated April 2025",
+          "note": ""
+        }
+      ],
+      "documents_gaps": "The Investment Prospectus document itself was not found, only its announcement."
     },
     {
       "id": "gcr",
@@ -284,7 +480,38 @@
           "title": "National Wealth Fund: Regional Project Accelerator launched, 21 October 2025",
           "url": "https://www.nationalwealthfund.org.uk/news/national-wealth-fund-launches-new-regional-project-accelerator-local-government"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "Glasgow City Region Economic Strategy",
+          "url": "https://glasgowcityregion.co.uk/wp-content/uploads/2021/12/GCR-EconomicStrategy-Final.pdf",
+          "dated": "December 2021",
+          "note": "Older, but still the current strategy on the region's site."
+        },
+        {
+          "kind": "growth_plan",
+          "title": "Glasgow City Region Devolution Deal: an emerging proposal",
+          "url": "https://glasgowcityregion.co.uk/wp-content/uploads/2025/11/Glasgow-City-Region-Devolution-Deal-November-2025.pdf",
+          "dated": "November 2025",
+          "note": ""
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Regional Transport Strategy 2023–2038 (Strathclyde Partnership for Transport)",
+          "url": "https://www.spt.co.uk/media/nr2c0jjt/spt_regional-transport-strategy-2023-2038.pdf",
+          "dated": "File dated September 2023",
+          "note": ""
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Clyde Metro (Strathclyde Partnership for Transport page)",
+          "url": "https://www.spt.co.uk/about-us/what-we-are-doing/clyde-metro/",
+          "dated": "Not dated",
+          "note": ""
+        }
+      ],
+      "documents_gaps": "No current investment prospectus found."
     },
     {
       "id": "bel",
@@ -314,7 +541,45 @@
         "url": "https://minutes.belfastcity.gov.uk/documents/s101181/Appendix 1 BRCD MoU Phase 3.pdf"
       },
       "boundary_note": "Six councils of the Belfast Region City Deal. It covers the city deal area, from Ballymena in the north to Newry in the south, not Belfast city alone.",
-      "nwf_partnership": null
+      "nwf_partnership": null,
+      "documents": [
+        {
+          "kind": "growth_plan",
+          "title": "Belfast Agenda: the city's community plan",
+          "url": "https://www.belfastcity.gov.uk/Community/Community-planning/Belfast-Agenda",
+          "dated": "Not dated",
+          "note": "Covers Belfast city, not the six-council region."
+        },
+        {
+          "kind": "growth_plan",
+          "title": "Belfast Region City Deal",
+          "url": "https://www.belfastcity.gov.uk/belfastregioncitydeal",
+          "dated": "Not dated",
+          "note": ""
+        },
+        {
+          "kind": "growth_plan",
+          "title": "A Bolder Vision for Belfast",
+          "url": "https://www.belfastcity.gov.uk/Documents/A-Bolder-Vision-for-Belfast",
+          "dated": "Not dated",
+          "note": "City centre vision."
+        },
+        {
+          "kind": "prospectus",
+          "title": "Invest in Belfast: resources",
+          "url": "https://www.belfastcity.gov.uk/investinbelfast/connections/resources",
+          "dated": "Not dated",
+          "note": "Resources page. The Belfast Region Investment Guide 2025 was not found there."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Eastern Transport Plan 2035 (Department for Infrastructure)",
+          "url": "https://www.infrastructure-ni.gov.uk/articles/eastern-transport-plan-etp-2035",
+          "dated": "Not dated",
+          "note": "In preparation. Replaces the Belfast Metropolitan Transport Plan 2015. Covers five councils, not Newry, Mourne and Down."
+        }
+      ],
+      "documents_gaps": "No region-wide growth plan or current investment guide found. The transport plan is still in preparation."
     },
     {
       "id": "ccr",
@@ -355,7 +620,31 @@
           "title": "National Wealth Fund: regional partnerships programme expanded, 7 September 2026",
           "url": "https://www.nationalwealthfund.org.uk/news-and-publications/news/national-wealth-fund-expands-regional-partnerships-programme/"
         }
-      }
+      },
+      "documents": [
+        {
+          "kind": "prospectus",
+          "title": "Inspire Invest Innovate: Investment Prospectus 2026",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2026/03/ccr-investment-prospectus-1-1.pdf",
+          "dated": "File dated March 2026",
+          "note": "35 pages."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Cardiff Capital Region Regional Transport Plan",
+          "url": "https://www.cardiffcapitalregion.wales/wp-content/uploads/2025/10/cardiff-capital-region-regional-transport-plan.pdf",
+          "dated": "File dated October 2025",
+          "note": "34 pages."
+        },
+        {
+          "kind": "transport_plan",
+          "title": "Regional transport (page)",
+          "url": "https://www.cardiffcapitalregion.wales/about-ccr/transport/",
+          "dated": "Not dated",
+          "note": ""
+        }
+      ],
+      "documents_gaps": "The Regional Economic and Industrial Plan was not found as a document."
     }
   ]
 }
